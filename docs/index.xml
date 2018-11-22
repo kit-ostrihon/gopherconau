@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GopherConAU</title>
+    <link>http://gopherconau.com/</link>
+    <description>Recent content on GopherConAU</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Nov 2018 18:49:26 +1100</lastBuildDate>
+    
+	<atom:link href="http://gopherconau.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Main</title>
+      <link>http://gopherconau.com/</link>
+      <pubDate>Thu, 22 Nov 2018 18:49:26 +1100</pubDate>
+      
+      <guid>http://gopherconau.com/</guid>
+      <description>Loading... </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,3 +1,4 @@
 baseURL = "http://gopherconau.com/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "GopherConAU"
+theme = "hugo-theme-lean-launch-page"
