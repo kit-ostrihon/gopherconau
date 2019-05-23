@@ -1,8 +1,9 @@
-baseURL: http://gopherconau.com/
+baseURL: http://gophercon.com.au/
 languageCode: en-us
 title: Gophercon AU
 theme: hugo-fresh
 
+publishDir: docs
 params:
   navbarlogo:
   # Logo (from /images/logos/___)
