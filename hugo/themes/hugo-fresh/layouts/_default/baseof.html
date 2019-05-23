@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    {{ partial "meta.html" . }}
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    {{ partial "css.html" . }}
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div id="status"></div>
+    </div>
+
+    {{ block "main" . }}
+
+    {{ if .Site.Params.hero }}
+    {{ partial "hero.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.section1 }}
+    {{ partial "section1.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.section2 }}
+    {{ partial "section2.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.section3 }}
+    {{ partial "section3.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.section4 }}
+    {{ partial "section4.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.section5 }}
+    {{ partial "section5.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.footer }}
+    {{ partial "footer.html" . }}
+    {{ end }}
+
+    <!-- Back To Top Button -->
+    <div id="backtotop"><a href="#"></a></div>
+
+    {{ if .Site.Params.sidebar }}
+    {{ partial "sidebar.html" . }}
+    {{ end }}
+    
+    {{ end }}
+<div style="width:80%; margin-left:auto; margin-right:auto;text-align: center;"><p>The design of this website is an adaptation of <a href="https://themes.gohugo.io/hugo-fresh/">Hugo Fresh</a> by <a href="https://github.com/StefMa">Stef Ma</a></p></div>
+
+    {{ partial "javascript.html" . }}
+
+  </body>
+</html>
