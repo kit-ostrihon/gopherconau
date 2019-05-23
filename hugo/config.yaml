@@ -1,4 +1,4 @@
-baseURL: http://gophercon.com.au/
+baseURL: https://gophercon.com.au/
 languageCode: en-us
 title: Gophercon AU
 theme: hugo-fresh
