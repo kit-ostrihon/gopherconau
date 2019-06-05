@@ -2,6 +2,7 @@ baseURL: https://gophercon.com.au/
 languageCode: en-us
 title: Gophercon AU
 theme: hugo-fresh
+googleAnalytics: UA-123456789-1
 
 publishDir: docs
 params:
