@@ -21,7 +21,7 @@ params:
     # Button text
     buttontext: Get your tickets here!
     # Where the main hero button links to
-    buttonlink: "https://placeholderlink"
+    buttonlink: "https://ti.to/gophercon-au"
     # Hero image (from /images/___)
     image: illustrations/comingsoon.svg
     # Footer logos (from /images/logos/clients/___.svg)
