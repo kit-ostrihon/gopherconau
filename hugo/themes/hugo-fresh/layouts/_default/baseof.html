@@ -4,7 +4,7 @@
     {{ partial "meta.html" . }}
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
     {{ partial "css.html" . }}
-    
+
     {{ template "_internal/google_analytics.html" . }}
   </head>
   <body>
@@ -39,8 +39,26 @@
     {{ partial "section5.html" . }}
     {{ end }}
 
+    <!-- about -->
+    {{ if .Site.Params.about }}
+    {{ partial "about.html" . }}
+    {{ end }}
+    <!-- end: about -->
+
+    <!-- contact -->
+    {{ if .Site.Params.contact }}
+    {{ partial "contact.html" . }}
+    {{ end }}
+    <!-- end: contact -->
+
+    <!-- mailing list -->
+    {{ if .Site.Params.mailinglist }}
+    {{ partial "mailing-list.html" . }}
+    {{ end }}
+    <!-- end: mailing list -->
+
     {{ if .Site.Params.footer }}
-    {{ partial "footer.html" . }}
+    {{ partial "custom-footer.html" . }}
     {{ end }}
 
     <!-- Back To Top Button -->
@@ -49,9 +67,8 @@
     {{ if .Site.Params.sidebar }}
     {{ partial "sidebar.html" . }}
     {{ end }}
-    
+
     {{ end }}
-<div style="width:80%; margin-left:auto; margin-right:auto;text-align: center;"><p>The design of this website is an adaptation of <a href="https://themes.gohugo.io/hugo-fresh/">Hugo Fresh</a> by <a href="https://github.com/StefMa">Stef Ma</a>.</p></div>
 
     {{ partial "javascript.html" . }}
 
