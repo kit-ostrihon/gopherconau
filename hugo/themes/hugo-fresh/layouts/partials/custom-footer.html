@@ -1,0 +1,18 @@
+{{- $footer      := .Site.Params.footer }}
+{{- $logo        := index $footer "logo" }}
+{{- $thanks      := index $footer "thanks" }}
+
+<footer class="footer footer-dark">
+  <div class="container">
+    <div class="footer-column">
+      <div class="footer-header">
+        <h3>Thanks</h3>
+        <p class="content has-text-justified">
+        {{- range $thanks }}
+          <span>{{ .text }}</span>
+        {{- end }}
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,6 +1,6 @@
 baseURL: https://gophercon.com.au/
 languageCode: en-us
-title: Gophercon AU
+title: GopherConAU
 theme: hugo-fresh
 googleAnalytics: UA-123456789-1
 
@@ -15,24 +15,28 @@ params:
     sizes: [400,600]
   hero:
     # Main hero title
-    title: GopherconAU
+    title: GopherconAU 2019
     # Hero subtitle (optional)
-    subtitle: First ever Gophercon in the AU/NZ region!
+    subtitle: First ever Golang conference in Australia!
     # Button text
-    buttontext: Call for Papers Open Now!
+    # buttontext: Follow on LinkedIn For Updates!
     # Where the main hero button links to
-    buttonlink: "https://www.papercall.io/gophercon-au-2019"
+    # buttonlink: "https://www.linkedin.com/company/gopherconau/"
     # Hero image (from /images/___)
-    image: illustrations/comingsoon.svg
+    image: illustrations/logo-ashley.jpg
     # Footer logos (from /images/logos/clients/___.svg)
-    clientlogos:
-    - systek
-    - tribe
-    - kromo
-    - infinite
-    - gutwork
+  #  clientlogos:
+  #  - systek
+  #  - tribe
+  #  - kromo
+  #  - infinite
+  #  - gutwork
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
+    - title: About
+      url: /#about
+    - title: Contact
+      url: /#contact
   # - title: Features
   #   url: /
   # - title: Pricing
@@ -84,6 +88,43 @@ params:
   #       url: /
   #     - text: App settings
   #       url: /
+
+  # a custom section based on section 1 without tiles
+  about:
+    title: About
+    subtitle: Why Should You Come to GopherConAU?
+    paragraphs:
+      - text: GopherConAU believes Go is the way to go! We wish to showcase this modern language here in beautiful Australia both as a successful tool for commercial programming and a viable career path. Part of our vision is to attract a diverse crowd both to the audience and to the stage. We aim the GopherCon Australia to reflect how we developers want the future of the industry to look.
+      - text: For the first year of GopherCon Australia, we will use sponsorships to attract and accommodate for international speakers and workshop hosts. By showing that GopherCon Australia is a welcoming conference, we wish to create a sense of community coming from different backgrounds, supporting traditionally underrepresented groups in the technology industry. We invited prominent contributors to the Go tech scene, who share and represent our vision of inclusion and who come from diverse gender and ethnicity groups.
+      - text: Many well known Australian companies use Go, including Google, Atlassian, VMware, Seek, Siteminder, Freelancer.com, Campaign Monitor, Sajari, and many more.
+      - text: GopherCon Australia is the latest in a series of conferences originating from the first GopherCon held in Denver, Colorado in 2014. The conference founders are Katie Fry and Xuanyi Chew, both organisers of the successful Sydney Go Users’ Group, and a committee of volunteers.
+      - text: GopherCon Australia is happening in Sydney between 30th October and 1st November 2019. Yes, you read it right - conveniently before the weekend, so that you can extend your stay. We encourage you to take your partner, family, or friends with you, as we will provide you with recommendations on how to spend time in Sydney to enjoy the culture, art, and fun.
+
+  # a custom section based on section 4 because of the quirky background colour and section 1 to get the tiles design styled
+  contact:
+     title: Contact
+     # subtitle: Who to Ask?
+     contacts:
+     - title: Twitter
+       icon: logo-ashley.jpg
+       text: Keeping you updated and entertained
+       url: https://twitter.com/gopherconaunz
+       buttonText: Read From @GopherConAUNZ
+     - title: LinkedIn
+       icon: gopher-kangaroo-plain-svg-small-margin.svg
+       text: News in full seriousness of LinkedIn Business Page
+       url: https://www.linkedin.com/company/gopherconau/
+       buttonText: Visit GopherConAU Page
+     - title: Mailling List
+       icon: gopher-celebrating.svg
+       text: To keep you in the loop with everything important
+       url: /#mail
+       buttonText: Join the Mailling List
+  mailinglist:
+    title: Mailing List
+    # subtitle
+    logo: gopher-kangaroo-sydney-opera.svg
+    # subtitle: We will keep you in the loop
   # section1:
   #   title: Great power comes
   #   subtitle: with great responsibility
@@ -139,10 +180,14 @@ params:
   #     quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
   #     job: HR Manager
   #     img: 3
-  # footer:
-  #   # Logo (from /images/logos/___)
-  #   logo: fresh-white-alt.svg
-  #   # Social media links (GitHub, Twitter, etc.). All are optional.
+  footer:
+     # logo: gopher-kangaroo-sydney-opera.svg
+     thanks:
+       - text: The design of this website is an adaptation of Hugo Fresh by Stef Ma.
+       - text: The Go gopher character was designed by Renee French under CC BY 3.0.
+       - text: The GopherConAU logo was kindly created by Ashley McNamara.
+       - text: The other gopher illustrations are based on creations of Egon Elbre.
+     # Social media links (GitHub, Twitter, etc.). All are optional.
   #   socialmedia:
   #   - link: https://github.com/lucperkins/github-fresh
   #     # Icons are from Font Awesome
