@@ -125,6 +125,7 @@ params:
     # subtitle
     logo: gopher-kangaroo-sydney-opera.svg
     # subtitle: We will keep you in the loop
+
   # The entire schedule
   schedule:
     title: Schedule
@@ -145,7 +146,7 @@ params:
         time: "10h00"
 
     - name: "Bill Gates"
-      photo: "/img/speaker.jpg"
+      photo: "/images/speakers/default.png"
       bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
       company: "Microsoft"
       link:
@@ -160,7 +161,7 @@ params:
       time: "12h00"
 
     - name: "Chuck Norris"
-      photo: "/img/speaker.jpg"
+      photo: "/images/speakers/default.png"
       bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
       company: "Delta Command"
       link:
@@ -172,7 +173,7 @@ params:
         time: "13h00"
 
     - name: "Steve Jobs"
-      photo: "/img/speaker.jpg"
+      photo: "/images/speakers/default.png"
       bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
       company: "Apple, Inc."
       link:
@@ -187,7 +188,7 @@ params:
       time: "15h00"
 
     - name: "Mark Zuckerberg"
-      photo: "/img/speaker.jpg"
+      photo: "/images/speakers/default.png"
       bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
       company: "Facebook"
       link:
@@ -199,7 +200,7 @@ params:
         time: "16h00"
 
     - name: "Steve Wozniak"
-      photo: "/img/speaker.jpg"
+      photo: "/images/speakers/default.png"
       bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
       company: "Apple, Inc."
       link:
@@ -209,6 +210,7 @@ params:
         title: "Why do I prefer Android over iPhone"
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
         time: "17h00"
+        
   # section2:
   #   title: You're here because you want the best
   #   subtitle: And we know it
