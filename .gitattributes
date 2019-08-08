@@ -1,2 +1,4 @@
 docs/CNAME merge=ours
 docs/robots.txt merge=ours
+hugo/config.yaml merge=ours
+gcaucontent/config.yaml merge=ours
