@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GopherConAU</title>
-    <link>https://gcau.mikehughes.info/</link>
+    <link>https://gophercon.com.au/</link>
     <description>Recent content on GopherConAU</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://gcau.mikehughes.info/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://gophercon.com.au/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
