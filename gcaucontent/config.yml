@@ -46,8 +46,8 @@ params:
     link: "http://register.example.com"
 
   # Fork me on GitHub, if you don't want this, just remove the forkButton property
-  ForkButton:
-    repository: "https://github.com/jweslley/hugo-conference/"
+  # ForkButton:
+  #   repository: "https://github.com/jweslley/hugo-conference/"
 
   # List of Sponsors
   Sponsors:
