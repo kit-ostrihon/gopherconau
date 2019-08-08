@@ -51,6 +51,19 @@
     {{ end }}
     <!-- end: contact -->
 
+    <!-- schedule and speakers -->
+    {{ if .Site.Params.schedule }}
+    {{ partial "speakers.html" . }}
+    {{ partial "schedule.html" . }}
+    {{ end }}
+    <!-- end: schedule and speakers -->
+
+    <!-- sponsors -->
+    {{ if .Site.Params.sponsors }}
+    {{ partial "sponsors.html" . }}
+    {{ end }}
+    <!-- end: sponsors -->
+
     <!-- mailing list -->
     {{ if .Site.Params.mailinglist }}
     {{ partial "mailing-list.html" . }}
