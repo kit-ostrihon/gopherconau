@@ -6850,6 +6850,81 @@ Sidebar Styles
 /* =============================================================================
    SPEAKER
    ========================================================================== */
+.speakers-item {
+  position: relative;
+  min-height: 180px;
+  padding-left: 180px;
+  margin-bottom: 30px;
+  border-bottom: 1px dashed #e7e7e7; }
+
+.speaker-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 120px;
+  height: 120px; }
+
+.speech-title {
+  padding-top: 10px;
+  font-size: 2em;
+  margin-bottom: 1em; }
+
+.speech-time {
+  font-size: 18px;
+  padding: 10px 15px;
+  letter-spacing: -0.03em; }
+
+.speakers-name {
+  font-size: 1.6em; }
+
+.speakers-item p {
+  font-size: 1.4em; }
+
+/* =============================================================================
+     SCHEDULE
+     ========================================================================== */
+.schedule-tbl {
+  padding: 20px; }
+  .schedule-tbl table {
+    border-collapse: collapse;
+    font-size: 1em; }
+  .schedule-tbl td {
+    position: relative;
+    padding: 20px 30px;
+    font-size: 1.4em;
+    line-height: 1.4em;
+    text-align: left; }
+  .schedule-tbl th {
+    position: relative;
+    padding: 20px 30px;
+    font-size: 1.4em;
+    line-height: 1.4em;
+    text-align: left;
+    padding: 5px 30px;
+    color: #2b2b2b;
+    font-size: 2em;
+    font-weight: bolder; }
+  .schedule-tbl .speaker-photo {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-right: 20px; }
+  .schedule-tbl .schedule-time {
+    text-align: center; }
+
+.schedule-slot {
+  width: 250px;
+  font-size: 16px; }
+
+.speakers-company {
+  display: block;
+  font-size: 12px; }
+
+/* =============================================================================
+   SPEAKER
+   ========================================================================== */
 .speaker-photo .photo {
   border-radius: 50%;
   box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.07);
@@ -6868,8 +6943,8 @@ Sidebar Styles
   border-radius: 8px; }
 
 /* =============================================================================
-     SCHEDULE
-     ========================================================================== */
+   SCHEDULE
+   ========================================================================== */
 .schedule-tbl {
   background: #fff;
   border: 1px solid #ccc;
@@ -6897,6 +6972,94 @@ Sidebar Styles
 
 .schedule-coffee, .schedule-closing, .schedule-lunch, .schedule-other {
   color: #214f87; }
+
+@media only screen and (max-width: 480px) {
+  /* speakers */
+  .speaker-photo .photo {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.07); }
+  .speech-title {
+    font-weight: bolder; }
+  .speech-time {
+    color: #2b2b2b;
+    background: transparent;
+    font-weight: bolder; }
+  .github-link {
+    display: none; } }
+
+@media only screen and (min-width: 320px) and (max-width: 800px) {
+  /* schedule */
+  .schedule-tbl {
+    padding: 1px; }
+    .schedule-tbl td {
+      padding: 10px; }
+    .schedule-tbl th {
+      padding: 10px;
+      padding: 10px;
+      font-size: 1.8em; }
+    .schedule-tbl .speaker-photo {
+      width: 40px;
+      height: 40px;
+      margin-right: 5px; }
+    .schedule-tbl .schedule-slot {
+      width: 120px; }
+    .schedule-tbl td.schedule-slot {
+      font-size: 14px;
+      line-height: 1.2em; }
+    .schedule-tbl .schedule-time {
+      width: 60px;
+      padding: 10px 0 10px 5px;
+      text-align: left; }
+    .schedule-tbl td.schedule-description {
+      font-size: 12px; }
+  /* partners */
+  .sponsor-item, .partner-item {
+    margin: 0 5px 10px 0; }
+  .sponsor--link, .partner-link {
+    width: 95px;
+    height: 95px;
+    line-height: 95px; }
+  /* contact */
+  .control-group-name, .control-group-email {
+    clear: both;
+    width: 100%;
+    float: none;
+    margin-right: 0; }
+  .form .btn {
+    margin-bottom: 50px; } }
+
+@media only screen and (max-width: 480px) {
+  /* speakers */
+  .speakers-item {
+    min-height: 70px;
+    padding-left: 70px; }
+  .speaker-photo {
+    width: 50px;
+    height: 50px; }
+  .speech-title {
+    padding-top: 0;
+    font-size: 16px;
+    margin-bottom: .3em; }
+  .speech-time {
+    font-size: 16px;
+    padding: 0; }
+  .speakers-bio {
+    display: none; } }
+
+@media only screen and (max-width: 321px) {
+  .logo-name {
+    font-size: 4em;
+    margin-bottom: .4em; }
+  .schedule-tbl .schedule-description {
+    display: none; }
+  .schedule-tbl .schedule-slot {
+    width: auto; }
+  /* partners */
+  .sponsor-item, .partner-item {
+    margin: 0 12px 15px 0; }
+  .sponsor--link, .partner-link {
+    width: 115px;
+    height: 115px;
+    line-height: 115px; } }
 
 /* ==========================================================================
 Testimonials Styles

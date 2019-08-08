@@ -133,7 +133,7 @@ params:
       time: "9h00"
 
     - name: "Linus Torvalds"
-      photo: "/img/speaker.jpg"
+      photo: "/images/speakers/default.png"
       bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
       company: "Linux Foundation"
       link:
