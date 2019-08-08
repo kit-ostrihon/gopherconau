@@ -51,6 +51,12 @@
     {{ end }}
     <!-- end: contact -->
 
+    <!-- schedule -->
+    {{ if .Site.Params.schedule }}
+    {{ partial "schedule.html" . }}
+    {{ end }}
+    <!-- end: schedule -->
+
     <!-- mailing list -->
     {{ if .Site.Params.mailinglist }}
     {{ partial "mailing-list.html" . }}
