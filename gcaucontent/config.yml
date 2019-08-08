@@ -1,4 +1,4 @@
-baseurl: "https://gophercon.com.au/content/"
+baseurl: "https://gcau.mikehughes.info/gcaucontent/"
 title: "GopherconAU 2019"
 canonifyurls: true
 theme: "hugo-conference"
