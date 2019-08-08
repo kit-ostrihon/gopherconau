@@ -41,6 +41,8 @@ params:
       url: /#speakers
     - title: Schedule
       url: /#schedule
+    - title: Sponsors
+      url: /#sponsors
   # - title: Features
   #   url: /
   # - title: Pricing
