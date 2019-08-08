@@ -15,13 +15,13 @@ params:
   Address: "755 Harris St, Ultimo NSW 2007"
   City:  "Sydney"
   State: "Australia"
-  Images: ["/img/badge.jpg"]
+  Images: ["../illustrations/logo-ashley.jpg"]
   GoogleMapsKey: "my-secret-maps-key"
 
   # Active sections on the website to deactivate comment out with '#'
   # you can also change order here and it will reflect on page
   Sections:
-    - about
+    #- about
     - location
     - speakers
     - schedule
@@ -41,9 +41,9 @@ params:
 
   # The Call To Action button at the header,
   # If you don't want this, just remove the callToAction property.
-  CallToAction:
-    text: "Register now!"
-    link: "http://register.example.com"
+  # CallToAction:
+  #   text: "Register now!"
+  #   link: "http://register.example.com"
 
   # Fork me on GitHub, if you don't want this, just remove the forkButton property
   # ForkButton:
