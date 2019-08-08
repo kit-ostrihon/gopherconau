@@ -255,6 +255,7 @@ params:
      # logo: gopher-kangaroo-sydney-opera.svg
      thanks:
        - text: The design of this website is an adaptation of Hugo Fresh by Stef Ma.
+       - text: It contains code from Hugo Conference by Jonhnny Weslley.
        - text: The Go gopher character was designed by Renee French under CC BY 3.0.
        - text: The GopherConAU logo was kindly created by Ashley McNamara.
        - text: The other gopher illustrations are based on creations of Egon Elbre.
