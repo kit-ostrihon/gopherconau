@@ -15,7 +15,7 @@ params:
   Address: "755 Harris St, Ultimo NSW 2007"
   City:  "Sydney"
   State: "Australia"
-  Images: ["../illustrations/logo-ashley.jpg"]
+  Images: ["/img/badge.jpg"]
   GoogleMapsKey: "my-secret-maps-key"
 
   # Active sections on the website to deactivate comment out with '#'
