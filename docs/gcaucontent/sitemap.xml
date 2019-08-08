@@ -3,17 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://gcau.mikehughes.info/gcaucontent/categories/</loc>
+    <loc>https://gophercon.com.au/gcaucontent/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://gcau.mikehughes.info/gcaucontent/</loc>
+    <loc>https://gophercon.com.au/gcaucontent/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://gcau.mikehughes.info/gcaucontent/tags/</loc>
+    <loc>https://gophercon.com.au/gcaucontent/tags/</loc>
     <priority>0</priority>
   </url>
   
