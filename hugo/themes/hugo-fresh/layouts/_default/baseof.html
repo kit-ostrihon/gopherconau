@@ -51,11 +51,12 @@
     {{ end }}
     <!-- end: contact -->
 
-    <!-- schedule -->
+    <!-- schedule and speakers -->
     {{ if .Site.Params.schedule }}
+    {{ partial "speakers.html" . }}
     {{ partial "schedule.html" . }}
     {{ end }}
-    <!-- end: schedule -->
+    <!-- end: schedule and speakers -->
 
     <!-- mailing list -->
     {{ if .Site.Params.mailinglist }}

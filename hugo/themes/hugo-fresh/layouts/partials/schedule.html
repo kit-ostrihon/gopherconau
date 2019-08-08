@@ -2,13 +2,16 @@
 {{- $title    := index $schedule "title" }}
 {{- $slots    := index $schedule "slots" }}
 
-<section class="section section-feature-grey is-medium" id="about">
+<section class="section section-feature-grey is-medium" id="schedule">
   <div class="container">
     <div class="title-wrapper has-text-centered">
 <h2 class="title is-2">{{ $title }}</h2>
+</div>
 
+<div class="content-wrapper">
+  
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 <div class="schedule-tbl">
   <table>
     <thead>
@@ -45,7 +48,6 @@ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
       {{ end }}
     </tbody>
   </table>
-</div>
 </div>
 </div>
 </section>
