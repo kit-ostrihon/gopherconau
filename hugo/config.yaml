@@ -17,7 +17,7 @@ params:
     # Main hero title
     title: GopherconAU 2019
     # Hero subtitle (optional)
-    subtitle: First ever Golang conference in Australia!
+    subtitle: First ever Go conference in Australia!
     # Button text
     # buttontext: Follow on LinkedIn For Updates!
     # Where the main hero button links to
