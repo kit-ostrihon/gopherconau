@@ -17,7 +17,11 @@ params:
     # Main hero title
     title: GopherconAU 2019
     # Hero subtitle (optional)
-    subtitle: First ever Golang conference in Australia!
+    subtitle: First ever Go conference in Australia!
+    listitems:
+      - text: Workshops Day - Wednesday 30th
+      - text: Conference Days - Thursday 31st & Friday 1st
+    advice: Please be advised that workshops are to be purchased separately.
     # Button text
     # buttontext: Follow on LinkedIn For Updates!
     # Where the main hero button links to
