@@ -19,8 +19,10 @@ params:
     # Hero subtitle (optional)
     subtitle: First ever Go conference in Australia!
     listitems:
-      - text: Workshops Day - Wednesday 30th
-      - text: Conference Days - Thursday 31st & Friday 1st
+      - label: Workshops Day
+        text: Wednesday 30th
+      - label: Conference Days
+        text: Thursday 31st & Friday 1st
     advice: Please be advised that workshops are to be purchased separately.
     # Button text
     # buttontext: Follow on LinkedIn For Updates!
