@@ -39,8 +39,8 @@ params:
       url: /#contact
     - title: Speakers
       url: /#speakers
-    - title: Schedule
-      url: /#schedule
+    # - title: Schedule
+    #   url: /#schedule
     # - title: Sponsors
     #   url: /#sponsors
     - title: Code Of Conduct
