@@ -17,7 +17,7 @@ params:
     # Main hero title
     title: GopherconAU 2019
     # Hero subtitle (optional)
-    subtitle: First ever Golang conference in Australia!
+    subtitle: First ever Go conference in Australia!
     # Button text
     # buttontext: Follow on LinkedIn For Updates!
     # Where the main hero button links to
@@ -37,12 +37,14 @@ params:
       url: /#about
     - title: Contact
       url: /#contact
-    # - title: Speakers
-    #   url: /#speakers
+    - title: Speakers
+      url: /#speakers
     # - title: Schedule
-    #   url: /#schedule
+      # url: /#schedule
     # - title: Sponsors
     #   url: /#sponsors
+    - title: Code Of Conduct
+      url: /#coc
   # - title: Features
   #   url: /
   # - title: Pricing
@@ -136,97 +138,197 @@ params:
   # sponsors:
   #   title: Sponsors
   #   companies:
-  #   - name: "Hugo"
-  #     logo: "/images/speakers/default.png"
-  #     url: "http://gohugo.io"
-  #   - name: "Google"
-  #     logo: "/images/speakers/default.png"
-  #     url: "http://google.com"
+  #   - name: "Atlassian"
+  #     logo: "/images/logos/sponsors/Atlassian-icon-blue-onecolor.png"
+  #     url: "https://www.atlassian.com/"
+  #     type: "Gold"
+  #   - name: "Campaign Monitor"
+  #     logo: "/images/logos/sponsors/campaignmonitor.png"
+  #     url: "https://www.campaignmonitor.com/"
+  #     type: "Lanyards and Programs"
+  #   - name: "Kablamo"
+  #     logo: "/images/logos/sponsors/kablamo.png"
+  #     url: "https://www.kablamo.com.au/"
+  #     type: ""
+  #   - name: "Google Cloud Platform"
+  #     logo: "/images/logos/sponsors/gcp.png"
+  #     url: "https://cloud.google.com/"
+  #     type: ""
+  #   - name: "MadeComfy"
+  #     logo: "/images/logos/sponsors/madecomfy-logo.png"
+  #     url: "https://madecomfy.com.au/"
+  #     type: ""
 
   # The entire schedule
-  # schedule:
-  #   title: Schedule
-  #   slots:
-  #   - name: "Check-in / Breakfast"
-  #     time: "9h00"
+  schedule:
+    title: Schedule
+    slots:
+    - name: "Check-in / Breakfast"
+      time: "30/10/2019 9h00"
 
-  #   - name: "Linus Torvalds"
-  #     photo: "/images/speakers/default.png"
-  #     bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-  #     company: "Linux Foundation"
-  #     link:
-  #       href: "http://twitter.com/linus"
-  #       text: "@linus"
-  #     presentation:
-  #       title: "Digging into a Linux Kernel"
-  #       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-  #       time: "10h00"
+    - name: "Peter Williams"
+      photo: "https://secure.gravatar.com/avatar/b937f13d868c05c74f23858ff5a98642?s=500"
+      bio: '<p><a href="https://www.linkedin.com/in/peterwilliams97/">Peter Williams</a> is the lead developer of
+enabling technologies at <a href="https://www.papercut.com/">PaperCut</a>. He develops libraries and features
+for PaperCut´s products.</p>
+<p>Peter has been developing in Go for the last few years. Some of the features and components he has
+recently written in Go for PaperCut are</p>
+<ul>
+<li>A printing back-end for Google Cloud Print.</li>
+<li>A printing back-end and IPP stack for PaperCut Mobility.</li>
+<li>PDF grayscale conversion.</li>
+<li>PDF watermarking.</li>
+</ul>
+'
+      company: "PaperCut"
+      link:
+        href: "https://www.linkedin.com/in/peterwilliams97/"
+        text: "LinkedIn"
+      presentation:
+        title: "PDF Full Text Search in Pure Go. Why and How I Wrote it."
+        description: '<p>Many modern software product developers work close to the top of a powerful open source software stack and focus on their customer problems.</p>
+<p>This talk is about how I worked further down the Go software stack to write a PDF Full Text Search library and solve customer problems in unexpected ways.</p>.
+'
+        time: "30/10/2019 10h00"
 
-  #   - name: "Bill Gates"
-  #     photo: "/images/speakers/default.png"
-  #     bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-  #     company: "Microsoft"
-  #     link:
-  #       href: "http://github.com/billy95"
-  #       text: "@billy95"
-  #     presentation:
-  #       title: "Introducing Windows 12"
-  #       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-  #       time: "11h00"
+    - name: "Gareth Seneque"
+      photo: "https://secure.gravatar.com/avatar/73bf281048c81f2da025951a2cc1094b?s=500"
+      bio: "I am a Machine Learning Engineer at the ABC who is fascinated by ML, art, and the beguiling weirdness of human experience. 
 
-  #   - name: "Lunch"
-  #     time: "12h00"
+Working at an organisation with a rich creative & cultural history (reflected in its data!) gives me the chance to experiment with a range of ML techniques on real-world 'big data'. Specifically, I am on the team that manages https://search.abc.net.au and our recommendation platform.
 
-  #   - name: "Chuck Norris"
-  #     photo: "/images/speakers/default.png"
-  #     bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-  #     company: "Delta Command"
-  #     link:
-  #       href: "http://twitter.com/littlechuck"
-  #       text: "@littlechuck"
-  #     presentation:
-  #       title: "How to kill a elephant with one finger"
-  #       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-  #       time: "13h00"
+I have also co-authored the recently-released 'Hands-on Deep Learning in Go', and presented at YOW! Data 2019 on the topic of 'Using Machine Learning to Automate Content Metadata'."
+      company: "Australian Broadcasting Corporation"
+      link:
+        href: "mailto://seneque@gmail.com"
+        text: "seneque@gmail.com"
+      presentation:
+        title: "Game of Clicks: Reinforcement Learning for News Recommendation"
+        description: '
+        <p>Recommendation systems suck. I buy one vacuum cleaner and all of a sudden I&#39;m a Hoover enthusiast. Enjoyed a nice video about politics? YouTube is unusable now.</p>
+<p>This talk covers a new way to build these systems using Deep Reinforcement Learning to improve the quality &amp; diversity of recommendations.</p>
 
-  #   - name: "Steve Jobs"
-  #     photo: "/images/speakers/default.png"
-  #     bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-  #     company: "Apple, Inc."
-  #     link:
-  #       href: "http://github.com/stevie"
-  #       text: "@stevie"
-  #     presentation:
-  #       title: "Presenting iPad"
-  #       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-  #       time: "14h00"
+        '
+        time: "30/10/2019 11h00"
 
-  #   - name: "Coffee-break"
-  #     time: "15h00"
+    - name: "Lunch"
+      time: "30/10/2019 12h00"
 
-  #   - name: "Mark Zuckerberg"
-  #     photo: "/images/speakers/default.png"
-  #     bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-  #     company: "Facebook"
-  #     link:
-  #       href: "http://twitter.com/zuck"
-  #       text: "@zuck"
-  #     presentation:
-  #       title: "Revealing Facebook Secrets"
-  #       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-  #       time: "16h00"
+    - name: "Ben Boyter"
+      photo: "https://secure.gravatar.com/avatar/4e078aff82f20742faba12084d25ced1?s=500"
+      bio: "A technical lead for Kablamo but at heart a codemonkey. I write about various topics on my blog https://boyter.org/ which occasionally makes the front of the orange site, as well as run searchcode.com as a side gig for fun. I like writing code, walks on beach and getting caught in the rain. I hate eating raw tomato unless you prepare it somehow, and slices on a hamburger does not count as preparation."
+      company: "Kablamo"
+      link:
+        href: "mailto://ben@boyter.org"
+        text: "ben@boyter.org"
+      presentation:
+        title: "Sloc Cloc and Code - Can a crusty Go program outperform a well written Rust Project?"
+        description: '<p>Sloc cloc and code. How a death march project lead to learning Go, the creation of a source lines of code counter which is faster and more accurate then the Rust/ATS/C equivalents, while learning about some really bizarre performance characteristics.</p>'
+        time: "30/10/2019 13h00"
 
-  #   - name: "Steve Wozniak"
-  #     photo: "/images/speakers/default.png"
-  #     bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-  #     company: "Apple, Inc."
-  #     link:
-  #       href: "http://twitter.com/woz"
-  #       text: "@woz"
-  #     presentation:
-  #       title: "Why do I prefer Android over iPhone"
-  #       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-  #       time: "17h00"
+    - name: "Darrell Chua"
+      photo: "https://secure.gravatar.com/avatar/49e0e0dc2b4a1198f30f3de7ab63cb11?s=500"
+      bio: "Darrell is a Senior Data Scientist with more than 10 years of experience. He has been programming in Go for a few years and has been working on Deep Learning models for longer. He has developed models of varying complexity; from building credit scorecards with logistic regression to building image classification models for trading cards."
+      company: "Kablamo"
+      link:
+        href: "mailto://cfgt2001@hotmail.com"
+        text: "cfgt2001@hotmail.com"
+      presentation:
+        title: "Getting Started with Deep Learning in Go"
+        description: '<p>Have you ever wanted to dabble in Deep Learning? Here&#39;s your chance to get started doing it in Go. We&#39;ll take you through a quick example of a new model - and then how to continue your learning process through more commonly found Tensorflow projects lying around the Internet.</p>'
+        time: "30/10/2019 14h00"
+
+    - name: "Coffee-break"
+      time: "30/10/2019 15h00"
+
+    - name: "Ajey Gore"
+      photo: "https://secure.gravatar.com/avatar/929238a6369d634577ccddecf91f38f8?s=500"
+      bio: "Ajey Gore is group CTO at GO-JEK primarily focussing on Payments and organisation wide technology and team strategies. He helps the group deliver a transport, logistics, lifestyle and payments platform of 20 products. Ajey has 18 years of experience building core technology strategy across diverse domains. His interests include machine learning, computer networks and distributed architecture system. 
+
+Ajey founded CodeIgnition, a boutique DevOps consultancy. CodeIgnition was later acquired by GO-JEK. He served as ThoughtWorks's Head of Technology, a noted international technology consulting firm, following which he joined Hoppr as Chief Technology Officer, a Bharati SoftBank funded started, later acquired by Hike Messenger in India.
+
+An active influencer in the technology community, He is a trustee of the Emerging Technology Trust, a-not-for-profit organization.  Ajey organizes technology conferences, including RubyConf, GopherCon, and devopsdays  In India for last 8 years, through his not-for-profit organization.
+"
+      company: "GoJek"
+      link:
+        href: "mailto://ajeygore@gmail.com"
+        text: "ajeygore@gmail.com"
+      presentation:
+        title: "Go Gamble on Unicorn"
+        description: '<p>We will be going through the journey of scaling a company to unicorn, I am going to talk about how GoLang helped us scale 6000x over 36 months and 18+ product lines,  where we failed and excelled with GoLang. Welcome to our journey and learnings of building software, teams and products</p>'
+        time: "30/10/2019 16h00"
+
+    - name: "Check-in / Breakfast"
+      time: "31/10/2019 9h00"
+
+    - name: "Am Laher"
+      photo: "https://secure.gravatar.com/avatar/47bbb612ea01d04266e8ee675b1c93e1?s=500"
+      bio: '<p>I&#39;ve been an avid Gopher since 2012 - roughly as long as I&#39;ve been living in New Zealand. I discovered such an immediate productivity boost, that I haven&#39;t looked back from Go, or NZ, since. I helped start the Go Auckland meetup group in 2013, and I&#39;ve hosted and spoken at many meetups since then.</p>
+<p>About four years ago, a wise man persuaded me that &quot;setting up a new stack is the right time to begin CD&quot;. I claimed I was too busy getting product and platform to market, but he won me over: &quot;it&#39;s much harder to add CD later&quot;. I went with it, and I was so chuffed with the results that I&#39;ve been championing CD-related approaches ever since.</p>'
+      company: "Movio"
+      link:
+        href: "mailto://am@laher.net.nz"
+        text: "am@laher.net.nz"
+      presentation:
+        title: "Designing Go services for Continuous Deployment"
+        description: '<p>Continuous Delivery can drive the design of your code for Great Good. I&#39;ll share some of the tricks and strategies I&#39;ve used to deploy Go services safely, smoothly, and without ceremony. I&#39;ll cover integration testing, db migrations, zero-downtime deploys, feature flags, and some useful go tooling.</p>'
+        time: "31/10/2019 10h00"
+
+    - name: "Alexander Else"
+      photo: "https://secure.gravatar.com/avatar/74ac55db57112d8ef8c832d77b805486?s=500"
+      bio: '<p>Alexander is an infrastructure software engineer, currently working at Atlassian on the Observability team. I like to build distributed systems. Sometimes things catch on fire and need putting out. When I&#39;m not doing those things I enjoy working on electronics projects, making music and spending time with my family.</p>'
+      company: "Atlassian"
+      link:
+        href: "mailto://aelse@atlassian.com"
+        text: "aelse@atlassian.com"
+      presentation:
+        title: "Eliminate the guess work: Profiling a go service in production"
+        description: '<p>This talk is about how to start using go&#39;s profiling tools, instrument your code so that you can profile your services running in production and have less mystery in your life.</p>
+<p>Viewers will learn how to use trace and pprof tools, and guidance on doing it in production for their own services.</p>'
+        time: "31/10/2019 11h00"
+
+    - name: "Lunch"
+      time: "31/10/2019 12h00"
+
+    - name: "Cera Davies"
+      photo: "https://secure.gravatar.com/avatar/1e2f5505c9fd1adf6a2203556d0791d5?s=500"
+      bio: '<p>I&#39;ve been coding Go since 2011. I&#39;m an infrastructure and platform engineer based in Melbourne, working in the energy sector on distributed &amp; renewable energy products. In my spare time I&#39;m into dancing, cycling, gabber, videogames &amp; politics. Mir veln zey iberlebn.</p>'
+      company: "GreenSync"
+      link:
+        href: "mailto://ceralena.davies@gmail.com"
+        text: "ceralena.davies@gmail.com"
+      presentation:
+        title: "Pragmatic Concurrency"
+        description: '<p>Concurrency is one of Go&#39;s big selling points, but it&#39;s also something that trips up developers and  leads to projects stalling under the weight of complexity. I discuss my experience working on large concurrent systems, outline some common pitfalls, and share some opinions on best practices.</p>'
+        time: "31/10/2019 13h00"
+
+    - name: "Joshua Carpeggiani"
+      photo: "https://secure.gravatar.com/avatar/8f3ae66a1b3c1494de8971e428e9b6ae?s=500"
+      bio: '<p>Josh is a software engineer at ANZ working on implementing an open source project decimal datatype in Go as well as spreading the word about Go by co-organising a corporate Go training course. 
+Outside of work, Josh likes to get lost by following the forgotten art of hitchhiking where he´s traveled to many places, and many are still to come.</p>'
+      company: "ANZ Bank"
+      link:
+        href: "mailto://joshuacarpeggiani@gmail.com"
+        text: "joshuacarpeggiani@gmail.com"
+      presentation:
+        title: "Go for Decimals"
+        description: '<p>Relying on binary floating point can kill; they are inherently imprecise and can lead to technical complications later down the road. A decimal system would solve many of these complications. Go has been lacking a fast and efficient decimal data type, until now...</p>'
+        time: "31/10/2019 14h00"
+
+    - name: "Coffee-break"
+      time: "31/10/2019 15h00"
+
+    - name: "Julia Wong"
+      photo: "https://secure.gravatar.com/avatar/592a3d6f570b7822e480edb108c601fd?s=500"
+      bio: '<p>Julia works as a developer in Atlassian´s Observability team. She loves learning about all things Go, especially the cute Gopher, and is passionate about teaching the younger generation how to code.</p>'
+      company: "Atlassian"
+      link:
+        href: "mailto://juwong@atlassian.com"
+        text: "juwong@atlassian.com"
+      presentation:
+        title: "Migrate to a New Platform by Creating a Pipeline in Go"
+        description: '<p>This is the story of how Atlassian moved from a multi-million dollar contract with one vendor to another for their monitoring system. To help them migrate the thousands of engineers and microservices onto the new platform in just a few months, they built a new data pipeline using Go.</p>'
+        time: "31/10/2019 16h00"
 
   # section2:
   #   title: You're here because you want the best

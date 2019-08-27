@@ -19,18 +19,18 @@
     {{ end }}
 
     <h3 class="speech-title">
-      {{ with .presentation.time }}
+      <!-- {{ with .presentation.time }}
       <span class="speech-time">{{ . }}</span>
-      {{ end }}
+      {{ end }} -->
       <span>{{ .presentation.title }}</span>
     </h3>
 
     <h3 class="speakers-name">{{ .name }}
-      {{ with .link }}
+      <!-- {{ with .link }}
       <a href="{{ .href }}" target="_blank" title="{{ .text }}"> {{ .text }} </a>
-      {{ end }}
+      {{ end }} -->
     </h3>
-    <p class="speakers-bio">{{ .bio }}</p>
+    <p class="speakers-bio">{{ .bio | safeHTML }}</p>
   </li>
   {{ end }}
 {{ end }}

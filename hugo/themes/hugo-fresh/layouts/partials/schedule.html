@@ -10,8 +10,8 @@
 
 <div class="content-wrapper">
   
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p> -->
 <div class="schedule-tbl">
   <table>
     <thead>
@@ -36,7 +36,7 @@
               {{ .presentation.title }}
               <span class="speakers-company">{{ .company }}</span>
             </td>
-            <td class="schedule-description">{{ .presentation.description }}</td>
+            <td class="schedule-description">{{ .presentation.description | safeHTML }}</td>
           </tr>
         {{ else }}
           <tr class="schedule-other">
