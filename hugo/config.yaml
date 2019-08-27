@@ -152,8 +152,8 @@ params:
 
     - name: "Peter Williams"
       photo: "https://secure.gravatar.com/avatar/b937f13d868c05c74f23858ff5a98642?s=500"
-      bio: "Peter Williams is the lead developer of
-enabling technologies at <a href=\"https://www.papercut.com/\">PaperCut</a> He develops libraries and features
+      bio: 'Peter Williams is the lead developer of
+enabling technologies at <a href="https://www.papercut.com/">PaperCut</a> He develops libraries and features
 for PaperCut´s products.
 
 Peter has been developing in Go for the last few years. Some of the features and components he has
@@ -162,7 +162,7 @@ recently written in Go for PaperCut are
 * A printing back-end and IPP stack for PaperCut Mobility.
 * PDF grayscale conversion.
 * PDF watermarking.
-"
+'
       company: "PaperCut"
       link:
         href: "https://www.linkedin.com/in/peterwilliams97/"

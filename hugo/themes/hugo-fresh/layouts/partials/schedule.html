@@ -36,7 +36,7 @@
               {{ .presentation.title }}
               <span class="speakers-company">{{ .company }}</span>
             </td>
-            <td class="schedule-description">{{ .presentation.description }}</td>
+            <td class="schedule-description">{{ .presentation.description | safeHTML }}</td>
           </tr>
         {{ else }}
           <tr class="schedule-other">
