@@ -54,7 +54,7 @@
     <!-- schedule and speakers -->
     {{ if .Site.Params.schedule }}
     {{ partial "speakers.html" . }}
-    {{ partial "schedule.html" . }}
+    <!-- {{ partial "schedule.html" . }} -->
     {{ end }}
     <!-- end: schedule and speakers -->
 
@@ -63,6 +63,10 @@
     {{ partial "sponsors.html" . }}
     {{ end }}
     <!-- end: sponsors -->
+
+    <!-- code of conduct -->
+    {{ partial "coc.html" . }}
+    <!-- end: code of conduct -->
 
     <!-- mailing list -->
     {{ if .Site.Params.mailinglist }}
