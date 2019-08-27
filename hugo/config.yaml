@@ -152,9 +152,9 @@ params:
 
     - name: "Peter Williams"
       photo: "https://secure.gravatar.com/avatar/b937f13d868c05c74f23858ff5a98642?s=500"
-      bio: "[Peter Williams](https://www.linkedin.com/in/peterwilliams97/) is the lead developer of
-enabling technologies at [PaperCut](https://www.papercut.com/). He develops libraries and features
-for PaperCutâ€šÃ„Ã´s products.
+      bio: "Peter Williams is the lead developer of
+enabling technologies at <a href=\"https://www.papercut.com/\">PaperCut</a> He develops libraries and features
+for PaperCut´s products.
 
 Peter has been developing in Go for the last few years. Some of the features and components he has
 recently written in Go for PaperCut are
@@ -165,8 +165,8 @@ recently written in Go for PaperCut are
 "
       company: "PaperCut"
       link:
-        href: ""
-        text: ""
+        href: "https://www.linkedin.com/in/peterwilliams97/"
+        text: "LinkedIn"
       presentation:
         title: "PDF Full Text Search in Pure Go. Why and How I Wrote it."
         description: "This talk is about how I wrote a
@@ -177,7 +177,7 @@ expect a small Australian software product company to undertake.
 Modern software product companies often solve customer problems using a powerful open source
 software stack, such as the Go ecosystem. It takes extra work to create
 libraries further down the software stack, but there is extra value in doing so: if a necessary
-library doesnâ€šÃ„Ã´t exist then you can build it yourself. This is critical for companies who survive on
+library doesn´t exist then you can build it yourself. This is critical for companies who survive on
 the technical depth of their software.
 
 The Go programming culture and library ecosystem allowed me to work effectively further down the
