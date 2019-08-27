@@ -1,19 +1,22 @@
 {{- $sponsors := .Site.Params.sponsors }}
 {{- $title    := index $sponsors "title" }}
-{{- $companies    := index $sponsors "companies" }}</div>
+{{- $companies    := index $sponsors "companies" }}
 <section class="section section-feature-grey is-medium" id="sponsors">
 <div class="container">
     <div class="title-wrapper has-text-centered">
-<h2 class="title is-2">{{ $title }}</h2>
+<h2 class="title is-2">{{ $title }}</h2><br />
     </div>
     </div>
-<div class="content-wrapper">
+<div class="has-text-centered">
 <ul class="sponsors-list">
 {{ range $company := $companies }}
   <li class="sponsor-item" itemscope itemtype="http://schema.org/Organization">
     <a href="{{ .url }}" class="sponsor--link" itemprop="url" target="_blank">
       <img src="{{ .logo }}" alt="{{ $company.name }}" class="photo" itemprop="image">
-    </a>
+    </a>    
+    <a href="{{ .url }}"itemprop="url" class="sponsor-desc" target="_blank">{{ $company.name }}</a>
+    <br />
+    <span class="sponsor-type-desc">{{ .type }}</span>
   </li>
 {{ end }}
 </ul>

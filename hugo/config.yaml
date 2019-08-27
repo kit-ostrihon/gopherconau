@@ -40,9 +40,9 @@ params:
     - title: Speakers
       url: /#speakers
     # - title: Schedule
-    #   url: /#schedule
-    # - title: Sponsors
-    #   url: /#sponsors
+      # url: /#schedule
+    - title: Sponsors
+      url: /#sponsors
     - title: Code Of Conduct
       url: /#coc
   # - title: Features
@@ -135,15 +135,29 @@ params:
     # subtitle: We will keep you in the loop
 
   # List of Sponsors
-  # sponsors:
-  #   title: Sponsors
-  #   companies:
-  #   - name: "Hugo"
-  #     logo: "/images/speakers/default.png"
-  #     url: "http://gohugo.io"
-  #   - name: "Google"
-  #     logo: "/images/speakers/default.png"
-  #     url: "http://google.com"
+  sponsors:
+    title: Sponsors
+    companies:
+    - name: "Atlassian"
+      logo: "/images/logos/sponsors/Atlassian-icon-blue-onecolor.png"
+      url: "https://www.atlassian.com/"
+      type: "Gold"
+    - name: "Campaign Monitor"
+      logo: "/images/logos/sponsors/campaignmonitor.png"
+      url: "https://www.campaignmonitor.com/"
+      type: "Lanyards and Programs"
+    - name: "Kablamo"
+      logo: "/images/logos/sponsors/kablamo.png"
+      url: "https://www.kablamo.com.au/"
+      type: ""
+    - name: "Google Cloud Platform"
+      logo: "/images/logos/sponsors/gcp.png"
+      url: "https://cloud.google.com/"
+      type: ""
+    - name: "MadeComfy"
+      logo: "/images/logos/sponsors/madecomfy-logo.png"
+      url: "https://madecomfy.com.au/"
+      type: ""
 
   # The entire schedule
   schedule:
