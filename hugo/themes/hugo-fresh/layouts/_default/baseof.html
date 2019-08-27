@@ -64,6 +64,10 @@
     {{ end }}
     <!-- end: sponsors -->
 
+    <!-- code of conduct -->
+    {{ partial "coc.html" . }}
+    <!-- end: code of conduct -->
+
     <!-- mailing list -->
     {{ if .Site.Params.mailinglist }}
     {{ partial "mailing-list.html" . }}

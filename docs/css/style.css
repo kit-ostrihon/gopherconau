@@ -6867,7 +6867,7 @@ Sidebar Styles
 
 .speech-title {
   padding-top: 10px;
-  font-size: 2em;
+  font-size: 1.25rem;
   margin-bottom: 1em; }
 
 .speech-time {
@@ -6876,7 +6876,7 @@ Sidebar Styles
   letter-spacing: -0.03em; }
 
 .speakers-name {
-  font-size: 1.6em; }
+  font-size: 1.2rem; }
 
 .speakers-item p {
   font-size: 1rem; }
@@ -6903,7 +6903,7 @@ Sidebar Styles
     text-align: left;
     padding: 5px 30px;
     color: #2b2b2b;
-    font-size: 2em;
+    font-size: 1.25rem;
     font-weight: bolder; }
   .schedule-tbl .speaker-photo {
     position: relative;
@@ -7004,7 +7004,7 @@ Sidebar Styles
       width: 120px; }
     .schedule-tbl td.schedule-slot {
       font-size: 14px;
-      line-height: 1.2em; }
+      line-height: 1.1 0.25rem; }
     .schedule-tbl .schedule-time {
       width: 60px;
       padding: 10px 0 10px 5px;
