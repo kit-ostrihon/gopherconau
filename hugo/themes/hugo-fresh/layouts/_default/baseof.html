@@ -39,30 +39,30 @@
     {{ partial "section5.html" . }}
     {{ end }}
 
+    <!-- sponsors -sponsors logos were previously inside of the hero first page though! -->
+    <!-- {{ if .Site.Params.sponsors }}
+    {{ partial "sponsors.html" . }}
+    {{ end }} -->
+    <!-- end: sponsors -->
+
     <!-- about -->
     {{ if .Site.Params.about }}
     {{ partial "about.html" . }}
     {{ end }}
     <!-- end: about -->
 
+    <!-- schedule and speakers -->
+    {{ if .Site.Params.schedule }}
+    {{ partial "speakers.html" . }}
+    <!-- {{ partial "schedule.html" . }} --> <!-- Ready for Go live. -->
+    {{ end }}
+    <!-- end: schedule and speakers -->
+
     <!-- contact -->
     {{ if .Site.Params.contact }}
     {{ partial "contact.html" . }}
     {{ end }}
     <!-- end: contact -->
-
-    <!-- schedule and speakers -->
-    {{ if .Site.Params.schedule }}
-    {{ partial "speakers.html" . }}
-    <!-- {{ partial "schedule.html" . }} -->
-    {{ end }}
-    <!-- end: schedule and speakers -->
-
-    <!-- sponsors -->
-    {{ if .Site.Params.sponsors }}
-    {{ partial "sponsors.html" . }}
-    {{ end }}
-    <!-- end: sponsors -->
 
     <!-- code of conduct -->
     {{ partial "coc.html" . }}

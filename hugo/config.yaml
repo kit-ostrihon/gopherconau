@@ -35,15 +35,15 @@ params:
   navbar:
     - title: About
       url: /#about
-    - title: Contact
-      url: /#contact
     - title: Speakers
       url: /#speakers
     # - title: Schedule
       # url: /#schedule
     # - title: Sponsors
     #   url: /#sponsors
-    - title: Code Of Conduct
+    - title: Contact
+      url: /#contact
+    - title: Code of Conduct
       url: /#coc
   # - title: Features
   #   url: /
@@ -108,6 +108,15 @@ params:
       - text: GopherCon Australia is the latest in a series of conferences originating from the first GopherCon held in Denver, Colorado in 2014. The conference founders are Katie Fry and Xuanyi Chew, both organisers of the successful Sydney Go Users’ Group, and a committee of volunteers.
       - text: GopherCon Australia is happening in Sydney between 30th October and 1st November 2019. Yes, you read it right - conveniently before the weekend, so that you can extend your stay. We encourage you to take your partner, family, or friends with you, as we will provide you with recommendations on how to spend time in Sydney to enjoy the culture, art, and fun.
 
+  # texts for the code of conduct section
+  coc:
+    title: Code of Conduct
+    subtitle: Why Should You Care?
+    paragraphs:
+      - text: All attendees, speakers, sponsors and volunteers at our conference are required to agree with the following code of conduct. Organisers will enforce this code throughout the event. We expect cooperation from all participants to help ensure a safe environment for everybody.
+      - text: Our conference is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment of conference participants in any form. Sexual language and imagery is not appropriate for any conference venue, including talks, workshops, parties, Twitter and other online media. Conference participants violating these rules may be sanctioned or expelled from the conference without a refund at the discretion of the conference organisers.
+      - text: If someone makes you or anyone else feel unsafe or unwelcome, please report it as soon as possible by emailing hello@gophercon.com.au, or by speaking to a member of the conference staff. Conference staff will be wearing badges with the label 'Organiser'.
+
   # a custom section based on section 4 because of the quirky background colour and section 1 to get the tiles design styled
   contact:
      title: Contact
@@ -135,38 +144,42 @@ params:
     # subtitle: We will keep you in the loop
 
   # List of Sponsors
-  # sponsors:
-  #   title: Sponsors
-  #   companies:
-  #   - name: "Atlassian"
-  #     logo: "/images/logos/sponsors/Atlassian-icon-blue-onecolor.png"
-  #     url: "https://www.atlassian.com/"
-  #     type: "Gold"
-  #   - name: "Campaign Monitor"
-  #     logo: "/images/logos/sponsors/campaignmonitor.png"
-  #     url: "https://www.campaignmonitor.com/"
-  #     type: "Lanyards and Programs"
-  #   - name: "Kablamo"
-  #     logo: "/images/logos/sponsors/kablamo.png"
-  #     url: "https://www.kablamo.com.au/"
-  #     type: ""
-  #   - name: "Google Cloud Platform"
-  #     logo: "/images/logos/sponsors/gcp.png"
-  #     url: "https://cloud.google.com/"
-  #     type: ""
-  #   - name: "MadeComfy"
-  #     logo: "/images/logos/sponsors/madecomfy-logo.png"
-  #     url: "https://madecomfy.com.au/"
-  #     type: ""
+  sponsors:
+      title: Sponsors
+      companies:
+      - name: "Atlassian"
+        logo: "/images/logos/sponsors/Atlassian-icon-blue-onecolor.png"
+        url: "https://www.atlassian.com/"
+        type: "Gold"
+      - name: "Campaign Monitor"
+        logo: "/images/logos/sponsors/campaignmonitor.png"
+        url: "https://www.campaignmonitor.com/"
+        type: "Lanyards and Programs"
+      - name: "Kablamo"
+        logo: "/images/logos/sponsors/kablamo.png"
+        url: "https://www.kablamo.com.au/"
+        type: ""
+      - name: "Google Cloud Platform"
+        logo: "/images/logos/sponsors/gcp.png"
+        url: "https://cloud.google.com/"
+        type: ""
+      - name: "MadeComfy"
+        logo: "/images/logos/sponsors/madecomfy-logo.png"
+        url: "https://madecomfy.com.au/"
+        type: ""
 
   # The entire schedule
   schedule:
     title: Schedule
+    subtitle: Here we Go!
     slots:
     - name: "Check-in / Breakfast"
-      time: "30/10/2019 9h00"
+      date: "31/10/2019"
+      time: "9:00"
 
     - name: "Peter Williams"
+      date: "31/10/2019"
+      time: "10:00"
       photo: "https://secure.gravatar.com/avatar/b937f13d868c05c74f23858ff5a98642?s=500"
       bio: '<p><a href="https://www.linkedin.com/in/peterwilliams97/">Peter Williams</a> is the lead developer of
 enabling technologies at <a href="https://www.papercut.com/">PaperCut</a>. He develops libraries and features
@@ -178,8 +191,7 @@ recently written in Go for PaperCut are</p>
 <li>A printing back-end and IPP stack for PaperCut Mobility.</li>
 <li>PDF grayscale conversion.</li>
 <li>PDF watermarking.</li>
-</ul>
-'
+</ul>'
       company: "PaperCut"
       link:
         href: "https://www.linkedin.com/in/peterwilliams97/"
@@ -187,13 +199,13 @@ recently written in Go for PaperCut are</p>
       presentation:
         title: "PDF Full Text Search in Pure Go. Why and How I Wrote it."
         description: '<p>Many modern software product developers work close to the top of a powerful open source software stack and focus on their customer problems.</p>
-<p>This talk is about how I worked further down the Go software stack to write a PDF Full Text Search library and solve customer problems in unexpected ways.</p>.
-'
-        time: "30/10/2019 10h00"
+<p>This talk is about how I worked further down the Go software stack to write a PDF Full Text Search library and solve customer problems in unexpected ways.</p>.'
 
     - name: "Gareth Seneque"
+      date: "31/10/2019"
+      time: "11:00"
       photo: "https://secure.gravatar.com/avatar/73bf281048c81f2da025951a2cc1094b?s=500"
-      bio: "I am a Machine Learning Engineer at the ABC who is fascinated by ML, art, and the beguiling weirdness of human experience. 
+      bio: "I am a Machine Learning Engineer at the ABC who is fascinated by ML, art, and the beguiling weirdness of human experience.
 
 Working at an organisation with a rich creative & cultural history (reflected in its data!) gives me the chance to experiment with a range of ML techniques on real-world 'big data'. Specifically, I am on the team that manages https://search.abc.net.au and our recommendation platform.
 
@@ -206,15 +218,15 @@ I have also co-authored the recently-released 'Hands-on Deep Learning in Go', an
         title: "Game of Clicks: Reinforcement Learning for News Recommendation"
         description: '
         <p>Recommendation systems suck. I buy one vacuum cleaner and all of a sudden I&#39;m a Hoover enthusiast. Enjoyed a nice video about politics? YouTube is unusable now.</p>
-<p>This talk covers a new way to build these systems using Deep Reinforcement Learning to improve the quality &amp; diversity of recommendations.</p>
-
-        '
-        time: "30/10/2019 11h00"
+<p>This talk covers a new way to build these systems using Deep Reinforcement Learning to improve the quality &amp; diversity of recommendations.</p>'
 
     - name: "Lunch"
-      time: "30/10/2019 12h00"
+      date: "31/10/2019"
+      time: "12:00"
 
     - name: "Ben Boyter"
+      date: "31/10/2019"
+      time: "13:00"
       photo: "https://secure.gravatar.com/avatar/4e078aff82f20742faba12084d25ced1?s=500"
       bio: "A technical lead for Kablamo but at heart a codemonkey. I write about various topics on my blog https://boyter.org/ which occasionally makes the front of the orange site, as well as run searchcode.com as a side gig for fun. I like writing code, walks on beach and getting caught in the rain. I hate eating raw tomato unless you prepare it somehow, and slices on a hamburger does not count as preparation."
       company: "Kablamo"
@@ -224,7 +236,6 @@ I have also co-authored the recently-released 'Hands-on Deep Learning in Go', an
       presentation:
         title: "Sloc Cloc and Code - Can a crusty Go program outperform a well written Rust Project?"
         description: '<p>Sloc cloc and code. How a death march project lead to learning Go, the creation of a source lines of code counter which is faster and more accurate then the Rust/ATS/C equivalents, while learning about some really bizarre performance characteristics.</p>'
-        time: "30/10/2019 13h00"
 
     - name: "Darrell Chua"
       photo: "https://secure.gravatar.com/avatar/49e0e0dc2b4a1198f30f3de7ab63cb11?s=500"
@@ -236,14 +247,18 @@ I have also co-authored the recently-released 'Hands-on Deep Learning in Go', an
       presentation:
         title: "Getting Started with Deep Learning in Go"
         description: '<p>Have you ever wanted to dabble in Deep Learning? Here&#39;s your chance to get started doing it in Go. We&#39;ll take you through a quick example of a new model - and then how to continue your learning process through more commonly found Tensorflow projects lying around the Internet.</p>'
-        time: "30/10/2019 14h00"
+        date: "31/10/2019"
+        time: "14:00"
 
     - name: "Coffee-break"
-      time: "30/10/2019 15h00"
+      date: "31/10/2019"
+      time: "15:00"
 
     - name: "Ajey Gore"
+      date: "31/10/2019"
+      time: "16:00"
       photo: "https://secure.gravatar.com/avatar/929238a6369d634577ccddecf91f38f8?s=500"
-      bio: "Ajey Gore is group CTO at GO-JEK primarily focussing on Payments and organisation wide technology and team strategies. He helps the group deliver a transport, logistics, lifestyle and payments platform of 20 products. Ajey has 18 years of experience building core technology strategy across diverse domains. His interests include machine learning, computer networks and distributed architecture system. 
+      bio: "Ajey Gore is group CTO at GO-JEK primarily focussing on Payments and organisation wide technology and team strategies. He helps the group deliver a transport, logistics, lifestyle and payments platform of 20 products. Ajey has 18 years of experience building core technology strategy across diverse domains. His interests include machine learning, computer networks and distributed architecture system.
 
 Ajey founded CodeIgnition, a boutique DevOps consultancy. CodeIgnition was later acquired by GO-JEK. He served as ThoughtWorks's Head of Technology, a noted international technology consulting firm, following which he joined Hoppr as Chief Technology Officer, a Bharati SoftBank funded started, later acquired by Hike Messenger in India.
 
@@ -256,12 +271,14 @@ An active influencer in the technology community, He is a trustee of the Emergin
       presentation:
         title: "Go Gamble on Unicorn"
         description: '<p>We will be going through the journey of scaling a company to unicorn, I am going to talk about how GoLang helped us scale 6000x over 36 months and 18+ product lines,  where we failed and excelled with GoLang. Welcome to our journey and learnings of building software, teams and products</p>'
-        time: "30/10/2019 16h00"
 
     - name: "Check-in / Breakfast"
-      time: "31/10/2019 9h00"
+      date: "1/11/2019"
+      time: "9:00"
 
     - name: "Am Laher"
+      date: "1/11/2019"
+      time: "10:00"
       photo: "https://secure.gravatar.com/avatar/47bbb612ea01d04266e8ee675b1c93e1?s=500"
       bio: '<p>I&#39;ve been an avid Gopher since 2012 - roughly as long as I&#39;ve been living in New Zealand. I discovered such an immediate productivity boost, that I haven&#39;t looked back from Go, or NZ, since. I helped start the Go Auckland meetup group in 2013, and I&#39;ve hosted and spoken at many meetups since then.</p>
 <p>About four years ago, a wise man persuaded me that &quot;setting up a new stack is the right time to begin CD&quot;. I claimed I was too busy getting product and platform to market, but he won me over: &quot;it&#39;s much harder to add CD later&quot;. I went with it, and I was so chuffed with the results that I&#39;ve been championing CD-related approaches ever since.</p>'
@@ -272,9 +289,10 @@ An active influencer in the technology community, He is a trustee of the Emergin
       presentation:
         title: "Designing Go services for Continuous Deployment"
         description: '<p>Continuous Delivery can drive the design of your code for Great Good. I&#39;ll share some of the tricks and strategies I&#39;ve used to deploy Go services safely, smoothly, and without ceremony. I&#39;ll cover integration testing, db migrations, zero-downtime deploys, feature flags, and some useful go tooling.</p>'
-        time: "31/10/2019 10h00"
 
     - name: "Alexander Else"
+      date: "1/11/2019"
+      time: "11:00"
       photo: "https://secure.gravatar.com/avatar/74ac55db57112d8ef8c832d77b805486?s=500"
       bio: '<p>Alexander is an infrastructure software engineer, currently working at Atlassian on the Observability team. I like to build distributed systems. Sometimes things catch on fire and need putting out. When I&#39;m not doing those things I enjoy working on electronics projects, making music and spending time with my family.</p>'
       company: "Atlassian"
@@ -285,12 +303,14 @@ An active influencer in the technology community, He is a trustee of the Emergin
         title: "Eliminate the guess work: Profiling a go service in production"
         description: '<p>This talk is about how to start using go&#39;s profiling tools, instrument your code so that you can profile your services running in production and have less mystery in your life.</p>
 <p>Viewers will learn how to use trace and pprof tools, and guidance on doing it in production for their own services.</p>'
-        time: "31/10/2019 11h00"
 
     - name: "Lunch"
-      time: "31/10/2019 12h00"
+      date: "1/11/2019"
+      time: "12:00"
 
     - name: "Cera Davies"
+      date: "1/11/2019"
+      time: "13:00"
       photo: "https://secure.gravatar.com/avatar/1e2f5505c9fd1adf6a2203556d0791d5?s=500"
       bio: '<p>I&#39;ve been coding Go since 2011. I&#39;m an infrastructure and platform engineer based in Melbourne, working in the energy sector on distributed &amp; renewable energy products. In my spare time I&#39;m into dancing, cycling, gabber, videogames &amp; politics. Mir veln zey iberlebn.</p>'
       company: "GreenSync"
@@ -300,11 +320,12 @@ An active influencer in the technology community, He is a trustee of the Emergin
       presentation:
         title: "Pragmatic Concurrency"
         description: '<p>Concurrency is one of Go&#39;s big selling points, but it&#39;s also something that trips up developers and  leads to projects stalling under the weight of complexity. I discuss my experience working on large concurrent systems, outline some common pitfalls, and share some opinions on best practices.</p>'
-        time: "31/10/2019 13h00"
 
     - name: "Joshua Carpeggiani"
+      date: "1/11/2019"
+      time: "14:00"
       photo: "https://secure.gravatar.com/avatar/8f3ae66a1b3c1494de8971e428e9b6ae?s=500"
-      bio: '<p>Josh is a software engineer at ANZ working on implementing an open source project decimal datatype in Go as well as spreading the word about Go by co-organising a corporate Go training course. 
+      bio: '<p>Josh is a software engineer at ANZ working on implementing an open source project decimal datatype in Go as well as spreading the word about Go by co-organising a corporate Go training course.
 Outside of work, Josh likes to get lost by following the forgotten art of hitchhiking where he´s traveled to many places, and many are still to come.</p>'
       company: "ANZ Bank"
       link:
@@ -313,12 +334,14 @@ Outside of work, Josh likes to get lost by following the forgotten art of hitchh
       presentation:
         title: "Go for Decimals"
         description: '<p>Relying on binary floating point can kill; they are inherently imprecise and can lead to technical complications later down the road. A decimal system would solve many of these complications. Go has been lacking a fast and efficient decimal data type, until now...</p>'
-        time: "31/10/2019 14h00"
 
     - name: "Coffee-break"
-      time: "31/10/2019 15h00"
+      date: "1/11/2019"
+      time: "15:00"
 
     - name: "Julia Wong"
+      date: "1/11/2019"
+      time: "16:00"
       photo: "https://secure.gravatar.com/avatar/592a3d6f570b7822e480edb108c601fd?s=500"
       bio: '<p>Julia works as a developer in Atlassian´s Observability team. She loves learning about all things Go, especially the cute Gopher, and is passionate about teaching the younger generation how to code.</p>'
       company: "Atlassian"
@@ -328,7 +351,6 @@ Outside of work, Josh likes to get lost by following the forgotten art of hitchh
       presentation:
         title: "Migrate to a New Platform by Creating a Pipeline in Go"
         description: '<p>This is the story of how Atlassian moved from a multi-million dollar contract with one vendor to another for their monitoring system. To help them migrate the thousands of engineers and microservices onto the new platform in just a few months, they built a new data pipeline using Go.</p>'
-        time: "31/10/2019 16h00"
 
   # section2:
   #   title: You're here because you want the best
