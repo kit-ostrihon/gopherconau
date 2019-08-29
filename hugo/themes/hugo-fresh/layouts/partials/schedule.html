@@ -1,53 +1,93 @@
 {{- $schedule := .Site.Params.schedule }}
 {{- $title    := index $schedule "title" }}
+{{- $subtitle := index $schedule "subtitle" }}
 {{- $slots    := index $schedule "slots" }}
+{{ $confday1 := "31/10/2019" }}
+{{ $confday2 := "1/11/2019" }}
 
-<section class="section section-feature-grey is-medium" id="schedule">
+<section class="section section-feature-grey" id="schedule">
   <div class="container">
     <div class="title-wrapper has-text-centered">
-<h2 class="title is-2">{{ $title }}</h2>
-</div>
+      <h2 class="title is-2 is-spaced">{{ $title }}</h2>
+      {{- with $subtitle }}
+      <h3 class="subtitle is-5 is-muted">{{ . }}</h3>
+      {{- end }}
+      <div class="divider is-centered"></div>
+    </div>
 
 <div class="content-wrapper">
-  
-<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p> -->
+
+<h3 class="schedule-day-title has-text-centered">Condeference Day 1 - 31st October</h3>
 <div class="schedule-tbl">
   <table>
     <thead>
       <tr>
-        <th class="schedule-time">Time</th>
-        <th class="schedule-slot">Slot</th>
-        <th class="schedule-description">Description</th>
+        <th>Time</th>
+        <th>Slot</th>
+        <th>Description</th>
       </tr>
     </thead>
     <tbody>
-      {{ range $slot := $slots}}
+      {{ range where $slots ".date" $confday1 }}
         {{ if ne .presentation nil }}
           <tr>
-            <td class="schedule-time">{{ .presentation.time }}</td>
-            <td class="schedule-slot">
-            {{ with .photo }}
-              <span class="speaker-photo">
-                <img class="photo" src="{{ . }}" alt="{{ $slot.name }}">
-              </span>
-            {{ end }}
-
-              {{ .presentation.title }}
-              <span class="speakers-company">{{ .company }}</span>
+            <td>{{ .time }}</td>
+            <td>
+              <h3 class="speakers-name">{{ .name }}</h3>
+              <!-- <span class="speakers-company">{{ .company }}</span> -->
             </td>
-            <td class="schedule-description">{{ .presentation.description | safeHTML }}</td>
+            <td>
+              <h3>{{ .presentation.title }}</h3>
+              <p>{{ .presentation.description | safeHTML }}</p>
+            </td>
           </tr>
         {{ else }}
           <tr class="schedule-other">
-            <td class="schedule-time">{{ .time }}</td>
-            <td class="schedule-slot">{{ .name }}</td>
-            <td class="schedule-description">-</td>
+            <td>{{ .time }}</td>
+            <td>{{ .name }}</td>
+            <td>-</td>
           </tr>
         {{ end }}
       {{ end }}
     </tbody>
   </table>
 </div>
+
+<h3 class="schedule-day-title has-text-centered">Condeference Day 2 - 1st November</h3>
+<div class="schedule-tbl">
+  <table>
+    <thead>
+      <tr>
+        <th>Time</th>
+        <th>Slot</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range where $slots ".date" $confday2 }}
+        {{ if ne .presentation nil }}
+          <tr>
+            <td>{{ .time }}</td>
+            <td>
+              <h3 class="speakers-name">{{ .name }}</h3>
+              <!-- <span class="speakers-company">{{ .company }}</span> -->
+            </td>
+            <td>
+              <h3>{{ .presentation.title }}</h3>
+              <p>{{ .presentation.description | safeHTML }}</p>
+            </td>
+          </tr>
+        {{ else }}
+          <tr class="schedule-other">
+            <td>{{ .time }}</td>
+            <td>{{ .name }}</td>
+            <td>-</td>
+          </tr>
+        {{ end }}
+      {{ end }}
+    </tbody>
+  </table>
+</div>
+
 </div>
 </section>

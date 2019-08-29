@@ -4,9 +4,14 @@
 {{- $buttonText := index $hero "buttontext" }}
 {{- $buttonLink := index $hero "buttonlink" }}
 {{- $image      := index $hero "image" }}
+{{- $sponsors   := .Site.Params.sponsors }}
+{{- $companies  := index $sponsors "companies" }}
+
 <div class="hero-body">
   <div class="container">
+
     <div class="columns is-vcentered">
+
       <div class="column is-5 is-offset-1 landing-caption">
         <h1 class="title is-1 is-bold is-spaced">
           {{ $title }}
@@ -23,11 +28,25 @@
             <tito-widget event="gophercon-au/2019"></tito-widget>
         </p>
       </div>
+
       <div class="column is-5 is-offset-1">
-        <!--<figure class="image is-4by3">-->
-          <img src="{{ printf "/images/%s" $image | relURL }}" alt="GopherConAU Logo by Ashley McNamara">
-        <!--</figure>-->
+        <img src="{{ printf "/images/%s" $image | relURL }}" alt="GopherConAU Logo by Ashley McNamara">
       </div>
+
     </div>
+
+    <h2 class="subtitle has-text-centered">Sponsored By</h2>
+    <div class="tabs is-centered">
+      <ul>
+        {{ range $company := $companies }}
+        <li>
+          <a href="{{ .url }}" class="home-page-sponsors-item sponsor--link" itemprop="url" target="_blank" title="{{ $company.name }}">
+            <img src="{{ .logo }}" alt="{{ $company.name }}" class="photo" itemprop="image">
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+
   </div>
 </div>

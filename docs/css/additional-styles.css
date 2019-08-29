@@ -1,0 +1,173 @@
+:root {
+  --gopher-blue: #96D6FF;
+  --gopher-blue-light: #D1EDFF;
+  --golden-yellow: #F39200;
+  --golden-yellow-light: #FFEDD1;
+  --dark-gray: #394455;
+}
+
+.section-primary {
+  background-color: var(--gopher-blue);
+}
+
+#speakers-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2em;
+  margin-top: 1em;
+}
+
+#speakers-list .speakers-item {
+  background-color: white;
+  border: none;
+  padding: 1em;
+  margin-top: 2em;
+  border-radius: 0.3em;
+}
+
+#speakers-list .speaker-photo {
+  position: absolute;
+  left: 2em;
+  top: -60px;
+}
+
+#speakers-list .speaker-photo .photo {
+  box-shadow: 0 0 0 10px rgb(150, 214, 255, 0.3);
+}
+
+#speakers-list .speakers-name {
+  color: var(--dark-gray);
+  font-family: open sans,sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#speakers-list .speakers-bio {
+  margin-top: 1em;
+}
+
+#speakers-list .speakers-bio ul {
+  list-style: inside;
+}
+
+.divider.primary {
+  background-color: var(--dark-gray);
+}
+
+.divider.light {
+  background-color: white;
+}
+
+.schedule-day-title {
+  line-height: 300%;
+  font-size: 1.5em;
+  margin-top: 0.5em;
+  color: var(--golden-yellow);
+}
+
+.schedule-tbl {
+  padding: 0 0 0 0;
+}
+
+.schedule-tbl th {
+  color: var(--dark-gray);
+  font-family: open sans,sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.schedule-tbl .schedule-description h3 {
+  font-family: open sans,sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-bottom: 1em;
+}
+
+.schedule-tbl td, .schedule-tbl th {
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.schedule-tbl .speaker-photo .photo {
+    box-shadow: 0 0 0 4px var(--gopher-blue);
+}
+
+.schedule-tbl tbody tr:nth-child(2n+1) {
+  background-color: white; /* To cancel the alternating background, because there is a hover and only two rows. */
+}
+
+.schedule-tbl .schedule-other {
+  background-color: var(--golden-yellow-light) !important;
+  color: var(--dark-gray);
+  font-style: italic;
+}
+
+.schedule-tbl td {
+  line-height: 150%; /* Because it was all mushed together. */
+}
+
+.schedule-tbl tbody tr:hover {
+  background: var(--gopher-blue-light);
+}
+
+.schedule-tbl h3 {
+  font-weight: bold;
+}
+
+.home-page-sponsors-title {
+  width: 100%;
+}
+
+.home-page-sponsors-item {
+  border: none;
+  box-shadow: 0 0 0 0;
+}
+
+@media(max-width: 768px) {
+  #speakers-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2em;
+    margin-top: 1em;
+  }
+  #speakers-list .speaker-photo {
+    position: absolute;
+    left: 2em;
+    top: -60px;
+  }
+  #speakers-list .speaker-photo .photo {
+    box-shadow: 0 0 0 10px rgb(150, 214, 255, 0.3);
+  }
+}
+
+@media(max-width: 480px) {
+  #speakers-list .speaker-photo {
+    left: 1em;
+    top: -40px;
+    width: 80px;
+  }
+  #speakers-list .speaker-photo .photo {
+    height: 80px;
+    width: 80px;
+  }
+  #speakers-list .speakers-bio {
+    display: block; /* Because the default styles take bio off of the screen. */
+  }
+}
+
+@media(max-width: 321px) {
+  #speakers-list {
+    grid-gap: 0em;
+  }
+  #speakers-list .speaker-photo {
+    left: 10px;
+    top: -30px;
+    width: 50px;
+  }
+  #speakers-list .speaker-photo .photo {
+    height: 50px;
+    width: 50px;
+  }
+}
