@@ -146,27 +146,33 @@ params:
   # List of Sponsors
   sponsors:
       title: Sponsors
+      subtitle: Thank you!
       companies:
       - name: "Atlassian"
         logo: "/images/logos/sponsors/Atlassian-icon-blue-onecolor.png"
+        logotype: "/images/logos/sponsors/Atlassian-horizontal-blue-rgb.svg"
         url: "https://www.atlassian.com/"
-        type: "Gold"
+        sponsorship: "Gold"
       - name: "Campaign Monitor"
         logo: "/images/logos/sponsors/campaignmonitor.png"
+        logotype: "/images/logos/sponsors/CM_Logo_CM_Full_Logo_Dark_copy.svg"
         url: "https://www.campaignmonitor.com/"
-        type: "Lanyards and Programs"
+        sponsorship: "Other"
+        type: "Lanyards and Programs Sponsor"
       - name: "Kablamo"
         logo: "/images/logos/sponsors/kablamo.png"
         url: "https://www.kablamo.com.au/"
-        type: ""
+        sponsorship: "Gold"
       - name: "Google Cloud Platform"
         logo: "/images/logos/sponsors/gcp.png"
+        logotype: "/images/logos/sponsors/logo_lockup_cloud_rgb.png"
         url: "https://cloud.google.com/"
-        type: ""
+        sponsorship: "Silver"
       - name: "MadeComfy"
         logo: "/images/logos/sponsors/madecomfy-logo.png"
         url: "https://madecomfy.com.au/"
-        type: ""
+        sponsorship: "Other"
+        type: "Catering Sponsor"
 
   # The entire schedule
   schedule:

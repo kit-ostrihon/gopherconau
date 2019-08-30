@@ -1,6 +1,7 @@
 :root {
   --gopher-blue: #96D6FF;
   --gopher-blue-light: #D1EDFF;
+  --gopher-blue-dark: #006AAD;
   --golden-yellow: #F39200;
   --golden-yellow-light: #FFEDD1;
   --dark-gray: #394455;
@@ -123,6 +124,44 @@
 .home-page-sponsors-item {
   border: none;
   box-shadow: 0 0 0 0;
+}
+
+.sponsor--link {
+  border: none;
+  box-shadow: 0 0 0 0;
+  margin: 0 auto; /* to center horizontally */
+}
+
+#sponsors .sponsor-item {
+  width: 100%; /* to allow the logotypes to fill the space */
+}
+
+#sponsors .sponsor--link {
+  width: 100%;
+}
+
+#sponsors .sponsor--link img {
+  max-height: 100%;
+  vertical-align: middle;
+}
+
+#sponsors .sponsors-group-title {
+  line-height: 300%;
+  font-size: 1.5em;
+  margin-top: 1em;
+  color: var(--golden-yellow);
+}
+
+#sponsors .sponsors-group-title.blue {
+  color: var(--gopher-blue-dark);
+}
+
+#sponsors .sponsors-group-title.dark {
+  color: var(--dark-gray);
+}
+
+#sponsors .sponsors-list {
+  margin-bottom: 4em;
 }
 
 @media(max-width: 768px) {
