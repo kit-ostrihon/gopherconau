@@ -1,39 +1,36 @@
 {{- $schedule := .Site.Params.schedule }}
 {{- $title    := index $schedule "title" }}
 {{- $slots    := index $schedule "slots" }}
-<section class="section section-feature-grey is-medium" id="speakers">
-<div class="container">
+<section class="section section-primary" id="speakers">
+  <div class="container">
+
     <div class="title-wrapper has-text-centered">
-<h2 class="title is-2">Speakers</h2>
+      <h2 class="title">Speakers</h2>
+      <h3 class="subtitle">Are you as excited as we are?</h3>
+      <div class="divider is-centered primary"></div>
     </div>
 
-<div class="content-wrapper">
-<ul class="speakers-list">
-    {{ range $slot := $slots}}
-      {{ if ne .presentation nil }}
-  <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
-    {{ with .photo }}
-      <span class="speaker-photo">
-        <img class="photo" src="{{ . }}" alt="{{ $slot.name }}" itemprop="image">
-      </span>
+    <ul id="speakers-list">
+        {{ range $slot := $slots}}
+          {{ if ne .presentation nil }}
+      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+        {{ with .photo }}
+          <span class="speaker-photo">
+            <img class="photo" src="{{ . }}" alt="{{ $slot.name }}" itemprop="image">
+          </span>
+        {{ end }}
+
+        <h3 class="speakers-name has-text-centered">{{ .name }}
+          <!-- {{ with .link }}
+          <a href="{{ .href }}" target="_blank" title="{{ .text }}"> {{ .text }} </a>
+          {{ end }} -->
+        </h3>
+        <h4 class="has-text-centered speakers-company">{{ .company }}</h4>
+        <div class="speakers-bio has-text-justified">{{ .bio | safeHTML }}</div>
+      </li>
+      {{ end }}
     {{ end }}
+    </ul>
 
-    <h3 class="speech-title">
-      <!-- {{ with .presentation.time }}
-      <span class="speech-time">{{ . }}</span>
-      {{ end }} -->
-      <span>{{ .presentation.title }}</span>
-    </h3>
-
-    <h3 class="speakers-name">{{ .name }}
-      <!-- {{ with .link }}
-      <a href="{{ .href }}" target="_blank" title="{{ .text }}"> {{ .text }} </a>
-      {{ end }} -->
-    </h3>
-    <p class="speakers-bio">{{ .bio | safeHTML }}</p>
-  </li>
-  {{ end }}
-{{ end }}
-</ul>
-</div>
+  </div>
 </section>
