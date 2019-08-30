@@ -1,25 +1,66 @@
 {{- $sponsors := .Site.Params.sponsors }}
 {{- $title    := index $sponsors "title" }}
+{{- $subtitle    := index $sponsors "subtitle" }}
 {{- $companies    := index $sponsors "companies" }}
-<section class="section section-feature-grey is-medium" id="sponsors">
-<div class="container">
-    <div class="title-wrapper has-text-centered">
-<h2 class="title is-2">{{ $title }}</h2><br />
-    </div>
-    </div>
-<div class="has-text-centered">
-<ul class="sponsors-list">
-{{ range $company := $companies }}
-  <li class="sponsor-item" itemscope itemtype="http://schema.org/Organization">
-    <a href="{{ .url }}" class="sponsor--link" itemprop="url" target="_blank">
-      <img src="{{ .logo }}" alt="{{ $company.name }}" class="photo" itemprop="image">
-    </a>    
-    <a href="{{ .url }}"itemprop="url" class="sponsor-desc" target="_blank">{{ $company.name }}</a>
-    <br />
-    <span class="sponsor-type-desc">{{ .type }}</span>
-  </li>
-{{ end }}
-</ul>
-</div>
-</section>
 
+<section class="section is-medium" id="sponsors">
+  <div class="container">
+
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2">{{ $title }}</h2>
+      <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>
+      <div class="divider is-centered"></div>
+    </div>
+
+    <div class="has-text-centered content-wrapper">
+
+      <h3 class="sponsors-group-title has-text-centered">Gold Sponsors &darr;</h3>
+      <ul class="sponsors-list">
+      {{ range where $companies ".sponsorship" "==" "Gold" }}
+        <li class="sponsor-item has-text-centered" itemscope itemtype="http://schema.org/Organization">
+          <a href="{{ .url }}" class="sponsor--link" itemprop="url" target="_blank" title="{{ .name }}">
+            {{ if ne .logotype nil }}
+            <img src="{{ .logotype }}" alt="{{ .name }}" class="photo" itemprop="image">
+            {{ else }}
+            <img src="{{ .logo }}" alt="{{ .name }}" class="photo" itemprop="image">
+            {{ end }}
+          </a>
+          <span class="sponsor-type-desc has-text-centered">{{ .sponsorship }} Sponsor</span>
+        </li>
+        {{ end }}
+      </ul>
+
+      <h3 class="sponsors-group-title has-text-centered blue">Silver Sponsors &darr;</h3>
+      <ul class="sponsors-list">
+      {{ range where $companies ".sponsorship" "==" "Silver" }}
+        <li class="sponsor-item has-text-centered" itemscope itemtype="http://schema.org/Organization">
+          <a href="{{ .url }}" class="sponsor--link" itemprop="url" target="_blank" title="{{ .name }}">
+            {{ if ne .logotype nil }}
+            <img src="{{ .logotype }}" alt="{{ .name }}" class="photo" itemprop="image">
+            {{ else }}
+            <img src="{{ .logo }}" alt="{{ .name }}" class="photo" itemprop="image">
+            {{ end }}
+          </a>
+          <span class="sponsor-type-desc has-text-centered">{{ .sponsorship }} Sponsor</span>
+        </li>
+        {{ end }}
+      </ul>
+
+      <h3 class="sponsors-group-title has-text-centered dark">Specialised Sponsors &darr;</h3>
+      <ul class="sponsors-list">
+      {{ range where $companies ".sponsorship" "==" "Other" }}
+        <li class="sponsor-item has-text-centered" itemscope itemtype="http://schema.org/Organization">
+          <a href="{{ .url }}" class="sponsor--link" itemprop="url" target="_blank" title="{{ .name }}">
+            {{ if ne .logotype nil }}
+            <img src="{{ .logotype }}" alt="{{ .name }}" class="photo" itemprop="image">
+            {{ else }}
+            <img src="{{ .logo }}" alt="{{ .name }}" class="photo" itemprop="image">
+            {{ end }}
+          </a>
+          <span class="sponsor-type-desc has-text-centered">{{ .type }}</span>
+        </li>
+        {{ end }}
+      </ul>
+
+  </div>
+</section>
