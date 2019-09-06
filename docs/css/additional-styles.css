@@ -59,6 +59,10 @@
   background-color: white;
 }
 
+.divider.blue {
+  background-color: var(--gopher-blue-dark);
+}
+
 .schedule-day-title {
   line-height: 300%;
   font-size: 1.5em;
@@ -130,6 +134,44 @@
   border: none;
   box-shadow: 0 0 0 0;
   margin: 0 auto; /* to center horizontally */
+}
+
+#workshops .feature-card {
+  height: auto;
+  padding-bottom: 2em;
+  width: auto;
+}
+
+#workshops .feature-card h4 {
+  color: var(--dark-gray);
+  font-size: 1.5em;
+}
+
+#workshops .feature-card h5 {
+  color: var(--gopher-blue-dark);
+  margin-top: 1em;
+  margin-bottom: 0.1em;
+  font-weight: bold;
+}
+
+#workshops .card-subtitle {
+  margin-top: 0.1em !important;
+  margin-bottom: 0.5em !important;
+  text-transform: uppercase;
+  color: var(--golden-yellow) !important;
+}
+
+#workshops .feature-card .card-icon img {
+  border-radius: 50%;
+}
+
+#workshops .feature-card .card-text p {
+  color: #4a4a4a;
+}
+
+#workshops .feature-card .with-bullets li::before {
+  content: "•";
+  margin-right: 0.2em;
 }
 
 #sponsors .sponsor-item {

@@ -1,0 +1,59 @@
+{{- $section := .Site.Params.workshops }}
+{{- $title    := index $section "title" }}
+{{- $subtitle := index $section "subtitle" }}
+{{- $slots    := index $section "slots" }}
+<section class="section" id="workshops">
+  <div class="container">
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2">{{ $title }}</h2>
+      <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>
+      <div class="divider is-centered blue"></div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="columns">
+        {{- range $slots }}
+        <div class="column is-6">
+          <div class="feature-card is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
+            <div class="card-title">
+              <h4>{{ .title }}</h4>
+              <h5 class="card-subtitle">Workshop</h5>
+            </div>
+            <div class="card-text has-text-justified">
+              <h5 class="has-text-centered">Description</h5>
+              {{- range .description }}
+              <p>{{ .text }}</p>
+              {{- end }}
+            </div>
+            <div class="card-text has-text-justified">
+              <h5 class="has-text-centered">Prerequisites</h5>
+              <ul>
+              {{- range .prerequisites }}
+                <li>{{ .item }}</li>
+              {{- end }}
+              </ul>
+            </div>
+            <div class="card-text has-text-justified">
+              <h5 class="has-text-centered">What an attendee is expected to learn</h5>
+              <ul class="with-bullets">
+              {{- range .outcomes }}
+                <p>{{ .item }}</p>
+              {{- end }}
+              </ul>
+            </div>
+            {{- range .authors }}
+            <div class="card-icon">
+                <img src="{{ .photo }}" alt="{{ .name }}" >
+            </div>
+            <div class="card-text has-text-justified">
+                <h5 class="has-text-centered">About {{.name}}</h5>
+                <p>{{ .bio }}</p>
+            {{- end }}
+            </div>
+          </div>
+        </div>
+        {{- end }}
+      </div>
+    </div>
+  </div>
+</section>
