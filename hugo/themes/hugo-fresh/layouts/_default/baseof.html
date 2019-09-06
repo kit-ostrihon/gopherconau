@@ -48,9 +48,16 @@
     <!-- schedule and speakers -->
     {{ if .Site.Params.schedule }}
     {{ partial "speakers.html" . }}
-    <!-- {{ partial "schedule.html" . }} --> <!-- Ready for Go live. -->
+    <!-- Ready for Go live after facts-check. -->
+    <!-- {{ partial "schedule.html" . }} -->
     {{ end }}
     <!-- end: schedule and speakers -->
+
+    <!-- workshops -->
+    {{ if .Site.Params.workshops }}
+    {{ partial "workshops.html" . }} <!-- Ready for Go live. -->
+    {{ end }}
+    <!-- end: workshops -->
 
     <!-- contact -->
     {{ if .Site.Params.contact }}
@@ -59,14 +66,22 @@
     <!-- end: contact -->
 
     <!-- code of conduct -->
+    {{ if .Site.Params.coc }}
     {{ partial "coc.html" . }}
+    {{ end }}
     <!-- end: code of conduct -->
 
     <!-- sponsors - more detailed, becase otherwise there are sponsors also at the home page, styled and ready to go once filled with all details -->
     <!-- {{ if .Site.Params.sponsors }}
     {{ partial "sponsors.html" . }}
-    {{ end }}  -->
+    {{ end }} -->
     <!-- end: sponsors -->
+
+    <!-- venue address -->
+    {{ if .Site.Params.venue }}
+    {{ partial "venue.html" . }}
+    {{ end }}
+    <!-- end: venue address -->
 
     <!-- mailing list -->
     {{ if .Site.Params.mailinglist }}

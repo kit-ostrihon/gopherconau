@@ -39,6 +39,8 @@ params:
       url: /#speakers
     # - title: Schedule
       # url: /#schedule
+    - title: Workshops
+      url: /#workshops
     # - title: Sponsors
     #   url: /#sponsors
     - title: Contact
@@ -106,7 +108,7 @@ params:
       - text: For the first year of GopherCon Australia, we will use sponsorships to attract and accommodate for international speakers and workshop hosts. By showing that GopherCon Australia is a welcoming conference, we wish to create a sense of community coming from different backgrounds, supporting traditionally underrepresented groups in the technology industry. We invited prominent contributors to the Go tech scene, who share and represent our vision of inclusion and who come from diverse gender and ethnicity groups.
       - text: Many well known Australian companies use Go, including Google, Atlassian, VMware, Seek, Siteminder, Freelancer.com, Campaign Monitor, Sajari, and many more.
       - text: GopherCon Australia is the latest in a series of conferences originating from the first GopherCon held in Denver, Colorado in 2014. The conference founders are Katie Fry and Xuanyi Chew, both organisers of the successful Sydney Go Users’ Group, and a committee of volunteers.
-      - text: GopherCon Australia is happening between 30th October and 1st November 2019 at the University of Technology Sydney. Yes, you read it right - conveniently before the weekend, so that you can extend your stay. We encourage you to take your partner, family, or friends with you, as we will provide you with recommendations on how to spend time in Sydney to enjoy the culture, art, and fun.
+      - text: GopherCon Australia is happening in Sydney between 30th October and 1st November 2019. Yes, you read it right - conveniently before the weekend, so that you can extend your stay. We encourage you to take your partner, family, or friends with you, as we will provide you with recommendations on how to spend time in Sydney to enjoy the culture, art, and fun.
 
   # texts for the code of conduct section
   coc:
@@ -174,7 +176,7 @@ params:
         sponsorship: "Other"
         type: "Catering Sponsor"
 
-  # The entire schedule
+  # The entire CONFERENCE schedule (workshops are on the workshop page)
   schedule:
     title: Schedule
     subtitle: Here we Go!
@@ -394,6 +396,52 @@ Outside of work, Josh likes to get lost by following the forgotten art of hitchh
   #     quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
   #     job: HR Manager
   #     img: 3
+
+  workshops:
+    title: Workshops Day
+    subtitle: Ready to Go?
+    slots:
+      #Bill's workshop
+    - title: Building Production Web Services In Go
+      description:
+        - text: This class has been designed over the past several years and goes beyond just being a Go service class. There will be very little time spent on specifc Go syntax. Our time will be spent learning how to re-engineer a web service and talk about application design, semantics and guidelines for building services in Go.
+        - text: Building Production Web Services In Go
+        - text: • Start/Stop
+        - text: • Logging/Configuration
+        - text: • Web Framework Design
+        - text: • Database Support
+        - text: • Testing
+        - text: • Metrics/Tracing
+        - text: • Modules/Docker/Compose
+      prerequisites:
+        - item: A basic understanding of the Go programming language. Students do not have to be expert Go users but they will get the most from the workshop if they have completed the majority of the Go Tour.
+      outcomes:
+        - item: Everyone is going to be mentally exhausted by the end of the day. We will be challenging every student to think about what they are doing and why. In the 4 years we have taught this material, we never had someone not appreciate the class and feel like they are a better developer for it. If you want to be a better Go developer, code reviewer, designer and architect, this is the class you want to take.
+      authors:
+        - name: William Kennedy
+          bio: William Kennedy is a managing partner at Ardan Labs in Miami, Florida, a group of passionate engineers, artists and business professionals focused on building and delivering reliable, secure and scalable solutions.  He is also a co-author of the book Go in Action, the author of the blog GoingGo.Net, and a founding member of GoBridge which is working to increase Go adoption through diversity.
+          photo: "/images/speakers/bill-kennedy.jpeg"
+      #Gary's workshop
+    - title: 1.13 = Enterprise Go
+      description:
+        - text: This workshop is for team leads, agile coaches and senior developers.
+        - text: The main goal is to workshop approaches to the biggest issue in software engineering; too much unverifiable code and not nearly enough human scale formal specifications.
+        - text: It covers topics from developer productivity to capturing system semantics. Using enterprise-ready features of Go 1.13 to advanced uses of protocol buffers.This is a hands on workshop, programming experience required, but experience with Go is not necessary.
+        - text: We will be using a combination of pairs and mob programming (pairs of mobs) to refactor and add features to a synthetic code base.
+        - text: Expect digressions into development process and economics of software engineering.
+      prerequisites:
+        - item: A basic understanding of microservices architectures
+      outcomes:
+        - item: • Fast & painless reproducible builds
+        - item: • Development & operations metrics collection
+        - item: • Traceability of production issues
+        - item: • Painless & productive approaches to APIs & contracts
+        - item: • Contract based regression testing
+        - item: • Speed of developers coming up to speed in development teams
+      authors:
+        - name: Gary Miller
+          bio: Gary Miller is a creative technologist, across a broad spectrum of web, cloud and enterprise IT systems and technologies. He is a senior engineer at a local Sydney spin-off, GotoBlink. Previously he was Macquarie Group's (COG - Infra) Computer Scientist in Residence, where he applied a small amount of theory with large amounts of practical software engineering nous, to unblock some of their most intractable problems.
+          photo: "/images/speakers/gary-miller.jpg"
   footer:
      # logo: gopher-kangaroo-sydney-opera.svg
      thanks:
