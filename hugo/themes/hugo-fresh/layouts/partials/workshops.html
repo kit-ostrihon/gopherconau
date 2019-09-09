@@ -13,7 +13,7 @@
     <div class="content-wrapper">
       <div class="columns">
         {{- range $slots }}
-        <div class="column is-6">
+        <div class="column is-4">
           <div class="feature-card is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
             <div class="card-title">
               <h4>{{ .title }}</h4>
@@ -42,14 +42,18 @@
               </ul>
             </div>
             {{- range .authors }}
+            {{ if .photo }}
             <div class="card-icon">
                 <img src="{{ .photo }}" alt="{{ .name }}" >
             </div>
+            {{ end }}
+            {{ if .bio }}
             <div class="card-text has-text-justified">
                 <h5 class="has-text-centered">About {{.name}}</h5>
                 <p>{{ .bio }}</p>
-            {{- end }}
             </div>
+            {{ end }}
+            {{- end }}
           </div>
         </div>
         {{- end }}
