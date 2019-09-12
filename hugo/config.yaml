@@ -404,15 +404,20 @@ Outside of work, Josh likes to get lost by following the forgotten art of hitchh
       #Leah's workshop
     - title: Intro to Go for Complete Beginners
       description:
-        - text: A detailed description is coming soon! #Have you ever heard of a variable? No? Then this workshop might be for you! You will learn the basics of Go programming language and how to code an individual project! The workshop is designed carefully for anyone who is considering dipping their toes into programming. Are you already a developer and know of someone interested in changing careers to tech? Send them to this workshop. A detailed description is coming soon!
+        - text: An introduction with lots of hands on practice
+        - text: • Development Environment
+        - text: • Programming Fundamentals
+        - text: • An introduction to the basic syntax of the language
+        - text: • Debugging
       prerequisites:
-        - item: None! If you already know, how to code, please consider William's or/and Gary's workshops.
+        - item: None! If you already know, how to code, please consider William’s or/and Gary’s workshops.
       outcomes:
         - item: • Learning in a friendly environment
+        - item: • The initial setup to get started with Go
       authors:
         - name: Leah Garrett
-          #bio: Leah is a web developer with extensive application development and consulting experience. She is active in the developer community - a host of two meet-ups and part of the team organising DDD Melbourne.
-          #photo: "/images/speakers/leah-garrett.jpeg"
+          bio: Leah Garrett has over 20 years experience working in software development, and was recently lead educator at a coding bootcamp. Active in the developer community, Leah is co-organiser of the Melbourne Golang Meetup group and is part of the team that organises the DDD Melbourne conference.
+          photo: "/images/speakers/leah-garrett.jpg"
       #Bill's workshop
     - title: Building Production Web Services in Go
       description:
