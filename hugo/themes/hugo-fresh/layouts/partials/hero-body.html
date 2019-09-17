@@ -1,9 +1,11 @@
 {{- $hero       := .Site.Params.hero }}
 {{- $title      := index $hero "title" }}
 {{- $subtitle   := index $hero "subtitle" }}
+{{- $listItems  := index $hero "listitems" }}
 {{- $buttonText := index $hero "buttontext" }}
 {{- $buttonLink := index $hero "buttonlink" }}
 {{- $image      := index $hero "image" }}
+{{- $advice     := index $hero "advice"}}
 {{- $sponsors   := .Site.Params.sponsors }}
 {{- $companies  := index $sponsors "companies" }}
 
@@ -18,16 +20,22 @@
         </h1>
         {{ with $subtitle }}
         <h2 class="subtitle">
-          30th October 2019 - 1 November 2019<br />
+          30th October 2019 - 1st November 2019<br />
           University of Technology Sydney
         </h2>
         <h2 class="subtitle is-5 is-muted">
           {{ . }}
         </h2>
         {{ end }}
+        <ul>
+          {{- range $listItems }}
+          <li><span class="has-text-weight-bold">{{ .label }}</span> - {{ .text }}</li>
+          {{- end}}
+        </ul>
         <p>
             <tito-widget event="gophercon-au/2019" discount-code=""></tito-widget>
         </p>
+        <span>{{ $advice }}</span>
       </div>
 
       <div class="column is-5 is-offset-1">
