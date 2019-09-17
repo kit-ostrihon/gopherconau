@@ -26,6 +26,17 @@
   border-radius: 0.3em;
 }
 
+#speakers-list .speakers-item.keynote-speaker {
+  grid-column: 1 / 3; /* to strech across the two columns */
+}
+
+#speakers-list .card-subtitle {
+  margin-top: 0.1em !important;
+  margin-bottom: 0.5em !important;
+  text-transform: uppercase;
+  color: var(--golden-yellow) !important;
+}
+
 #speakers-list .speaker-photo {
   position: absolute;
   left: 2em;
