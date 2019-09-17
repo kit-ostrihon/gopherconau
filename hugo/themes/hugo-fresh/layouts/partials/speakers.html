@@ -10,6 +10,15 @@
       <div class="divider is-centered primary"></div>
     </div>
 
+    <div class="speakers-item" itemprop="performer" itemscope  itemtype="http://schema.org/Person">
+       <span class="speaker-photo">
+            <img class="photo" src="https://avatars2.githubusercontent.com/u/1622229?s=460&v=4" alt="Carmen Andoh's profile image" itemprop="image">
+       </span>
+       <h2>Keynote Speaker</h2>
+      <h3 class="speakers-name">Carmen Andoh</h3>
+      <div class="speakers-bio has-text-justified">Carmen is the Open Source Strategy Lead for Go at Google. She was previously Build Infrastructure Engineer at Travis CI Operations at Enquos.</div>
+    </div>
+
     <ul id="speakers-list">
         {{ range $slot := $slots}}
           {{ if ne .presentation nil }}
