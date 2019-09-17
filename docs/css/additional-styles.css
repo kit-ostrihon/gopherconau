@@ -222,6 +222,22 @@
   margin-bottom: 4em;
 }
 
+/* Making the speakers' photos smaller. */
+@media(max-width: 1087px) {
+  #speakers-list .speaker-photo {
+    position: absolute;
+    left: 1em;
+    top: -40px;
+    width: 80px;
+  }
+  #speakers-list .speaker-photo .photo {
+    box-shadow: 0 0 0 10px rgb(150, 214, 255, 0.3);
+    height: 80px;
+    width: 80px;
+  }
+}
+
+/* Changing the Speakers layout from two columns to one. */
 @media(max-width: 768px) {
   #speakers-list {
     display: grid;
@@ -229,31 +245,20 @@
     grid-gap: 2em;
     margin-top: 1em;
   }
-  #speakers-list .speaker-photo {
-    position: absolute;
-    left: 2em;
-    top: -60px;
-  }
-  #speakers-list .speaker-photo .photo {
-    box-shadow: 0 0 0 10px rgb(150, 214, 255, 0.3);
+  #speakers-list .speakers-item.keynote-speaker {
+    grid-column: 1 / 2; /* stretch for one-column grid */
   }
 }
 
+/* Adding the element that is otherwise removed. */
 @media(max-width: 480px) {
-  #speakers-list .speaker-photo {
-    left: 1em;
-    top: -40px;
-    width: 80px;
-  }
-  #speakers-list .speaker-photo .photo {
-    height: 80px;
-    width: 80px;
-  }
+  /* Because the default styles take bio off of the screen for small screens! Note to future self: Yes, it should really be here in the media query. */
   #speakers-list .speakers-bio {
-    display: block; /* Because the default styles take bio off of the screen. */
+    display: block;
   }
 }
 
+/* Making the speakers' photos even smaller for the small width. */
 @media(max-width: 321px) {
   #speakers-list {
     grid-gap: 0em;
