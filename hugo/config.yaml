@@ -191,6 +191,18 @@ params:
       date: "31/10/2019"
       time: "9:00"
 
+      #ADDED with dummy time
+    - name: "Carmen Andoh"
+      date: "31/10/2019"
+      time: "00:00"
+      photo: "https://avatars2.githubusercontent.com/u/1622229?s=460&v=4"
+      bio: "Carmen is the Open Source Strategy Lead for Go at Google. She was previously Build Infrastructure Engineer at Travis CI Operations at Enquos."
+      keynote: true
+      company: Google
+      presentation:
+        title: ""
+        description: ""
+
     - name: "Peter Williams"
       date: "31/10/2019"
       time: "10:00"
