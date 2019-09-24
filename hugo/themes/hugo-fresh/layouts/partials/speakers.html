@@ -26,6 +26,13 @@
           {{ end }} -->
         </h3>
         <h4 class="has-text-centered speakers-company">{{ .company }}</h4>
+        <h4 class="has-text-centered speakers-card-talk-title" >{{ .presentation.title }}</h4>
+        <h5 class="card-subtitle speakers-card-talk-subtitle has-text-centered">Talk</h5>
+        <h4 class="has-text-centered speakers-card-section-title">Description</h4>
+        <div class="speakers-bio has-text-justified">{{ .presentation.description | safeHTML }}</div>
+        <!-- <h4 class="has-text-centered speakers-card-section-title">Target Audience Level</h4>
+        <p class="has-text-centered">{{ .presentation.level }}</p> -->
+        <h4 class="has-text-centered speakers-card-section-title">About {{ .name }}</h4>
         <div class="speakers-bio has-text-justified">{{ .bio | safeHTML }}</div>
       </li>
       {{ end }}
