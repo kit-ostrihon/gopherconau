@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-	<meta name="generator" content="Hugo 0.55.6" />
+	<meta name="generator" content="Hugo 0.58.3" />
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -33,9 +33,7 @@ if (!doNotTrack) {
   </head>
   <body>
     
-    <div id="preloader">
-      <div id="status"></div>
-    </div>
+    
 
     
 
@@ -62,6 +60,9 @@ if (!doNotTrack) {
           </a>
           <a href="/#speakers" class="navbar-item is-secondary">
             Speakers
+          </a>
+          <a href="/#workshops" class="navbar-item is-secondary">
+            Workshops
           </a>
           <a href="/#contact" class="navbar-item is-secondary">
             Contact
@@ -96,6 +97,9 @@ if (!doNotTrack) {
         <a href="/#speakers" class="navbar-item is-secondary">
           Speakers
         </a>
+        <a href="/#workshops" class="navbar-item is-secondary">
+          Workshops
+        </a>
         <a href="/#contact" class="navbar-item is-secondary">
           Contact
         </a>
@@ -116,20 +120,25 @@ if (!doNotTrack) {
 
       <div class="column is-5 is-offset-1 landing-caption">
         <h1 class="title is-1 is-bold is-spaced">
-          GopherconAU 2019
+          GopherConAU 2019
         </h1>
         
         <h2 class="subtitle">
-          30th October 2019 - 1 November 2019<br />
+          30th October 2019 - 1st November 2019<br />
           University of Technology Sydney
         </h2>
         <h2 class="subtitle is-5 is-muted">
-          First ever Go conference in Australia!
+          First ever GopherCon in Australia!
         </h2>
         
+        <ul>
+          <li><span class="has-text-weight-bold">Conference Days</span> - Thursday 31st &amp; Friday 1st</li>
+          <li><span class="has-text-weight-bold">Workshops Day*</span> - Wednesday 30th</li>
+        </ul>
         <p>
-            <tito-widget event="gophercon-au/2019"></tito-widget>
+            <tito-widget event="gophercon-au/2019" discount-code=""></tito-widget>
         </p>
+        <span>*Please be advised that workshops are to be purchased separately.</span>
       </div>
 
       <div class="column is-5 is-offset-1">
@@ -210,33 +219,67 @@ if (!doNotTrack) {
           
     
           
-      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      <li class="speakers-item keynote-speaker" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+        
+          <span class="speaker-photo">
+            <img class="photo" src="https://avatars2.githubusercontent.com/u/1622229?s=460&amp;v=4" alt="Carmen Andoh" itemprop="image">
+          </span>
+        
+        <h5 class="card-subtitle has-text-centered">Keynote Speaker</h5>
+        <h3 class="speakers-name has-text-centered">Carmen Andoh
+          
+        </h3>
+        <h4 class="has-text-centered speakers-company">Google</h4>
+        <h4 class="has-text-centered speakers-card-talk-title" >10 years of Go</h4>
+        <h5 class="card-subtitle speakers-card-talk-subtitle has-text-centered">Talk</h5>
+        <h4 class="has-text-centered speakers-card-section-title">Description</h4>
+        <div class="speakers-bio has-text-justified">Simple. Reliable. Efficient. These words defined Go on Nov 10 2009.  As we celebrate 10 yrs, we add one more: Sustainable. A reflection of Go: technological & industry advances during the last decade, while exploring what it means to be sustainable amidst constant change.</div>
+        
+        <h4 class="has-text-centered speakers-card-section-title">About Carmen Andoh</h4>
+        <div class="speakers-bio has-text-justified">Carmen is the Open Source Strategy Lead for Go at Google. She was previously Build Infrastructure Engineer at Travis CI Operations at Enquos.</div>
+      </li>
+      
+    
+          
+      <li class="speakers-item " itemprop="performer" itemscope itemtype="http://schema.org/Person">
         
           <span class="speaker-photo">
             <img class="photo" src="https://secure.gravatar.com/avatar/b937f13d868c05c74f23858ff5a98642?s=500" alt="Peter Williams" itemprop="image">
           </span>
         
-
+        
         <h3 class="speakers-name has-text-centered">Peter Williams
           
         </h3>
         <h4 class="has-text-centered speakers-company">PaperCut</h4>
+        <h4 class="has-text-centered speakers-card-talk-title" >PDF Full Text Search in Pure Go. Why and How I Wrote it.</h4>
+        <h5 class="card-subtitle speakers-card-talk-subtitle has-text-centered">Talk</h5>
+        <h4 class="has-text-centered speakers-card-section-title">Description</h4>
+        <div class="speakers-bio has-text-justified"><p>Many modern software product developers work close to the top of a powerful open source software stack and focus on their customer problems.</p> <p>This talk is about how I worked further down the Go software stack to write a PDF Full Text Search library and solve customer problems in unexpected ways.</p>.</div>
+        
+        <h4 class="has-text-centered speakers-card-section-title">About Peter Williams</h4>
         <div class="speakers-bio has-text-justified"><p><a href="https://www.linkedin.com/in/peterwilliams97/">Peter Williams</a> is the lead developer of enabling technologies at <a href="https://www.papercut.com/">PaperCut</a>. He develops libraries and features for PaperCut´s products.</p> <p>Peter has been developing in Go for the last few years. Some of the features and components he has recently written in Go for PaperCut are</p> <ul> <li>A printing back-end for Google Cloud Print.</li> <li>A printing back-end and IPP stack for PaperCut Mobility.</li> <li>PDF grayscale conversion.</li> <li>PDF watermarking.</li> </ul></div>
       </li>
       
     
           
-      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      <li class="speakers-item " itemprop="performer" itemscope itemtype="http://schema.org/Person">
         
           <span class="speaker-photo">
             <img class="photo" src="https://secure.gravatar.com/avatar/73bf281048c81f2da025951a2cc1094b?s=500" alt="Gareth Seneque" itemprop="image">
           </span>
         
-
+        
         <h3 class="speakers-name has-text-centered">Gareth Seneque
           
         </h3>
         <h4 class="has-text-centered speakers-company">Australian Broadcasting Corporation</h4>
+        <h4 class="has-text-centered speakers-card-talk-title" >Game of Clicks: Reinforcement Learning for News Recommendation</h4>
+        <h5 class="card-subtitle speakers-card-talk-subtitle has-text-centered">Talk</h5>
+        <h4 class="has-text-centered speakers-card-section-title">Description</h4>
+        <div class="speakers-bio has-text-justified"> <p>Recommendation systems suck. I buy one vacuum cleaner and all of a sudden I&#39;m a Hoover enthusiast. Enjoyed a nice video about politics? YouTube is unusable now.</p> <p>This talk covers a new way to build these systems using Deep Reinforcement Learning to improve the quality &amp; diversity of recommendations.</p></div>
+        
+        <h4 class="has-text-centered speakers-card-section-title">About Gareth Seneque</h4>
         <div class="speakers-bio has-text-justified">I am a Machine Learning Engineer at the ABC who is fascinated by ML, art, and the beguiling weirdness of human experience.
 Working at an organisation with a rich creative & cultural history (reflected in its data!) gives me the chance to experiment with a range of ML techniques on real-world 'big data'. Specifically, I am on the team that manages https://search.abc.net.au and our recommendation platform.
 I have also co-authored the recently-released 'Hands-on Deep Learning in Go', and presented at YOW! Data 2019 on the topic of 'Using Machine Learning to Automate Content Metadata'.</div>
@@ -246,33 +289,45 @@ I have also co-authored the recently-released 'Hands-on Deep Learning in Go', an
           
     
           
-      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      <li class="speakers-item " itemprop="performer" itemscope itemtype="http://schema.org/Person">
         
           <span class="speaker-photo">
             <img class="photo" src="https://secure.gravatar.com/avatar/4e078aff82f20742faba12084d25ced1?s=500" alt="Ben Boyter" itemprop="image">
           </span>
         
-
+        
         <h3 class="speakers-name has-text-centered">Ben Boyter
           
         </h3>
         <h4 class="has-text-centered speakers-company">Kablamo</h4>
+        <h4 class="has-text-centered speakers-card-talk-title" >Sloc Cloc and Code - Can a crusty Go program outperform a well written Rust Project?</h4>
+        <h5 class="card-subtitle speakers-card-talk-subtitle has-text-centered">Talk</h5>
+        <h4 class="has-text-centered speakers-card-section-title">Description</h4>
+        <div class="speakers-bio has-text-justified"><p>Sloc cloc and code. How a death march project lead to learning Go, the creation of a source lines of code counter which is faster and more accurate then the Rust/ATS/C equivalents, while learning about some really bizarre performance characteristics.</p></div>
+        
+        <h4 class="has-text-centered speakers-card-section-title">About Ben Boyter</h4>
         <div class="speakers-bio has-text-justified">A technical lead for Kablamo but at heart a codemonkey. I write about various topics on my blog https://boyter.org/ which occasionally makes the front of the orange site, as well as run searchcode.com as a side gig for fun. I like writing code, walks on beach and getting caught in the rain. I hate eating raw tomato unless you prepare it somehow, and slices on a hamburger does not count as preparation.</div>
       </li>
       
     
           
-      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      <li class="speakers-item " itemprop="performer" itemscope itemtype="http://schema.org/Person">
         
           <span class="speaker-photo">
             <img class="photo" src="https://secure.gravatar.com/avatar/49e0e0dc2b4a1198f30f3de7ab63cb11?s=500" alt="Darrell Chua" itemprop="image">
           </span>
         
-
+        
         <h3 class="speakers-name has-text-centered">Darrell Chua
           
         </h3>
         <h4 class="has-text-centered speakers-company">Kablamo</h4>
+        <h4 class="has-text-centered speakers-card-talk-title" >Getting Started with Deep Learning in Go</h4>
+        <h5 class="card-subtitle speakers-card-talk-subtitle has-text-centered">Talk</h5>
+        <h4 class="has-text-centered speakers-card-section-title">Description</h4>
+        <div class="speakers-bio has-text-justified"><p>Have you ever wanted to dabble in Deep Learning? Here&#39;s your chance to get started doing it in Go. We&#39;ll take you through a quick example of a new model - and then how to continue your learning process through more commonly found Tensorflow projects lying around the Internet.</p></div>
+        
+        <h4 class="has-text-centered speakers-card-section-title">About Darrell Chua</h4>
         <div class="speakers-bio has-text-justified">Darrell is a Senior Data Scientist with more than 10 years of experience. He has been programming in Go for a few years and has been working on Deep Learning models for longer. He has developed models of varying complexity; from building credit scorecards with logistic regression to building image classification models for trading cards.</div>
       </li>
       
@@ -280,17 +335,23 @@ I have also co-authored the recently-released 'Hands-on Deep Learning in Go', an
           
     
           
-      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      <li class="speakers-item " itemprop="performer" itemscope itemtype="http://schema.org/Person">
         
           <span class="speaker-photo">
             <img class="photo" src="https://secure.gravatar.com/avatar/929238a6369d634577ccddecf91f38f8?s=500" alt="Ajey Gore" itemprop="image">
           </span>
         
-
+        
         <h3 class="speakers-name has-text-centered">Ajey Gore
           
         </h3>
         <h4 class="has-text-centered speakers-company">GoJek</h4>
+        <h4 class="has-text-centered speakers-card-talk-title" >Go Gamble on Unicorn</h4>
+        <h5 class="card-subtitle speakers-card-talk-subtitle has-text-centered">Talk</h5>
+        <h4 class="has-text-centered speakers-card-section-title">Description</h4>
+        <div class="speakers-bio has-text-justified"><p>We will be going through the journey of scaling a company to unicorn, I am going to talk about how GoLang helped us scale 6000x over 36 months and 18+ product lines,  where we failed and excelled with GoLang. Welcome to our journey and learnings of building software, teams and products</p></div>
+        
+        <h4 class="has-text-centered speakers-card-section-title">About Ajey Gore</h4>
         <div class="speakers-bio has-text-justified">Ajey Gore is group CTO at GO-JEK primarily focussing on Payments and organisation wide technology and team strategies. He helps the group deliver a transport, logistics, lifestyle and payments platform of 20 products. Ajey has 18 years of experience building core technology strategy across diverse domains. His interests include machine learning, computer networks and distributed architecture system.
 Ajey founded CodeIgnition, a boutique DevOps consultancy. CodeIgnition was later acquired by GO-JEK. He served as ThoughtWorks's Head of Technology, a noted international technology consulting firm, following which he joined Hoppr as Chief Technology Officer, a Bharati SoftBank funded started, later acquired by Hike Messenger in India.
 An active influencer in the technology community, He is a trustee of the Emerging Technology Trust, a-not-for-profit organization.  Ajey organizes technology conferences, including RubyConf, GopherCon, and devopsdays  In India for last 8 years, through his not-for-profit organization. </div>
@@ -300,33 +361,45 @@ An active influencer in the technology community, He is a trustee of the Emergin
           
     
           
-      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      <li class="speakers-item " itemprop="performer" itemscope itemtype="http://schema.org/Person">
         
           <span class="speaker-photo">
             <img class="photo" src="https://secure.gravatar.com/avatar/47bbb612ea01d04266e8ee675b1c93e1?s=500" alt="Am Laher" itemprop="image">
           </span>
         
-
+        
         <h3 class="speakers-name has-text-centered">Am Laher
           
         </h3>
         <h4 class="has-text-centered speakers-company">Vend</h4>
+        <h4 class="has-text-centered speakers-card-talk-title" >Designing Go services for Continuous Deployment</h4>
+        <h5 class="card-subtitle speakers-card-talk-subtitle has-text-centered">Talk</h5>
+        <h4 class="has-text-centered speakers-card-section-title">Description</h4>
+        <div class="speakers-bio has-text-justified"><p>Continuous Delivery can drive the design of your code for Great Good. I&#39;ll share some of the tricks and strategies I&#39;ve used to deploy Go services safely, smoothly, and without ceremony. I&#39;ll cover integration testing, db migrations, zero-downtime deploys, feature flags, and some useful go tooling.</p></div>
+        
+        <h4 class="has-text-centered speakers-card-section-title">About Am Laher</h4>
         <div class="speakers-bio has-text-justified"><p>I&#39;ve been an avid Gopher since 2012 - roughly as long as I&#39;ve been living in New Zealand. I discovered such an immediate productivity boost, that I haven&#39;t looked back from Go, or NZ, since. I helped start the Go Auckland meetup group in 2013, and I&#39;ve hosted and spoken at many meetups since then.</p> <p>About four years ago, a wise man persuaded me that &quot;setting up a new stack is the right time to begin CD&quot;. I claimed I was too busy getting product and platform to market, but he won me over: &quot;it&#39;s much harder to add CD later&quot;. I went with it, and I was so chuffed with the results that I&#39;ve been championing CD-related approaches ever since.</p></div>
       </li>
       
     
           
-      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      <li class="speakers-item " itemprop="performer" itemscope itemtype="http://schema.org/Person">
         
           <span class="speaker-photo">
             <img class="photo" src="https://secure.gravatar.com/avatar/74ac55db57112d8ef8c832d77b805486?s=500" alt="Alexander Else" itemprop="image">
           </span>
         
-
+        
         <h3 class="speakers-name has-text-centered">Alexander Else
           
         </h3>
         <h4 class="has-text-centered speakers-company">Atlassian</h4>
+        <h4 class="has-text-centered speakers-card-talk-title" >Eliminate the guess work: Profiling a go service in production</h4>
+        <h5 class="card-subtitle speakers-card-talk-subtitle has-text-centered">Talk</h5>
+        <h4 class="has-text-centered speakers-card-section-title">Description</h4>
+        <div class="speakers-bio has-text-justified"><p>This talk is about how to start using go&#39;s profiling tools, instrument your code so that you can profile your services running in production and have less mystery in your life.</p> <p>Viewers will learn how to use trace and pprof tools, and guidance on doing it in production for their own services.</p></div>
+        
+        <h4 class="has-text-centered speakers-card-section-title">About Alexander Else</h4>
         <div class="speakers-bio has-text-justified"><p>Alexander is an infrastructure software engineer, currently working at Atlassian on the Observability team. I like to build distributed systems. Sometimes things catch on fire and need putting out. When I&#39;m not doing those things I enjoy working on electronics projects, making music and spending time with my family.</p></div>
       </li>
       
@@ -334,33 +407,45 @@ An active influencer in the technology community, He is a trustee of the Emergin
           
     
           
-      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      <li class="speakers-item " itemprop="performer" itemscope itemtype="http://schema.org/Person">
         
           <span class="speaker-photo">
             <img class="photo" src="https://secure.gravatar.com/avatar/1e2f5505c9fd1adf6a2203556d0791d5?s=500" alt="Cera Davies" itemprop="image">
           </span>
         
-
+        
         <h3 class="speakers-name has-text-centered">Cera Davies
           
         </h3>
         <h4 class="has-text-centered speakers-company">GreenSync</h4>
+        <h4 class="has-text-centered speakers-card-talk-title" >Pragmatic Concurrency</h4>
+        <h5 class="card-subtitle speakers-card-talk-subtitle has-text-centered">Talk</h5>
+        <h4 class="has-text-centered speakers-card-section-title">Description</h4>
+        <div class="speakers-bio has-text-justified"><p>Concurrency is one of Go&#39;s big selling points, but it&#39;s also something that trips up developers and  leads to projects stalling under the weight of complexity. I discuss my experience working on large concurrent systems, outline some common pitfalls, and share some opinions on best practices.</p></div>
+        
+        <h4 class="has-text-centered speakers-card-section-title">About Cera Davies</h4>
         <div class="speakers-bio has-text-justified"><p>I&#39;ve been coding Go since 2011. I&#39;m an infrastructure and platform engineer based in Melbourne, working in the energy sector on distributed &amp; renewable energy products. In my spare time I&#39;m into dancing, cycling, gabber, videogames &amp; politics. Mir veln zey iberlebn.</p></div>
       </li>
       
     
           
-      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      <li class="speakers-item " itemprop="performer" itemscope itemtype="http://schema.org/Person">
         
           <span class="speaker-photo">
             <img class="photo" src="https://secure.gravatar.com/avatar/8f3ae66a1b3c1494de8971e428e9b6ae?s=500" alt="Joshua Carpeggiani" itemprop="image">
           </span>
         
-
+        
         <h3 class="speakers-name has-text-centered">Joshua Carpeggiani
           
         </h3>
         <h4 class="has-text-centered speakers-company">ANZ Bank</h4>
+        <h4 class="has-text-centered speakers-card-talk-title" >Go for Decimals</h4>
+        <h5 class="card-subtitle speakers-card-talk-subtitle has-text-centered">Talk</h5>
+        <h4 class="has-text-centered speakers-card-section-title">Description</h4>
+        <div class="speakers-bio has-text-justified"><p>Relying on binary floating point can kill; they are inherently imprecise and can lead to technical complications later down the road. A decimal system would solve many of these complications. Go has been lacking a fast and efficient decimal data type, until now...</p></div>
+        
+        <h4 class="has-text-centered speakers-card-section-title">About Joshua Carpeggiani</h4>
         <div class="speakers-bio has-text-justified"><p>Josh is a software engineer at ANZ working on implementing an open source decimal datatype in Go as well as spreading the word about Go by co-organising a corporate Go training course. Outside of work, Josh likes to get lost by following the forgotten art of hitchhiking where he´s traveled to many places, and many are still to come.</p></div>
       </li>
       
@@ -368,17 +453,23 @@ An active influencer in the technology community, He is a trustee of the Emergin
           
     
           
-      <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+      <li class="speakers-item " itemprop="performer" itemscope itemtype="http://schema.org/Person">
         
           <span class="speaker-photo">
             <img class="photo" src="https://secure.gravatar.com/avatar/592a3d6f570b7822e480edb108c601fd?s=500" alt="Julia Wong" itemprop="image">
           </span>
         
-
+        
         <h3 class="speakers-name has-text-centered">Julia Wong
           
         </h3>
         <h4 class="has-text-centered speakers-company">Atlassian</h4>
+        <h4 class="has-text-centered speakers-card-talk-title" >Migrate to a New Platform by Creating a Pipeline in Go</h4>
+        <h5 class="card-subtitle speakers-card-talk-subtitle has-text-centered">Talk</h5>
+        <h4 class="has-text-centered speakers-card-section-title">Description</h4>
+        <div class="speakers-bio has-text-justified"><p>This is the story of how Atlassian moved from a multi-million dollar contract with one vendor to another for their monitoring system. To help them migrate the thousands of engineers and microservices onto the new platform in just a few months, they built a new data pipeline using Go.</p></div>
+        
+        <h4 class="has-text-centered speakers-card-section-title">About Julia Wong</h4>
         <div class="speakers-bio has-text-justified"><p>Julia works as a developer in Atlassian´s Observability team. She loves learning about all things Go, especially the cute Gopher, and is passionate about teaching the younger generation how to code.</p></div>
       </li>
       
@@ -388,7 +479,165 @@ An active influencer in the technology community, He is a trustee of the Emergin
   </div>
 </section>
 
-     
+    
+    
+    
+    
+
+    
+    
+    
+<section class="section" id="workshops">
+  <div class="container">
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2">Workshops Day</h2>
+      <h3 class="subtitle is-5 is-muted">Ready to Go?</h3>
+      <div class="divider is-centered blue"></div>
+    </div>
+
+     <p>
+            <tito-widget event="gophercon-au/gopherconau-2019-workshops" discount-code=""></tito-widget>
+        </p>
+
+    <div class="content-wrapper">
+      <div class="columns">
+        <div class="column is-4">
+          <div class="feature-card is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
+            <div class="card-title">
+              <h4>Intro to Go for Complete Beginners</h4>
+              <h5 class="card-subtitle">Workshop</h5>
+            </div>
+            <div class="card-text has-text-justified">
+              <h5 class="has-text-centered">Description</h5>
+              <p>An introduction with lots of hands on practice</p>
+              <p>• Development Environment</p>
+              <p>• Programming Fundamentals</p>
+              <p>• An introduction to the basic syntax of the language</p>
+              <p>• Debugging</p>
+            </div>
+            <div class="card-text has-text-justified">
+              <h5 class="has-text-centered">Prerequisites</h5>
+              <ul>
+                <li>None! If you already know, how to code, please consider William’s or/and Gary’s workshops.</li>
+              </ul>
+            </div>
+            <div class="card-text has-text-justified">
+              <h5 class="has-text-centered">What an attendee is expected to learn</h5>
+              <ul class="with-bullets">
+                <p>• Learning in a friendly environment</p>
+                <p>• The initial setup to get started with Go</p>
+              </ul>
+            </div>
+            
+            <div class="card-icon">
+                <img src="/images/speakers/leah-garrett.jpg" alt="Leah Garrett" >
+            </div>
+            
+            
+            <div class="card-text has-text-justified">
+                <h5 class="has-text-centered">About Leah Garrett</h5>
+                <p>Leah Garrett has over 20 years experience working in software development, and was recently lead educator at a coding bootcamp. Active in the developer community, Leah is co-organiser of the Melbourne Golang Meetup group and is part of the team that organises the DDD Melbourne conference.</p>
+            </div>
+            
+          </div>
+        </div>
+        <div class="column is-4">
+          <div class="feature-card is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
+            <div class="card-title">
+              <h4>Building Production Web Services in Go</h4>
+              <h5 class="card-subtitle">Workshop</h5>
+            </div>
+            <div class="card-text has-text-justified">
+              <h5 class="has-text-centered">Description</h5>
+              <p>This class has been designed over the past several years and goes beyond just being a Go service class. There will be very little time spent on specifc Go syntax. Our time will be spent learning how to re-engineer a web service and talk about application design, semantics and guidelines for building services in Go.</p>
+              <p>Building Production Web Services In Go</p>
+              <p>• Start/Stop</p>
+              <p>• Logging/Configuration</p>
+              <p>• Web Framework Design</p>
+              <p>• Database Support</p>
+              <p>• Testing</p>
+              <p>• Metrics/Tracing</p>
+              <p>• Modules/Docker/Compose</p>
+            </div>
+            <div class="card-text has-text-justified">
+              <h5 class="has-text-centered">Prerequisites</h5>
+              <ul>
+                <li>A basic understanding of the Go programming language. Students do not have to be expert Go users but they will get the most from the workshop if they have completed the majority of the Go Tour.</li>
+              </ul>
+            </div>
+            <div class="card-text has-text-justified">
+              <h5 class="has-text-centered">What an attendee is expected to learn</h5>
+              <ul class="with-bullets">
+                <p>Everyone is going to be mentally exhausted by the end of the day. We will be challenging every student to think about what they are doing and why. In the 4 years we have taught this material, we never had someone not appreciate the class and feel like they are a better developer for it. If you want to be a better Go developer, code reviewer, designer and architect, this is the class you want to take.</p>
+              </ul>
+            </div>
+            
+            <div class="card-icon">
+                <img src="/images/speakers/bill-kennedy.jpeg" alt="William Kennedy" >
+            </div>
+            
+            
+            <div class="card-text has-text-justified">
+                <h5 class="has-text-centered">About William Kennedy</h5>
+                <p>William Kennedy is a managing partner at Ardan Labs in Miami, Florida, a group of passionate engineers, artists and business professionals focused on building and delivering reliable, secure and scalable solutions.  He is also a co-author of the book Go in Action, the author of the blog GoingGo.Net, and a founding member of GoBridge which is working to increase Go adoption through diversity.</p>
+            </div>
+            
+          </div>
+        </div>
+        <div class="column is-4">
+          <div class="feature-card is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
+            <div class="card-title">
+              <h4>1.13 = Enterprise Go</h4>
+              <h5 class="card-subtitle">Workshop</h5>
+            </div>
+            <div class="card-text has-text-justified">
+              <h5 class="has-text-centered">Description</h5>
+              <p>This workshop is for team leads, agile coaches and senior developers.</p>
+              <p>The main goal is to workshop approaches to the biggest issue in software engineering; too much unverifiable code and not nearly enough human scale formal specifications.</p>
+              <p>It covers topics from developer productivity to capturing system semantics. Using enterprise-ready features of Go 1.13 to advanced uses of protocol buffers.This is a hands on workshop, programming experience required, but experience with Go is not necessary.</p>
+              <p>We will be using a combination of pairs and mob programming (pairs of mobs) to refactor and add features to a synthetic code base.</p>
+              <p>Expect digressions into development process and economics of software engineering.</p>
+            </div>
+            <div class="card-text has-text-justified">
+              <h5 class="has-text-centered">Prerequisites</h5>
+              <ul>
+                <li>A basic understanding of microservices architectures</li>
+              </ul>
+            </div>
+            <div class="card-text has-text-justified">
+              <h5 class="has-text-centered">What an attendee is expected to learn</h5>
+              <ul class="with-bullets">
+                <p>• Fast &amp; painless reproducible builds</p>
+                <p>• Development &amp; operations metrics collection</p>
+                <p>• Traceability of production issues</p>
+                <p>• Painless &amp; productive approaches to APIs &amp; contracts</p>
+                <p>• Contract based regression testing</p>
+                <p>• Speed of developers coming up to speed in development teams</p>
+              </ul>
+            </div>
+            
+            <div class="card-icon">
+                <img src="/images/speakers/gary-miller.jpg" alt="Gary Miller" >
+            </div>
+            
+            
+            <div class="card-text has-text-justified">
+                <h5 class="has-text-centered">About Gary Miller</h5>
+                <p>Gary Miller is a creative technologist, across a broad spectrum of web, cloud and enterprise IT systems and technologies. He is a senior engineer at a local Sydney spin-off, GotoBlink. Previously he was Macquarie Group&#39;s (COG - Infra) Computer Scientist in Residence, where he applied a small amount of theory with large amounts of practical software engineering nous, to unblock some of their most intractable problems.</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+       <p>
+            <tito-widget event="gophercon-au/gopherconau-2019-workshops" discount-code=""></tito-widget>
+        </p>
+
+    </div>
+  </div>
+</section>
+ 
     
     
 
@@ -464,6 +713,7 @@ An active influencer in the technology community, He is a trustee of the Emergin
 
     
     
+    
 <section class="section is-medium" id="coc">
   <div class="container">
 
@@ -488,6 +738,11 @@ An active influencer in the technology community, He is a trustee of the Emergin
   </div>
 </section>
 
+    
+    
+
+    
+    
     
 
     
