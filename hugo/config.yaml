@@ -15,9 +15,15 @@ params:
     sizes: [400,600]
   hero:
     # Main hero title
-    title: GopherconAU 2019
+    title: GopherConAU 2019
     # Hero subtitle (optional)
-    subtitle: First ever Go conference in Australia!
+    subtitle: First ever GopherCon in Australia!
+    listitems:
+      - label: Conference Days
+        text: Thursday 31st & Friday 1st
+      - label: "Workshops Day*"
+        text: Wednesday 30th
+    advice: "*Please be advised that workshops are to be purchased separately."
     # Button text
     # buttontext: Follow on LinkedIn For Updates!
     # Where the main hero button links to
@@ -39,6 +45,8 @@ params:
       url: /#speakers
     # - title: Schedule
       # url: /#schedule
+    - title: Workshops
+      url: /#workshops
     # - title: Sponsors
     #   url: /#sponsors
     - title: Contact
@@ -106,7 +114,7 @@ params:
       - text: For the first year of GopherCon Australia, we will use sponsorships to attract and accommodate for international speakers and workshop hosts. By showing that GopherCon Australia is a welcoming conference, we wish to create a sense of community coming from different backgrounds, supporting traditionally underrepresented groups in the technology industry. We invited prominent contributors to the Go tech scene, who share and represent our vision of inclusion and who come from diverse gender and ethnicity groups.
       - text: Many well known Australian companies use Go, including Google, Atlassian, VMware, Seek, Siteminder, Freelancer.com, Campaign Monitor, Sajari, and many more.
       - text: GopherCon Australia is the latest in a series of conferences originating from the first GopherCon held in Denver, Colorado in 2014. The conference founders are Katie Fry and Xuanyi Chew, both organisers of the successful Sydney Go Users’ Group, and a committee of volunteers.
-      - text: GopherCon Australia is happening between 30th October and 1st November 2019 at the University of Technology Sydney. Yes, you read it right - conveniently before the weekend, so that you can extend your stay. We encourage you to take your partner, family, or friends with you, as we will provide you with recommendations on how to spend time in Sydney to enjoy the culture, art, and fun.
+      - text: GopherCon Australia is happening in Sydney between 30th October and 1st November 2019. Yes, you read it right - conveniently before the weekend, so that you can extend your stay. We encourage you to take your partner, family, or friends with you, as we will provide you with recommendations on how to spend time in Sydney to enjoy the culture, art, and fun.
 
   # texts for the code of conduct section
   coc:
@@ -174,7 +182,7 @@ params:
         sponsorship: "Other"
         type: "Catering Sponsor"
 
-  # The entire schedule
+  # The entire CONFERENCE schedule (workshops are on the workshop page)
   schedule:
     title: Schedule
     subtitle: Here we Go!
@@ -182,6 +190,19 @@ params:
     - name: "Check-in / Breakfast"
       date: "31/10/2019"
       time: "9:00"
+
+      #ADDED with dummy time
+    - name: "Carmen Andoh"
+      date: "31/10/2019"
+      time: "00:00"
+      photo: "https://avatars2.githubusercontent.com/u/1622229?s=460&v=4"
+      bio: "Carmen is the Open Source Strategy Lead for Go at Google. She was previously Build Infrastructure Engineer at Travis CI Operations at Enquos."
+      keynote: true
+      company: Google
+      presentation:
+        title: "10 years of Go"
+        description: "Simple. Reliable. Efficient. These words defined Go on Nov 10 2009.  As we celebrate 10 yrs, we add one more: Sustainable. A reflection of Go: technological & industry advances during the last decade, while exploring what it means to be sustainable amidst constant change."
+        level: All levels
 
     - name: "Peter Williams"
       date: "31/10/2019"
@@ -206,6 +227,7 @@ recently written in Go for PaperCut are</p>
         title: "PDF Full Text Search in Pure Go. Why and How I Wrote it."
         description: '<p>Many modern software product developers work close to the top of a powerful open source software stack and focus on their customer problems.</p>
 <p>This talk is about how I worked further down the Go software stack to write a PDF Full Text Search library and solve customer problems in unexpected ways.</p>.'
+        level: All levels
 
     - name: "Gareth Seneque"
       date: "31/10/2019"
@@ -225,6 +247,7 @@ I have also co-authored the recently-released 'Hands-on Deep Learning in Go', an
         description: '
         <p>Recommendation systems suck. I buy one vacuum cleaner and all of a sudden I&#39;m a Hoover enthusiast. Enjoyed a nice video about politics? YouTube is unusable now.</p>
 <p>This talk covers a new way to build these systems using Deep Reinforcement Learning to improve the quality &amp; diversity of recommendations.</p>'
+        level: Intermediate
 
     - name: "Lunch"
       date: "31/10/2019"
@@ -242,8 +265,11 @@ I have also co-authored the recently-released 'Hands-on Deep Learning in Go', an
       presentation:
         title: "Sloc Cloc and Code - Can a crusty Go program outperform a well written Rust Project?"
         description: '<p>Sloc cloc and code. How a death march project lead to learning Go, the creation of a source lines of code counter which is faster and more accurate then the Rust/ATS/C equivalents, while learning about some really bizarre performance characteristics.</p>'
+        level: All levels
 
     - name: "Darrell Chua"
+      date: "31/10/2019"
+      time: "14:00"
       photo: "https://secure.gravatar.com/avatar/49e0e0dc2b4a1198f30f3de7ab63cb11?s=500"
       bio: "Darrell is a Senior Data Scientist with more than 10 years of experience. He has been programming in Go for a few years and has been working on Deep Learning models for longer. He has developed models of varying complexity; from building credit scorecards with logistic regression to building image classification models for trading cards."
       company: "Kablamo"
@@ -253,8 +279,7 @@ I have also co-authored the recently-released 'Hands-on Deep Learning in Go', an
       presentation:
         title: "Getting Started with Deep Learning in Go"
         description: '<p>Have you ever wanted to dabble in Deep Learning? Here&#39;s your chance to get started doing it in Go. We&#39;ll take you through a quick example of a new model - and then how to continue your learning process through more commonly found Tensorflow projects lying around the Internet.</p>'
-        date: "31/10/2019"
-        time: "14:00"
+        level: Beginners
 
     - name: "Coffee-break"
       date: "31/10/2019"
@@ -277,6 +302,7 @@ An active influencer in the technology community, He is a trustee of the Emergin
       presentation:
         title: "Go Gamble on Unicorn"
         description: '<p>We will be going through the journey of scaling a company to unicorn, I am going to talk about how GoLang helped us scale 6000x over 36 months and 18+ product lines,  where we failed and excelled with GoLang. Welcome to our journey and learnings of building software, teams and products</p>'
+        level: All levels
 
     - name: "Check-in / Breakfast"
       date: "1/11/2019"
@@ -295,6 +321,7 @@ An active influencer in the technology community, He is a trustee of the Emergin
       presentation:
         title: "Designing Go services for Continuous Deployment"
         description: '<p>Continuous Delivery can drive the design of your code for Great Good. I&#39;ll share some of the tricks and strategies I&#39;ve used to deploy Go services safely, smoothly, and without ceremony. I&#39;ll cover integration testing, db migrations, zero-downtime deploys, feature flags, and some useful go tooling.</p>'
+        level: All levels
 
     - name: "Alexander Else"
       date: "1/11/2019"
@@ -309,6 +336,7 @@ An active influencer in the technology community, He is a trustee of the Emergin
         title: "Eliminate the guess work: Profiling a go service in production"
         description: '<p>This talk is about how to start using go&#39;s profiling tools, instrument your code so that you can profile your services running in production and have less mystery in your life.</p>
 <p>Viewers will learn how to use trace and pprof tools, and guidance on doing it in production for their own services.</p>'
+        level: All levels
 
     - name: "Lunch"
       date: "1/11/2019"
@@ -326,6 +354,7 @@ An active influencer in the technology community, He is a trustee of the Emergin
       presentation:
         title: "Pragmatic Concurrency"
         description: '<p>Concurrency is one of Go&#39;s big selling points, but it&#39;s also something that trips up developers and  leads to projects stalling under the weight of complexity. I discuss my experience working on large concurrent systems, outline some common pitfalls, and share some opinions on best practices.</p>'
+        level: Intermediate
 
     - name: "Joshua Carpeggiani"
       date: "1/11/2019"
@@ -340,6 +369,7 @@ Outside of work, Josh likes to get lost by following the forgotten art of hitchh
       presentation:
         title: "Go for Decimals"
         description: '<p>Relying on binary floating point can kill; they are inherently imprecise and can lead to technical complications later down the road. A decimal system would solve many of these complications. Go has been lacking a fast and efficient decimal data type, until now...</p>'
+        level: All levels
 
     - name: "Coffee-break"
       date: "1/11/2019"
@@ -357,6 +387,7 @@ Outside of work, Josh likes to get lost by following the forgotten art of hitchh
       presentation:
         title: "Migrate to a New Platform by Creating a Pipeline in Go"
         description: '<p>This is the story of how Atlassian moved from a multi-million dollar contract with one vendor to another for their monitoring system. To help them migrate the thousands of engineers and microservices onto the new platform in just a few months, they built a new data pipeline using Go.</p>'
+        level: All levels
 
   # section2:
   #   title: You're here because you want the best
@@ -394,6 +425,69 @@ Outside of work, Josh likes to get lost by following the forgotten art of hitchh
   #     quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
   #     job: HR Manager
   #     img: 3
+
+  workshops:
+    title: Workshops Day
+    subtitle: Ready to Go?
+    slots:
+      #Leah's workshop
+    - title: Intro to Go for Complete Beginners
+      description:
+        - text: An introduction with lots of hands on practice
+        - text: • Development Environment
+        - text: • Programming Fundamentals
+        - text: • An introduction to the basic syntax of the language
+        - text: • Debugging
+      prerequisites:
+        - item: None! If you already know, how to code, please consider William’s or/and Gary’s workshops.
+      outcomes:
+        - item: • Learning in a friendly environment
+        - item: • The initial setup to get started with Go
+      authors:
+        - name: Leah Garrett
+          bio: Leah Garrett has over 20 years experience working in software development, and was recently lead educator at a coding bootcamp. Active in the developer community, Leah is co-organiser of the Melbourne Golang Meetup group and is part of the team that organises the DDD Melbourne conference.
+          photo: "/images/speakers/leah-garrett.jpg"
+      #Bill's workshop
+    - title: Building Production Web Services in Go
+      description:
+        - text: This class has been designed over the past several years and goes beyond just being a Go service class. There will be very little time spent on specifc Go syntax. Our time will be spent learning how to re-engineer a web service and talk about application design, semantics and guidelines for building services in Go.
+        - text: Building Production Web Services In Go
+        - text: • Start/Stop
+        - text: • Logging/Configuration
+        - text: • Web Framework Design
+        - text: • Database Support
+        - text: • Testing
+        - text: • Metrics/Tracing
+        - text: • Modules/Docker/Compose
+      prerequisites:
+        - item: A basic understanding of the Go programming language. Students do not have to be expert Go users but they will get the most from the workshop if they have completed the majority of the Go Tour.
+      outcomes:
+        - item: Everyone is going to be mentally exhausted by the end of the day. We will be challenging every student to think about what they are doing and why. In the 4 years we have taught this material, we never had someone not appreciate the class and feel like they are a better developer for it. If you want to be a better Go developer, code reviewer, designer and architect, this is the class you want to take.
+      authors:
+        - name: William Kennedy
+          bio: William Kennedy is a managing partner at Ardan Labs in Miami, Florida, a group of passionate engineers, artists and business professionals focused on building and delivering reliable, secure and scalable solutions.  He is also a co-author of the book Go in Action, the author of the blog GoingGo.Net, and a founding member of GoBridge which is working to increase Go adoption through diversity.
+          photo: "/images/speakers/bill-kennedy.jpeg"
+      #Gary's workshop
+    - title: 1.13 = Enterprise Go
+      description:
+        - text: This workshop is for team leads, agile coaches and senior developers.
+        - text: The main goal is to workshop approaches to the biggest issue in software engineering; too much unverifiable code and not nearly enough human scale formal specifications.
+        - text: It covers topics from developer productivity to capturing system semantics. Using enterprise-ready features of Go 1.13 to advanced uses of protocol buffers.This is a hands on workshop, programming experience required, but experience with Go is not necessary.
+        - text: We will be using a combination of pairs and mob programming (pairs of mobs) to refactor and add features to a synthetic code base.
+        - text: Expect digressions into development process and economics of software engineering.
+      prerequisites:
+        - item: A basic understanding of microservices architectures
+      outcomes:
+        - item: • Fast & painless reproducible builds
+        - item: • Development & operations metrics collection
+        - item: • Traceability of production issues
+        - item: • Painless & productive approaches to APIs & contracts
+        - item: • Contract based regression testing
+        - item: • Speed of developers coming up to speed in development teams
+      authors:
+        - name: Gary Miller
+          bio: Gary Miller is a creative technologist, across a broad spectrum of web, cloud and enterprise IT systems and technologies. He is a senior engineer at a local Sydney spin-off, GotoBlink. Previously he was Macquarie Group's (COG - Infra) Computer Scientist in Residence, where he applied a small amount of theory with large amounts of practical software engineering nous, to unblock some of their most intractable problems.
+          photo: "/images/speakers/gary-miller.jpg"
   footer:
      # logo: gopher-kangaroo-sydney-opera.svg
      thanks:
