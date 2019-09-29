@@ -3,15 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://gophercon.com.au/categories/</loc>
+    <loc>https://gcau.mikehughes.info/categories/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://gophercon.com.au/</loc>
+    <loc>https://gcau.mikehughes.info/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://gophercon.com.au/tags/</loc>
+    <loc>https://gcau.mikehughes.info/tags/</loc>
+    <priority>0</priority>
   </url>
   
 </urlset>
