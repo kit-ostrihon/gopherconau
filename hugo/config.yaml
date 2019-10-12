@@ -20,9 +20,9 @@ params:
     subtitle: First ever GopherCon in Australia!
     listitems:
       - label: Conference Days
-        text: Thursday 31st & Friday 1st
+        text: 'Thursday 31st & Friday 1st  <p> <tito-widget event="gophercon-au/2019" discount-code=""></tito-widget>  </p>'
       - label: "Workshops Day*"
-        text: Wednesday 30th
+        text: 'Wednesday 30th <p> <tito-widget event="gophercon-au/gopherconau-2019-workshops" discount-code=""></tito-widget>  </p>'
     advice: "*Please be advised that workshops are to be purchased separately."
     # Button text
     # buttontext: Follow on LinkedIn For Updates!

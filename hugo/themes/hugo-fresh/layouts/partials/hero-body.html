@@ -29,12 +29,11 @@
         {{ end }}
         <ul>
           {{- range $listItems }}
-          <li><span class="has-text-weight-bold">{{ .label }}</span> - {{ .text }}</li>
+          <li><span class="has-text-weight-bold">{{ .label }}</span> - {{ .text | safeHTML}}</li>
           {{- end}}
         </ul>
-        <p>
-            <tito-widget event="gophercon-au/2019" discount-code=""></tito-widget>
-        </p>
+
+
         <span>{{ $advice }}</span>
       </div>
 
