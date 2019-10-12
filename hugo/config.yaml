@@ -388,6 +388,32 @@ Outside of work, Josh likes to get lost by following the forgotten art of hitchh
         title: "Migrate to a New Platform by Creating a Pipeline in Go"
         description: '<p>This is the story of how Atlassian moved from a multi-million dollar contract with one vendor to another for their monitoring system. To help them migrate the thousands of engineers and microservices onto the new platform in just a few months, they built a new data pipeline using Go.</p>'
         level: All levels
+    - name: "Kaylyn Gibilterra"
+      date: "1/11/2019"
+      time: "16:00"
+      photo: "http://cdn.filestackcontent.com/jMAw1qRwSUuE4b4Itfy2"
+      bio: '<p>Kaylyn Gibilterra is a tech lead for modernizing core banking systems in Go at Capital One. She has been programming Go since 2014 and has been introducing developers to the language through talks and trainings ever since. She is a Recurse Center alum and is currently working on her masters in Computer Systems from Georgia Tech</p>'
+      company: "CapitalOne Bank"
+      link:
+        href: ""
+        text: ""
+      presentation:
+        title: "Unlocking net/http APIs"
+        description: '<p>Building an API with the net/http library is incredibly easy…until it isn’t. Even in 2019 the advice you find online when doing routing is often to “use X framework” or “just use net/http” without a lot of context for how to use them well. In this talk I will cover request parsing, writing middleware, using context, and other useful skills to level up your standard library-only APIs.</p>'
+        level: All levels
+    - name: "Jeff Levin"
+      date: "1/11/2019"
+      time: "16:00"
+      photo: "https://avatars3.githubusercontent.com/u/1669620?s=460&v=4"
+      bio: '<p>Jeff Levin is the Founder of Legalverse and the Alaska Developers Alliance. He has been a web developer since Microsoft Frontpage and recently accepted the title of software engineer. When he’s not coding you’ll find him running and skiing in the mountains</p>'
+      company: "LegalVerse"
+      link:
+        href: ""
+        text: ""
+      presentation:
+        title: "Let’s build our own webstack in Go!"
+        description: '<p>Many new Gophers come from dynamic languages and frameworks that have an emphasis on productivity vs engineering, but what happens when your application doesn’t fit the mold of a framework like Ruby on Rails? What happens when your problems don’t scale in the way the framework expects you to? What does it look like to build a full web stack from scratch for a production environment</p>'
+        level: All levels
 
   # section2:
   #   title: You're here because you want the best
