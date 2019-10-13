@@ -211,20 +211,20 @@
   margin-right: 0.2em;
 }
 
-#sponsors .sponsor-item {
+.sponsors .sponsor-item {
   width: 100%; /* to allow the logotypes to fill the space */
 }
 
-#sponsors .sponsor--link {
+.sponsors .sponsor--link {
   width: 100%;
 }
 
-#sponsors .sponsor--link img {
+.sponsors .sponsor--link img {
   max-height: 100%;
   vertical-align: middle;
 }
 
-#sponsors .sponsors-group-title {
+.sponsors .sponsors-group-title {
   line-height: 300%;
   font-size: 1.5em;
   margin-top: 1em;
@@ -279,7 +279,7 @@
   }
 }
 
-/* Making the speakers' photos even smaller for the small width. */
+/* Making the speakers' photos even smaller for the small width. */b
 @media(max-width: 321px) {
   #speakers-list {
     grid-gap: 0em;
