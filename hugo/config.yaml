@@ -199,7 +199,7 @@ params:
       - name: "Microsoft Azure"
         logo: "/images/logos/sponsors/Azure.png"
         logotype: "/images/logos/sponsors/Azure.png"
-        url: "https://https://azure.microsoft.com/develop/go/?ocid=AID2423468/"
+        url: "https://azure.microsoft.com/develop/go/?ocid=AID2423468/"
         sponsorship: "Other"
         type: "Lanyards and Programs Sponsor"
       - name: "Campaign Monitor"
