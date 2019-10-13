@@ -33,7 +33,6 @@
           {{- end}}
         </ul>
 
-
         <span>{{ $advice }}</span>
       </div>
 
@@ -42,47 +41,5 @@
       </div>
 
     </div>
-
-    <!-- Commented for now. -->
-    <h2 class="subtitle has-text-centered">Sponsored By</h2>
-    <div class="tabs is-centered" style="flex-wrap:wrap">
-      <div id="diamond" style="width:100%; margin-right:auto; margin-left:auto;flex-basis:100%">
-	<a href="https://www.safetyculture.com.au" class="home-page-sponsors-item" itemprop="url" target="_blank" title="SafetyCulture">
-          <img src="/images/logos/sponsors/SafetyCulture.svg" alt="SafetyCulture" itemprop="image" style="height: auto;width:100%">
-        </a>
-      </div>
-
-      <div id="gold" class="sponsors" style="width:100%; margin-right:auto; margin-left:auto;flex-basis:100%">
-	{{ range $company := $companies }}
-	{{if eq .sponsorship "Gold" }}
-	<a href="{{ .url }}" class="home-page-sponsors-item sponsor--link" itemprop="url" target="_blank" title="{{ $company.name }}">
-          <img src="{{ .logo }}" alt="{{ $company.name }}" class="photo" itemprop="image">
-	</a>
-	{{end}}
-	{{end}}
-	  <!--
-	       <a href="https://www.buildkite.com/" class="home-page-sponsors-item sponsor--link" itemprop="url" target="_blank" title="BuildKite" style="width:50%">
-               <img src="/images/logos/sponsors/buildkite.png" alt="BuildKite" itemprop="image" >
-               </a>
-	       <a href="https://www.atlassian.com/" class="home-page-sponsors-item sponsor--link" itemprop="url" target="_blank" title="Atlassian" style="width:50%">
-               <img src="/images/logos/sponsors/atlassian.png" alt="Atlassian" itemprop="image" >
-               </a>
-	  -->
-      </div>
-
-	   <ul class="sponsors" style="flex-basis:100%">
-             {{ range $company := $companies }}
-	     {{ if and (ne .sponsorship "Diamond") (ne .sponsorship "Gold")}}
-           <li>
-           <a href="{{ .url }}" class="home-page-sponsors-item sponsor--link" itemprop="url" target="_blank" title="{{ $company.name }}">
-           <img src="{{ .logo }}" alt="{{ $company.name }}" class="photo" itemprop="image">
-           </a>
-           </li>
-	   {{end}}
-           {{ end }}
-	   </ul>
-
-    </div>
-
   </div>
 </div>
