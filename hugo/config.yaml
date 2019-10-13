@@ -159,7 +159,7 @@ params:
       - name: "SafetyCulture"
         logo: "/images/logos/sponsors/SafetyCulture.svg"
         logotype: "/images/logos/sponsors/SafetyCulture.svg"
-        url: "https://www.safetyculture.com.au/"
+        url: "https://www.safetyculture.com/about"
         sponsorship: "Diamond"
       - name: "Atlassian"
         logo: "/images/logos/sponsors/atlassian.png"
