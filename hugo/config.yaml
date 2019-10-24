@@ -324,7 +324,7 @@ I have also co-authored the recently-released 'Hands-on Deep Learning in Go', an
       date: "31/10/2019"
       time: "15:00"
 
-    - name: "William Kennedy Kennedy"
+    - name: "William Kennedy"
       date: "31/10/2019"
       time: "16:00"
       photo: "/images/speakers/bill-kennedy.jpeg"
@@ -335,7 +335,7 @@ I have also co-authored the recently-released 'Hands-on Deep Learning in Go', an
         text: "-"
       presentation:
         title: "Modules"
-        description: 'Go 1.13 made Modules a first class citizen. But what do they do exactly? <TBD>'
+        description: 'Go 1.13 made Modules a first class citizen. But what do they do exactly? In this talk, Bill will walk through what he has learned about modules and the developer experience.'
         level: All levels
 
     - name: "Check-in / Breakfast"
