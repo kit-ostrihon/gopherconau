@@ -44,12 +44,17 @@
     {{ partial "sponsors.html" . }}
     {{ end }}
     <!-- end: sponsors -->
-
     <!-- about -->
     {{ if .Site.Params.about }}
     {{ partial "about.html" . }}
     {{ end }}
     <!-- end: about -->
+
+    <!-- location -->
+    {{ if .Site.Params.location }}
+    {{ partial "location.html" . }}
+    {{ end }}
+    <!-- end: location -->
 
     <!-- schedule and speakers -->
     {{ if .Site.Params.schedule }}

@@ -43,6 +43,8 @@ params:
       url: /#about
     - title: Speakers
       url: /#speakers
+    - title: Location
+      url: /#location
     # - title: Schedule
       # url: /#schedule
     - title: Workshops
@@ -150,7 +152,12 @@ params:
     # subtitle
     logo: gopher-kangaroo-sydney-opera.svg
     # subtitle: We will keep you in the loop
-
+  location:
+      title: University of Technology Sydney
+      workshops: '<iframe width="400" height="300" frameborder="0" style="border:0"
+src="https://www.google.com/maps/embed/v1/place?q=UTS%20Building%208&key=AIzaSyADBhlPQf5XH5MkxAeHp-Z40f_Wa9yvxcE" allowfullscreen></iframe>'
+      conference: '<iframe width="400" height="300" frameborder="0" style="border:0"
+src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJn3JMjiauEmsRXz9JCzjm56c&key=AIzaSyADBhlPQf5XH5MkxAeHp-Z40f_Wa9yvxcE" allowfullscreen></iframe>'
   # List of Sponsors
   sponsors:
       title: Sponsors
@@ -214,7 +221,6 @@ params:
         url: "https://www.campaignmonitor.com/"
         sponsorship: "Other"
         type: "Recruitment Partner"
-
   # The entire CONFERENCE schedule (workshops are on the workshop page)
   schedule:
     title: Schedule
@@ -442,7 +448,6 @@ Outside of work, Josh likes to get lost by following the forgotten art of hitchh
         title: "Let’s build our own webstack in Go!"
         description: '<p>Many new Gophers come from dynamic languages and frameworks that have an emphasis on productivity vs engineering, but what happens when your application doesn’t fit the mold of a framework like Ruby on Rails? What happens when your problems don’t scale in the way the framework expects you to? What does it look like to build a full web stack from scratch for a production environment</p>'
         level: All levels
-
   # section2:
   #   title: You're here because you want the best
   #   subtitle: And we know it
