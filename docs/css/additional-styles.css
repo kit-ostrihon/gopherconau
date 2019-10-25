@@ -262,16 +262,20 @@
     height: 80px;
     width: 80px;
   }
-  #sponsors .sponsors-list {
+  #sponsors .sponsors-list,
+  #location .sponsors-list {
     display: grid;
   }
-  #sponsors .sponsors-list.single {
+  #sponsors .sponsors-list.single,
+  #location .sponsors-list.single {
     grid-template-columns: 1fr;
   }
-  #sponsors .sponsors-list.double {
+  #sponsors .sponsors-list.double,
+  #location .sponsors-list.double {
     grid-template-columns: repeat(2, 1fr);
   }
-  #sponsors .sponsors-list.triple {
+  #sponsors .sponsors-list.triple,
+  #location .sponsors-list.triple {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -287,7 +291,8 @@
   #speakers-list .speakers-item.keynote-speaker {
     grid-column: 1 / 2; /* stretch for one-column grid */
   }
-  #sponsors .sponsors-list {
+  #sponsors .sponsors-list,
+  #location .sponsors-list {
     display: grid;
     grid-template-columns: 1fr !important;
   }
