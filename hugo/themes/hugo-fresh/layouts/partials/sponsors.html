@@ -30,9 +30,12 @@
         {{ end }}
       </ul>
 
+
+
+
       <!-- <h3 class="sponsors-group-title has-text-centered">Gold Sponsors &darr;</h3> -->
       <ul class="sponsors-list double">
-      {{ range where $companies ".sponsorship" "==" "Gold" }}
+	{{ range where $companies ".sponsorship" "in" (slice "Rose Gold" "Gold")}}
         <li class="sponsor-item has-text-centered" itemscope itemtype="http://schema.org/Organization">
           <a href="{{ .url }}" class="sponsor--link" itemprop="url" target="_blank" title="{{ .name }}">
             {{ if ne .logotype nil }}
