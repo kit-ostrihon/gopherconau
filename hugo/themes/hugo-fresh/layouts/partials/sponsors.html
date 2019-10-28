@@ -30,12 +30,25 @@
         {{ end }}
       </ul>
 
-
+      <ul class="sponsors-list single">
+	{{ range where $companies ".sponsorship" "==" "Rose Gold" }}
+        <li class="sponsor-item has-text-centered" itemscope itemtype="http://schema.org/Organization">
+          <a href="{{ .url }}" class="sponsor--link" itemprop="url" target="_blank" title="{{ .name }}">
+            {{ if ne .logotype nil }}
+            <img src="{{ .logotype }}" alt="{{ .name }}" class="photo" itemprop="image">
+            {{ else }}
+            <img src="{{ .logo }}" alt="{{ .name }}" class="photo" itemprop="image">
+            {{ end }}
+          </a>
+          <span class="sponsor-type-desc has-text-centered">{{ .sponsorship }} Sponsor</span>
+        </li>
+        {{ end }}
+      </ul>
 
 
       <!-- <h3 class="sponsors-group-title has-text-centered">Gold Sponsors &darr;</h3> -->
       <ul class="sponsors-list double">
-	{{ range where $companies ".sponsorship" "in" (slice "Rose Gold" "Gold")}}
+	{{ range where $companies ".sponsorship" "==" "Gold" }}
         <li class="sponsor-item has-text-centered" itemscope itemtype="http://schema.org/Organization">
           <a href="{{ .url }}" class="sponsor--link" itemprop="url" target="_blank" title="{{ .name }}">
             {{ if ne .logotype nil }}
