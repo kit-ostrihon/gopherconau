@@ -518,17 +518,18 @@ Outside of work, Josh likes to get lost by following the forgotten art of hitchh
       description: "The last 45-minute long break for this year's GopherConAU!"
 
       #FRI 15:45-16:30 Adel
-#    - name: "Adel Smee"
-#      time: "15:45"
-#      photo: "https://pbs.twimg.com/profile_images/905369148078792705/uQANof3w_400x400.jpg"
-#      bio: ''
-#      company: "ZenDesk"
-#      link:
-#        href: ""
-#        text: ""
-#      presentation:
-#        title: ""
-#        description: ''
+    - name: "Adel Smee"
+      time: "15:45"
+      photo: "./images/speakers/adel_selfie.jpg"
+      bio: 'Adel Smee is an Engineering Manager at Zendesk where, for the last four years, she has led innovation projects across a variety of technologies and grown a number of high performing teams. Her career in tech started with teaching people to code, before she decided to break out and get paid to do it commercially at a startup, then at Lonely Planet, and then at Zendesk. Along the way she realised that her main implicit motivator is delight in the success of others, which turns out to be a really useful quality in a manager. She is obsessed with what makes people (and herself) tick and loves to hear how she is getting it wrong so she can do better. Adel is an incurable optimist who believes that one day we’ll live in a world where everybody likes their job as much as she does, but isn’t naive enough to think that day is coming any time soon.
+'
+      company: "ZenDesk"
+      link:
+        href: ""
+        text: ""
+      presentation:
+        title: "Inclusiveness - It’s In Your Hands"
+        description: 'Resilient, effective teams are diverse teams, teams that feel safe throwing around ideas, teams that look out for each other, teams where the needs of the individuals in the team are (mostly) met, teams that can learn and grow with your company. Nurturing environments in which such teams can form and flourish is an endlessly challenging and rewarding task that belongs to everyone in the company. And yet, a lot of the work to identify issues, champion change and improve a company’s culture and the diversity of its workforce is done by the same few people, or left entirely to HR. These folks could do with a hand. A hand from you! This talk will encourage you to get involved in diversity and inclusion work at your company in whatever way makes sense to you. It includes a few pointers to get you started and some stories to motivate you along the way.'
 
   # section2:
   #   title: You're here because you want the best
