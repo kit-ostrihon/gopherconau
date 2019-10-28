@@ -250,16 +250,16 @@ src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJn3JMjiauEmsRXz9JC
         description: "Simple. Reliable. Efficient. These words defined Go on Nov 10 2009.  As we celebrate 10 yrs, we add one more: Sustainable. A reflection of Go: technological & industry advances during the last decade, while exploring what it means to be sustainable amidst constant change."
         level: All levels
 
-      #THU 10:25-11:45 Break
+      #THU 10:25-11:35 Break
     - name: "Break"
       date: "31/10/2019"
       time: "10:25"
-      description: "Break for 20 minutes."
+      description: "Break for 10 minutes."
 
-      #THU 10:45-11:15 Am
+      #THU 10:35-11:05 Am
     - name: "Am Laher"
       date: "31/10/2019"
-      time: "10:45"
+      time: "10:35"
       photo: "https://secure.gravatar.com/avatar/47bbb612ea01d04266e8ee675b1c93e1?s=500"
       bio: '<p>I&#39;ve been an avid Gopher since 2012 - roughly as long as I&#39;ve been living in New Zealand. I discovered such an immediate productivity boost, that I haven&#39;t looked back from Go, or NZ, since. I helped start the Go Auckland meetup group in 2013, and I&#39;ve hosted and spoken at many meetups since then.</p><p>About four years ago, a wise man persuaded me that &quot;setting up a new stack is the right time to begin CD&quot;. I claimed I was too busy getting product and platform to market, but he won me over: &quot;it&#39;s much harder to add CD later&quot;. I went with it, and I was so chuffed with the results that I&#39;ve been championing CD-related approaches ever since.</p>'
       company: "Vend"
@@ -271,11 +271,11 @@ src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJn3JMjiauEmsRXz9JC
         description: '<p>Continuous Delivery can drive the design of your code for Great Good. I&#39;ll share some of the tricks and strategies I&#39;ve used to deploy Go services safely, smoothly, and without ceremony. I&#39;ll cover integration testing, db migrations, zero-downtime deploys, feature flags, and some useful go tooling.</p>'
         level: All levels
 
-      #THU 11:15-11:30 Break
+      #THU 11:05-11:30 Break
     - name: "Break"
       date: "31/10/2019"
-      time: "11:15"
-      description: "Gophers have 15 minutes to chill."
+      time: "11:05"
+      description: "Gophers have 25 minutes to chill."
 
       #THU 11:30-12:00 Alexander
     - name: "Alexander Else"
@@ -397,7 +397,7 @@ I have also co-authored the recently-released 'Hands-on Deep Learning in Go', an
         description: '<p>Many new Gophers come from dynamic languages and frameworks that have an emphasis on productivity vs engineering, but what happens when your application doesn’t fit the mold of a framework like Ruby on Rails? What happens when your problems don’t scale in the way the framework expects you to? What does it look like to build a full web stack from scratch for a production environment</p>'
         level: All levels
 
-      #FRI 9:00 Check-In
+      #FRI 9:30 Check-In
     - name: "Check-In"
       date: "1/11/2019"
       time: "9:30"
@@ -418,16 +418,16 @@ I have also co-authored the recently-released 'Hands-on Deep Learning in Go', an
         description: 'Go 1.13 made Modules a first class citizen. But what do they do exactly? In this talk, Bill will walk through what he has learned about modules and the developer experience.'
         level: All levels
 
-      #FRI 10:25-10:45 Break
+      #FRI 10:25-10:35 Break
     - name: "Break"
       date: "1/11/2019"
       time: "10:25"
-      description: "Break for 20 minutes."
+      description: "Break for 10 minutes."
 
-      #FRI 10:45-11:15 Joshua
+      #FRI 10:35-11:05 Joshua
     - name: "Joshua Carpeggiani"
       date: "1/11/2019"
-      time: "10:45"
+      time: "10:35"
       photo: "https://secure.gravatar.com/avatar/8f3ae66a1b3c1494de8971e428e9b6ae?s=500"
       bio: '<p>Josh is a software engineer at ANZ working on implementing an open source decimal datatype in Go as well as spreading the word about Go by co-organising a corporate Go training course.
 Outside of work, Josh likes to get lost by following the forgotten art of hitchhiking where he´s traveled to many places, and many are still to come.</p>'
@@ -440,11 +440,11 @@ Outside of work, Josh likes to get lost by following the forgotten art of hitchh
         description: '<p>Relying on binary floating point can kill; they are inherently imprecise and can lead to technical complications later down the road. A decimal system would solve many of these complications. Go has been lacking a fast and efficient decimal data type, until now...</p>'
         level: All levels
 
-      #FRI 11:15-11:30 Break
+      #FRI 11:05-11:30 Break
     - name: "Break"
       date: "1/11/2019"
-      time: "11:15"
-      description: "Gophers have 15 minutes to chill."
+      time: "11:05"
+      description: "Gophers have 25 minutes to chill."
 
       #FRI 11:30-12:00 Cera
     - name: "Cera Davies"
