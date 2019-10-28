@@ -56,6 +56,12 @@
     {{ end }}
     <!-- end: location -->
 
+    <!-- workshops -->
+    {{ if .Site.Params.workshops }}
+    {{ partial "workshops.html" . }} <!-- Ready for Go live. -->
+    {{ end }}
+    <!-- end: workshops -->
+
     <!-- schedule and speakers -->
     {{ if .Site.Params.schedule }}
     {{ partial "speakers.html" . }}
@@ -63,12 +69,6 @@
     <!-- {{ partial "schedule.html" . }} -->
     {{ end }}
     <!-- end: schedule and speakers -->
-
-    <!-- workshops -->
-    {{ if .Site.Params.workshops }}
-    {{ partial "workshops.html" . }} <!-- Ready for Go live. -->
-    {{ end }}
-    <!-- end: workshops -->
 
     <!-- contact -->
     {{ if .Site.Params.contact }}
