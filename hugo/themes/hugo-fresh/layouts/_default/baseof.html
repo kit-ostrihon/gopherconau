@@ -44,26 +44,31 @@
     {{ partial "sponsors.html" . }}
     {{ end }}
     <!-- end: sponsors -->
-
     <!-- about -->
     {{ if .Site.Params.about }}
     {{ partial "about.html" . }}
     {{ end }}
     <!-- end: about -->
 
-    <!-- schedule and speakers -->
-    {{ if .Site.Params.schedule }}
-    {{ partial "speakers.html" . }}
-    <!-- Ready for Go live after facts-check. -->
-    <!-- {{ partial "schedule.html" . }} -->
+    <!-- location -->
+    {{ if .Site.Params.location }}
+    {{ partial "location.html" . }}
     {{ end }}
-    <!-- end: schedule and speakers -->
+    <!-- end: location -->
 
     <!-- workshops -->
     {{ if .Site.Params.workshops }}
     {{ partial "workshops.html" . }} <!-- Ready for Go live. -->
     {{ end }}
     <!-- end: workshops -->
+
+    <!-- schedule and speakers -->
+    {{ if .Site.Params.schedule }}
+    {{ partial "speakers.html" . }}
+    <!-- Ready for Go live after facts-check. -->
+    {{ partial "schedule.html" . }}
+    {{ end }}
+    <!-- end: schedule and speakers -->
 
     <!-- contact -->
     {{ if .Site.Params.contact }}
