@@ -29,12 +29,10 @@
         {{ end }}
         <ul>
           {{- range $listItems }}
-          <li><span class="has-text-weight-bold">{{ .label }}</span> - {{ .text }}</li>
+          <li><span class="has-text-weight-bold">{{ .label }}</span> - {{ .text | safeHTML}}</li>
           {{- end}}
         </ul>
-        <p>
-            <tito-widget event="gophercon-au/2019" discount-code=""></tito-widget>
-        </p>
+
         <span>{{ $advice }}</span>
       </div>
 
@@ -43,20 +41,5 @@
       </div>
 
     </div>
-
-    <!-- Commented for now. -->
-    <!-- <h2 class="subtitle has-text-centered">Sponsored By</h2>
-    <div class="tabs is-centered">
-      <ul>
-        {{ range $company := $companies }}
-        <li>
-          <a href="{{ .url }}" class="home-page-sponsors-item sponsor--link" itemprop="url" target="_blank" title="{{ $company.name }}">
-            <img src="{{ .logo }}" alt="{{ $company.name }}" class="photo" itemprop="image">
-          </a>
-        </li>
-        {{ end }}
-      </ul>
-    </div> -->
-
   </div>
 </div>

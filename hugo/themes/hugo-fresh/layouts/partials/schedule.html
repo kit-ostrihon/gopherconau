@@ -5,7 +5,7 @@
 {{ $confday1 := "31/10/2019" }}
 {{ $confday2 := "1/11/2019" }}
 
-<section class="section section-feature-grey" id="schedule">
+<section class="section" id="programme"> <!--changed to programme anchor to work with QR on screens & posters-->
   <div class="container">
     <div class="title-wrapper has-text-centered">
       <h2 class="title is-2 is-spaced">{{ $title }}</h2>
@@ -17,7 +17,7 @@
 
 <div class="content-wrapper">
 
-<h3 class="schedule-day-title has-text-centered">Condeference Day 1 - 31st October</h3>
+<h3 class="schedule-day-title has-text-centered">Conference Day 1 - 31st October</h3>
 <div class="schedule-tbl">
   <table>
     <thead>
@@ -45,7 +45,7 @@
           <tr class="schedule-other">
             <td>{{ .time }}</td>
             <td>{{ .name }}</td>
-            <td>-</td>
+            <td>{{ .description }}</td>
           </tr>
         {{ end }}
       {{ end }}
@@ -81,7 +81,7 @@
           <tr class="schedule-other">
             <td>{{ .time }}</td>
             <td>{{ .name }}</td>
-            <td>-</td>
+            <td>{{ .description }}</td>
           </tr>
         {{ end }}
       {{ end }}

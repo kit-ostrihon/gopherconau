@@ -1,0 +1,23 @@
+{{- $section := .Site.Params.location }}
+{{- $title := index $section "title" }}
+{{- $workshops := index $section "workshops" }}
+{{- $conference := index $section "conference" }}
+
+<section class="section is-medium" id="location">
+  <div class="container">
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2">{{ $title }}</h2>
+      <div class="divider is-centered"></div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="content">
+	<ul class="sponsors-list double">
+	  <li class="sponsor-item"> Workshops: <br>{{$workshops | safeHTML}} </li>
+	  <li class="sponsor-item"> Conference: <br>{{$conference | safeHTML }}</li>
+	</ul>
+      </div>
+
+    </div>
+  </div>
+</section>
