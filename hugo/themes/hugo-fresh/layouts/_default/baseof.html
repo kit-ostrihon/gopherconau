@@ -82,6 +82,12 @@
     {{ end }}
     <!-- end: code of conduct -->
 
+    <!-- things to do -->
+    {{ if .Site.Params.todo }}
+    {{ partial "todo.html" . }}
+    {{ end }}
+    <!-- end: code of conduct -->
+
     <!-- venue address -->
     {{ if .Site.Params.venue }}
     {{ partial "venue.html" . }}

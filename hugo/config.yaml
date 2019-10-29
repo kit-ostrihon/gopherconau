@@ -53,6 +53,8 @@ params:
     #   url: /#sponsors
     - title: Contact
       url: /#contact
+    - title: Things To Do
+      url: /#todo
     - title: Code of Conduct
       url: /#coc
   # - title: Features
@@ -654,6 +656,33 @@ Outside of work, Josh likes to get lost by following the forgotten art of hitchh
         - name: Gary Miller
           bio: Gary Miller is a creative technologist, across a broad spectrum of web, cloud and enterprise IT systems and technologies. He is a senior engineer at a local Sydney spin-off, GotoBlink. Previously he was Macquarie Group's (COG - Infra) Computer Scientist in Residence, where he applied a small amount of theory with large amounts of practical software engineering nous, to unblock some of their most intractable problems.
           photo: "/images/speakers/gary-miller.jpg"
+    # The entire CONFERENCE schedule (workshops are on the workshop page)
+  todo:
+    title: Things To Do
+    subtitle: Around Sydney!
+    things:
+
+      #Blue Mountains
+    - name: "The Blue Mountains"
+      distance: "75km"
+      navigation: "https://maps.google.com.au/"
+      photo: "https://www.bluemts.com.au/images/features/home/blank-whatson-old.jpg"
+      about: "Experience fresh mountain air as you rise above Sydney and enter the spectacular Blue Mountains region. The Blue Mountains is perfect for exploring the best that NSW has to offer. The Three Sisters at Echo Point, bushwalking, galleries, dining, shopping, day spas, golf, and numerous attractions. The Blue Mountains is the ideal destination for that romantic getaway or family escape."
+      company: Google
+      presentation:
+        title: "10 years of Go"
+        description: "Experience fresh mountain air as you rise above Sydney and enter the spectacular Blue Mountains region. The Blue Mountains is perfect for exploring the best that NSW has to offer. The Three Sisters at Echo Point, bushwalking, galleries, dining, shopping, day spas, golf, and numerous attractions. The Blue Mountains is the ideal destination for that romantic getaway or family escape."
+    #Botanic Gardens
+    - name: "The Royal Botanic Garden"
+      distance: "1km"
+      navigation: "https://maps.google.com.au/"
+      photo: "./images/todo/gardens.jpg"
+      about: "The Royal Botanic Garden Sydney is Australia’s oldest living scientific institution, beginning its life in 1816. The Garden encompasses 30 hectares and is the oldest botanic garden in Australia, home to an outstanding collection of more than 27,000 plants from around the world."
+      company: Google
+      presentation:
+        title: "10 years of Go"
+        description: "The Royal Botanic Garden Sydney is Australia’s oldest living scientific institution, beginning its life in 1816. The Garden encompasses 30 hectares and is the oldest botanic garden in Australia, home to an outstanding collection of more than 27,000 plants from around the world."
+    
   footer:
      # logo: gopher-kangaroo-sydney-opera.svg
      thanks:
