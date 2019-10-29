@@ -106,6 +106,10 @@
   padding: 0 0 0 0;
 }
 
+.schedule-tbl table {
+  width: 100%; /* Because when there was no desc, it would not fill the page width. */
+}
+
 .schedule-tbl th {
   color: var(--dark-gray);
   font-family: open sans,sans-serif;
