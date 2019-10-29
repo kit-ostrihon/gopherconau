@@ -50,10 +50,10 @@ params:
     #   url: /#sponsors
     - title: Contact
       url: /#contact
-    - title: Things To Do
-      url: /#todo
     - title: Code of Conduct
       url: /#coc
+    - title: Things To Do
+      url: /#todo
   # - title: Features
   #   url: /
   # - title: Pricing
