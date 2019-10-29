@@ -21,9 +21,6 @@ params:
     listitems:
       - label: Conference Days
         text: 'Thursday 31st & Friday 1st  <p> <tito-widget event="gophercon-au/2019" discount-code=""></tito-widget>  </p>'
-      - label: "Workshops Day*"
-        text: 'Wednesday 30th <p> <tito-widget event="gophercon-au/gopherconau-2019-workshops" discount-code=""></tito-widget>  </p>'
-    advice: "*Please be advised that workshops are to be purchased separately."
     # Button text
     # buttontext: Follow on LinkedIn For Updates!
     # Where the main hero button links to
@@ -666,7 +663,7 @@ Outside of work, Josh likes to get lost by following the forgotten art of hitchh
     - name: "The Blue Mountains"
       distance: "104km"
       navigation: '<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d424408.7684965556!2d150.46926213788018!3d-33.79441218573838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x6b12ae265bb4a143%3A0x16e224b2bd8fa957!2sUniversity%20of%20Technology%20Sydney%2C%20Broadway%2C%20Ultimo%20NSW!3m2!1d-33.8832376!2d151.20049419999998!4m5!1s0x6b126e9b18072287%3A0x46c4113cc389ea6!2sThree%20Sisters%2C%2023-31%20Echo%20Point%20Rd%2C%20Katoomba%20NSW%202780!3m2!1d-33.7320724!2d150.3121543!5e0!3m2!1sen!2sau!4v1572339342065!5m2!1sen!2sau" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>'
-      photo: "https://www.bluemts.com.au/images/features/home/blank-whatson-old.jpg"
+      photo: "./images/todo/bluemountains.jpg"
       links: '<a href="https://www.bluemts.com.au/">Blue Mountains Information Website</a>'
       about: "The Blue Mountains is a magical place any time of the year. Glowing in autumn, cool in winter, colourful in spring and refreshing in summer. The Blue Mountains is densely populated by oil bearing Eucalyptus trees. The Greater Blue Mountains was inscribed on the World Heritage List in 2000 and was one of 15 World Heritage places included in the National Heritage List on 21 May 2007."
       presentation:
@@ -682,7 +679,67 @@ Outside of work, Josh likes to get lost by following the forgotten art of hitchh
       presentation:
         title: "Gardens by the Harbour!"
         description: "The Royal Botanic Garden Sydney is Australia’s oldest living scientific institution, beginning its life in 1816. The Garden encompasses 30 hectares and is the oldest botanic garden in Australia, home to an outstanding collection of more than 27,000 plants from around the world."
-    
+    # #The Harbour Bridge
+    - name: "The Harbour Bridge"
+      distance: "3km"
+      navigation: '<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d26502.640238581647!2d151.18973886150965!3d-33.868271028219716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x6b12ae265bb4a143%3A0x16e224b2bd8fa957!2sUniversity%20of%20Technology%20Sydney%2C%2015%20Broadway%2C%20Ultimo%20NSW%202007!3m2!1d-33.8832376!2d151.20049419999998!4m5!1s0x6b12ae5d25ead5e3%3A0x68948eb717c0c43e!2sSydney%20Harbour%20Bridge%2C%20Sydney%20NSW!3m2!1d-33.852306299999995!2d151.2107871!5e0!3m2!1sen!2sau!4v1572342011077!5m2!1sen!2sau" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>'
+      photo: "./images/todo/bridge.jpg"
+      links: '<a href="https://www.bridgeclimb.com/">BridgeClimb Website</a>'
+      about: 'The Sydney Harbour Bridge is a heritage-listed steel through arch bridge across Sydney Harbour that carries rail, vehicular, bicycle, and pedestrian traffic between the Sydney central business district (CBD) and the North Shore. The dramatic view of the bridge, the harbour, and the nearby Sydney Opera House is an iconic image of Sydney, and Australia itself. The bridge is nicknamed "The Coathanger" because of its arch-based design.'
+      presentation:
+        title: "Climb the Coathanger!"
+        description: "See the iconic Sydney Harbour Bridge, or even climb it!"
+    #The Opera House
+    - name: "The Opera House"
+      distance: "3km"
+      navigation: '<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d26501.916096453526!2d151.1901288115138!3d-33.8706034791521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x6b12ae265bb4a143%3A0x16e224b2bd8fa957!2sUniversity%20of%20Technology%20Sydney%2C%2015%20Broadway%2C%20Ultimo%20NSW%202007!3m2!1d-33.8832376!2d151.20049419999998!4m5!1s0x6b12ae665e892fdd%3A0x3133f8d75a1ac251!2sSydney%20Opera%20House%2C%20Sydney%20NSW!3m2!1d-33.856784399999995!2d151.21529669999998!5e0!3m2!1sen!2sau!4v1572344099609!5m2!1sen!2sau" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>'
+      photo: "./images/todo/operahouse.jpg"
+      links: '<a href="https://www.sydneyoperahouse.com/">Sydney Opera House Website</a>'
+      about: "The Opera House is a World Heritage-listed masterpiece of ‘human creative genius’ that belongs to all Australians. It is the Country’s number one tourist destination and its busiest performing arts centre, welcoming more than 10.9 million visitors a year on site and hosting more than 1,800 performances attended by more than 1.4 million people."
+      presentation:
+        title: "Sails by the Sea!"
+        description: "Visit Sydney's most iconic building, and maybe see some amazing music or theatre while you're at it!"
+    #A general music / culture page linking to https://whatson.cityofsydney.nsw.gov.au/
+    - name: "Music , Theatre, Culture and Art"
+      distance: "a very short distance"
+      navigation: '<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d13250.046607728438!2d151.1966992377713!3d-33.87647432535517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x6b12ae265bb4a143%3A0x16e224b2bd8fa957!2sUniversity%20of%20Technology%20Sydney%2C%2015%20Broadway%2C%20Ultimo%20NSW%202007!3m2!1d-33.8832376!2d151.20049419999998!4m5!1s0x6b129838f39a743f%3A0x3017d681632a850!2sSydney%2C%20New%20South%20Wales!3m2!1d-33.868819699999996!2d151.2092955!5e0!3m2!1sen!2sau!4v1572344813279!5m2!1sen!2sau" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>'
+      photo: "./images/todo/culture.jpg"
+      links: '<a href="https://whatson.cityofsydney.nsw.gov.au">What&rsquo;s on in Sydney</a>'
+      about: "There&rsquo;s always something on in Sydney. From live music and theatre to art, museums and sports"
+      presentation:
+        title: "Australia's most vibrant city!"
+        description: "Sydney always has something to offer! If you're looking for a day with the family, or a night out on the town, this city has something for you. Please feel free to ask the conference organisers if you need some local knowledge!"
+    #Sydney Harbour (with links to sydney ferries)
+    - name: "Sydney Harbour"
+      distance: "3km"
+      navigation: '<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d13250.639052231088!2d151.19738048776958!3d-33.872658324575475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x6b12ae265bb4a143%3A0x16e224b2bd8fa957!2sUniversity%20of%20Technology%20Sydney%2C%2015%20Broadway%2C%20Ultimo%20NSW%202007!3m2!1d-33.8832376!2d151.20049419999998!4m5!1s0x6b12ae69d26aafad%3A0x7f9b21ebd5b57ce0!2sCircular%20Quay%2C%20Sydney%20NSW!3m2!1d-33.8611374!2d151.2126457!5e0!3m2!1sen!2sau!4v1572345105082!5m2!1sen!2sau" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>'
+      photo: "./images/todo/harbour.jpg"
+      links: '<a href="https://transportnsw.info/routes/ferry">Sydney Ferries</a>'
+      about: "Hop on a ferry at Circular Quay and glide past the Sydney Opera House and the Sydney Harbour Bridge to Taronga Zoo. There are all kinds of harbour cruises, including lunch cruises, tall ships and an Aboriginal cultural heritage cruise. Boating is popular too if you know how to steer a ship."
+      presentation:
+        title: "Explore the Harbour!"
+        description: "Welcome to one of the world’s most beautiful natural harbours. Sydney Harbour has it all; sparkling blue waters, iconic tourists attractions, hidden beaches, pristine bushland, pretty botanic gardens brimming with native flora and charming islands that are made for exploring."
+    #The Rocks
+    - name: "The Rocks"
+      distance: "3km"
+      navigation: '<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d13250.733937252318!2d151.19849368776934!3d-33.87204712445059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x6b12ae265bb4a143%3A0x16e224b2bd8fa957!2sUniversity%20of%20Technology%20Sydney%2C%2015%20Broadway%2C%20Ultimo%20NSW%202007!3m2!1d-33.8832376!2d151.20049419999998!4m5!1s0x6b12ae42b65d8fb3%3A0x5017d681632cd60!2sThe%20Rocks%20NSW!3m2!1d-33.85985!2d151.20901!5e0!3m2!1sen!2sau!4v1572345467948!5m2!1sen!2sau" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>'
+      photo: "./images/todo/therocks.jpg"
+      links: '<a href="https://www.therocks.com/">The Rocks Website</a>'
+      about: "Framed by the diamond-sparkled waters of Sydney Harbour and shaped by history, The Rocks is where Sydney began. It&#39;s also a place for now with chic restaurants, stylish bars, hearty pubs &amp; eclectic shopping."
+      presentation:
+        title: "Sydney's oldest district!"
+        description: "TThere aren&#39;t many places like The Rocks. Framed by the diamond-sparkled waters of Sydney Harbour and shaped by history, The Rocks is where Sydney began. It&#39;s also a place for now with chic restaurants, stylish bars, hearty pubs &amp; eclectic shopping."
+    #Bondi Beach (because, you know, tourism)
+    - name: "Bondi Beach"
+      distance: "8km"
+      navigation: '<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d26498.477168656915!2d151.2211502615337!3d-33.88167828358012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x6b12ae265bb4a143%3A0x16e224b2bd8fa957!2sUniversity%20of%20Technology%20Sydney%2C%2015%20Broadway%2C%20Ultimo%20NSW%202007!3m2!1d-33.8832376!2d151.20049419999998!4m5!1s0x6b12b201c6bc3859%3A0x5017d681632ad80!2sBondi%20Beach%20NSW!3m2!1d-33.89102!2d151.277726!5e0!3m2!1sen!2sau!4v1572345707976!5m2!1sen!2sau" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>'
+      photo: "./images/todo/bondi.jpg"
+      links: '<a href="https://www.sydney.com/destinations/sydney/sydney-east/bondi/beach-lifestyle">Bondi Information</a>'
+      about: "Roll out your beach towel and soak up Sydney’s laid-back beach lifestyle and enjoy a dip between the red and yellow flags. Professional lifeguards patrol Bondi Beach 365 days a year. You can learn to surf year-round at one of the accredited surf schools. Experienced surfers head to the southern end of the beach, where southerly swells and a rocky reef create powerful waves. Surfboard hire is also available."
+      presentation:
+        title: "Sydney's most famous beach!"
+        description: "The day begins early at Bondi Beach. As a glorious sunrise edges above the ocean horizon, surfers gracefully carve up waves, joggers limber up on the promenade and swimmers flip turn in Bondi Baths. The famous beach is buzzing from dawn to dusk and then Bondi&rsquo;s night-time scene sparkles."
+        
   footer:
      # logo: gopher-kangaroo-sydney-opera.svg
      thanks:
