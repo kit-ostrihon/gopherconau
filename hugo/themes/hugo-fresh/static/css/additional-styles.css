@@ -106,6 +106,10 @@
   padding: 0 0 0 0;
 }
 
+.schedule-tbl table {
+  width: 100%; /* Because when there was no desc, it would not fill the page width. */
+}
+
 .schedule-tbl th {
   color: var(--dark-gray);
   font-family: open sans,sans-serif;
@@ -211,19 +215,25 @@
   margin-right: 0.2em;
 }
 
+.sponsors .sponsor-item,
 #sponsors .sponsor-item {
+  margin: 0 0 0 0;
+  padding: 1em 2em;
   width: 100%; /* to allow the logotypes to fill the space */
 }
 
+.sponsors .sponsor--link,
 #sponsors .sponsor--link {
   width: 100%;
 }
 
+.sponsors .sponsor--link img,
 #sponsors .sponsor--link img {
   max-height: 100%;
   vertical-align: middle;
 }
 
+.sponsors .sponsors-group-title,
 #sponsors .sponsors-group-title {
   line-height: 300%;
   font-size: 1.5em;
@@ -240,7 +250,7 @@
 }
 
 #sponsors .sponsors-list {
-  margin-bottom: 4em;
+  /* margin-bottom: 2em; */
 }
 
 /* Making the speakers' photos smaller. */
@@ -256,6 +266,22 @@
     height: 80px;
     width: 80px;
   }
+  #sponsors .sponsors-list,
+  #location .sponsors-list {
+    display: grid;
+  }
+  #sponsors .sponsors-list.single,
+  #location .sponsors-list.single {
+    grid-template-columns: 1fr;
+  }
+  #sponsors .sponsors-list.double,
+  #location .sponsors-list.double {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #sponsors .sponsors-list.triple,
+  #location .sponsors-list.triple {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* Changing the Speakers layout from two columns to one. */
@@ -269,6 +295,11 @@
   #speakers-list .speakers-item.keynote-speaker {
     grid-column: 1 / 2; /* stretch for one-column grid */
   }
+  #sponsors .sponsors-list,
+  #location .sponsors-list {
+    display: grid;
+    grid-template-columns: 1fr !important;
+  }
 }
 
 /* Adding the element that is otherwise removed. */
@@ -279,7 +310,7 @@
   }
 }
 
-/* Making the speakers' photos even smaller for the small width. */
+/* Making the speakers' photos even smaller for the small width. */b
 @media(max-width: 321px) {
   #speakers-list {
     grid-gap: 0em;
