@@ -1,0 +1,23 @@
+{{- $section := .Site.Params.coc }}
+{{- $title    := index $section "title" }}
+{{- $subtitle := index $section "subtitle" }}
+{{- $paragraphs    := index $section "paragraphs" }}
+<section class="section is-medium" id="coc">
+  <div class="container">
+
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2">{{ $title }}</h2>
+      <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>
+      <div class="divider is-centered"></div>
+    </div>
+
+    <div class="content-wrapper">
+      {{- range $paragraphs }}
+        <p class="content has-text-justified">
+          <span class="icon-box-text">{{ .text }}</span>
+        </p>
+      {{- end }}
+    </div>
+
+  </div>
+</section>

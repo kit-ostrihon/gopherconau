@@ -14,4 +14,7 @@
 {{- $css := resources.Get $sass | toCSS $cssOpts | minify | fingerprint }}
 <link rel="stylesheet" type="text/css" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 {{- end }}
-<link rel="stylesheet" type="text/css" href="{{ "css/icons.css" | absURL }}">
+<link rel="stylesheet" type="text/css" href="{{ "css/icons.css" | relURL }}">
+<link rel="stylesheet" type="text/css" href='https://css.tito.io/v1.1' />
+<!-- Additional styles. -->
+<link rel="stylesheet" type="text/css" href="{{ "css/additional-styles.css" | relURL }}" />

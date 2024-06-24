@@ -9,9 +9,9 @@
   </head>
   <body>
     <!-- Preloader -->
-    <div id="preloader">
+    <!-- <div id="preloader">
       <div id="status"></div>
-    </div>
+    </div> -->
 
     {{ block "main" . }}
 
@@ -39,17 +39,60 @@
     {{ partial "section5.html" . }}
     {{ end }}
 
+    <!-- sponsors - more detailed, becase otherwise there are sponsors also at the home page, styled and ready to go once filled with all details -->
+    {{ if .Site.Params.sponsors }}
+    {{ partial "sponsors.html" . }}
+    {{ end }}
+    <!-- end: sponsors -->
     <!-- about -->
     {{ if .Site.Params.about }}
     {{ partial "about.html" . }}
     {{ end }}
     <!-- end: about -->
 
+    <!-- location -->
+    {{ if .Site.Params.location }}
+    {{ partial "location.html" . }}
+    {{ end }}
+    <!-- end: location -->
+
+    <!-- workshops -->
+    {{ if .Site.Params.workshops }}
+    {{ partial "workshops.html" . }} <!-- Ready for Go live. -->
+    {{ end }}
+    <!-- end: workshops -->
+
+    <!-- schedule and speakers -->
+    {{ if .Site.Params.schedule }}
+    {{ partial "speakers.html" . }}
+    <!-- Ready for Go live after facts-check. -->
+    {{ partial "schedule.html" . }}
+    {{ end }}
+    <!-- end: schedule and speakers -->
+
     <!-- contact -->
     {{ if .Site.Params.contact }}
     {{ partial "contact.html" . }}
     {{ end }}
     <!-- end: contact -->
+
+    <!-- code of conduct -->
+    {{ if .Site.Params.coc }}
+    {{ partial "coc.html" . }}
+    {{ end }}
+    <!-- end: code of conduct -->
+
+    <!-- things to do -->
+    {{ if .Site.Params.todo }}
+    {{ partial "todo.html" . }}
+    {{ end }}
+    <!-- end: code of conduct -->
+
+    <!-- venue address -->
+    {{ if .Site.Params.venue }}
+    {{ partial "venue.html" . }}
+    {{ end }}
+    <!-- end: venue address -->
 
     <!-- mailing list -->
     {{ if .Site.Params.mailinglist }}

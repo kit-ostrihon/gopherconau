@@ -1,0 +1,327 @@
+:root {
+  --gopher-blue: #96D6FF;
+  --gopher-blue-light: #D1EDFF;
+  --gopher-blue-dark: #006AAD;
+  --golden-yellow: #F39200;
+  --golden-yellow-light: #FFEDD1;
+  --dark-gray: #394455;
+}
+
+.section-primary {
+  background-color: var(--gopher-blue);
+}
+
+#speakers-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2em;
+  margin-top: 1em;
+}
+
+#speakers-list .speakers-item {
+  background-color: white;
+  border: none;
+  padding: 1em;
+  margin-top: 2em;
+  border-radius: 0.3em;
+}
+
+#speakers-list .speakers-item.keynote-speaker {
+  grid-column: 1 / 3; /* to strech across the two columns */
+}
+
+#speakers-list .card-subtitle {
+  margin-top: 0.1em !important;
+  margin-bottom: 0.5em !important;
+  text-transform: uppercase;
+  color: var(--golden-yellow) !important;
+}
+
+#speakers-list .speaker-photo {
+  position: absolute;
+  left: 2em;
+  top: -60px;
+}
+
+#speakers-list .speaker-photo .photo {
+  box-shadow: 0 0 0 10px rgb(150, 214, 255, 0.3);
+}
+
+#speakers-list .speakers-name {
+  color: var(--dark-gray);
+  font-family: open sans,sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#speakers-list .speakers-bio {
+  margin-top: 1em;
+}
+
+#speakers-list .speakers-bio ul {
+  list-style: inside;
+}
+
+.speakers-card-talk-title {
+  color: var(--dark-gray);
+  font-size: 1.5em;
+  margin-top: 0.5em;
+}
+
+.speakers-card-talk-subtitle {
+  font-weight: bold;
+  margin-top: 0.1em !important;
+  margin-bottom: 0.5em !important;
+  text-transform: uppercase;
+  color: var(--golden-yellow) !important;
+}
+
+.speakers-card-section-title {
+  color: var(--gopher-blue-dark);
+  margin-top: 1em;
+  margin-bottom: 0.1em;
+  font-weight: bold;
+}
+
+.divider.primary {
+  background-color: var(--dark-gray);
+}
+
+.divider.light {
+  background-color: white;
+}
+
+.divider.blue {
+  background-color: var(--gopher-blue-dark);
+}
+
+.schedule-day-title {
+  line-height: 300%;
+  font-size: 1.5em;
+  margin-top: 0.5em;
+  color: var(--golden-yellow);
+}
+
+.schedule-tbl {
+  padding: 0 0 0 0;
+}
+
+.schedule-tbl table {
+  width: 100%; /* Because when there was no desc, it would not fill the page width. */
+}
+
+.schedule-tbl th {
+  color: var(--dark-gray);
+  font-family: open sans,sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.schedule-tbl .schedule-description h3 {
+  font-family: open sans,sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-bottom: 1em;
+}
+
+.schedule-tbl td, .schedule-tbl th {
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.schedule-tbl .speaker-photo .photo {
+    box-shadow: 0 0 0 4px var(--gopher-blue);
+}
+
+.schedule-tbl tbody tr:nth-child(2n+1) {
+  background-color: white; /* To cancel the alternating background, because there is a hover and only two rows. */
+}
+
+.schedule-tbl .schedule-other {
+  background-color: var(--golden-yellow-light) !important;
+  color: var(--dark-gray);
+  font-style: italic;
+}
+
+.schedule-tbl td {
+  line-height: 150%; /* Because it was all mushed together. */
+}
+
+.schedule-tbl tbody tr:hover {
+  background: var(--gopher-blue-light);
+}
+
+.schedule-tbl h3 {
+  font-weight: bold;
+}
+
+.home-page-sponsors-title {
+  width: 100%;
+}
+
+.home-page-sponsors-item {
+  border: none;
+  box-shadow: 0 0 0 0;
+}
+
+.sponsor--link {
+  border: none;
+  box-shadow: 0 0 0 0;
+  margin: 0 auto; /* to center horizontally */
+}
+
+#workshops .feature-card {
+  height: auto;
+  padding-bottom: 2em;
+  width: auto;
+}
+
+#workshops .feature-card .card-title {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+#workshops .feature-card h4 {
+  color: var(--dark-gray);
+  font-size: 1.5em;
+}
+
+#workshops .feature-card h5 {
+  color: var(--gopher-blue-dark);
+  margin-top: 1em;
+  margin-bottom: 0.1em;
+  font-weight: bold;
+}
+
+#workshops .card-subtitle {
+  margin-top: 0.1em !important;
+  margin-bottom: 0.5em !important;
+  text-transform: uppercase;
+  color: var(--golden-yellow) !important;
+}
+
+#workshops .feature-card .card-icon img {
+  border-radius: 50%;
+}
+
+#workshops .feature-card .card-text p {
+  color: #4a4a4a;
+}
+
+#workshops .feature-card .with-bullets li::before {
+  content: "•";
+  margin-right: 0.2em;
+}
+
+.sponsors .sponsor-item,
+#sponsors .sponsor-item {
+  margin: 0 0 0 0;
+  padding: 1em 2em;
+  width: 100%; /* to allow the logotypes to fill the space */
+}
+
+.sponsors .sponsor--link,
+#sponsors .sponsor--link {
+  width: 100%;
+}
+
+.sponsors .sponsor--link img,
+#sponsors .sponsor--link img {
+  max-height: 100%;
+  vertical-align: middle;
+}
+
+.sponsors .sponsors-group-title,
+#sponsors .sponsors-group-title {
+  line-height: 300%;
+  font-size: 1.5em;
+  margin-top: 1em;
+  color: var(--golden-yellow);
+}
+
+#sponsors .sponsors-group-title.blue {
+  color: var(--gopher-blue-dark);
+}
+
+#sponsors .sponsors-group-title.dark {
+  color: var(--dark-gray);
+}
+
+#sponsors .sponsors-list {
+  /* margin-bottom: 2em; */
+}
+
+/* Making the speakers' photos smaller. */
+@media(max-width: 1087px) {
+  #speakers-list .speaker-photo {
+    position: absolute;
+    left: 1em;
+    top: -40px;
+    width: 80px;
+  }
+  #speakers-list .speaker-photo .photo {
+    box-shadow: 0 0 0 10px rgb(150, 214, 255, 0.3);
+    height: 80px;
+    width: 80px;
+  }
+  #sponsors .sponsors-list,
+  #location .sponsors-list {
+    display: grid;
+  }
+  #sponsors .sponsors-list.single,
+  #location .sponsors-list.single {
+    grid-template-columns: 1fr;
+  }
+  #sponsors .sponsors-list.double,
+  #location .sponsors-list.double {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #sponsors .sponsors-list.triple,
+  #location .sponsors-list.triple {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Changing the Speakers layout from two columns to one. */
+@media(max-width: 768px) {
+  #speakers-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2em;
+    margin-top: 1em;
+  }
+  #speakers-list .speakers-item.keynote-speaker {
+    grid-column: 1 / 2; /* stretch for one-column grid */
+  }
+  #sponsors .sponsors-list,
+  #location .sponsors-list {
+    display: grid;
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Adding the element that is otherwise removed. */
+@media(max-width: 480px) {
+  /* Because the default styles take bio off of the screen for small screens! Note to future self: Yes, it should really be here in the media query. */
+  #speakers-list .speakers-bio {
+    display: block;
+  }
+}
+
+/* Making the speakers' photos even smaller for the small width. */b
+@media(max-width: 321px) {
+  #speakers-list {
+    grid-gap: 0em;
+  }
+  #speakers-list .speaker-photo {
+    left: 10px;
+    top: -30px;
+    width: 50px;
+  }
+  #speakers-list .speaker-photo .photo {
+    height: 50px;
+    width: 50px;
+  }
+}

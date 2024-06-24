@@ -1,0 +1,43 @@
+{{- $schedule := .Site.Params.schedule }}
+{{- $title    := index $schedule "title" }}
+{{- $slots    := index $schedule "slots" }}
+<section class="section section-primary" id="speakers">
+  <div class="container">
+
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title">Speakers</h2>
+      <h3 class="subtitle">Are you as excited as we are?</h3>
+      <div class="divider is-centered primary"></div>
+    </div>
+
+    <ul id="speakers-list">
+        {{ range $slot := $slots}}
+          {{ if ne .presentation nil }}
+      <li class="speakers-item {{ if .keynote }}keynote-speaker{{ end }}" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+        {{ with .photo }}
+          <span class="speaker-photo">
+            <img class="photo" src="{{ . }}" alt="{{ $slot.name }}" itemprop="image">
+          </span>
+        {{ end }}
+        {{if .keynote}}<h5 class="card-subtitle has-text-centered">Keynote Speaker</h5>{{end}}
+        <h3 class="speakers-name has-text-centered">{{ .name }}
+          <!-- {{ with .link }}
+          <a href="{{ .href }}" target="_blank" title="{{ .text }}"> {{ .text }} </a>
+          {{ end }} -->
+        </h3>
+        <h4 class="has-text-centered speakers-company">{{ .company }}</h4>
+        <h4 class="has-text-centered speakers-card-talk-title" >{{ .presentation.title }}</h4>
+        <h5 class="card-subtitle speakers-card-talk-subtitle has-text-centered">Talk</h5>
+        <h4 class="has-text-centered speakers-card-section-title">Description</h4>
+        <div class="speakers-bio has-text-justified">{{ .presentation.description | safeHTML }}</div>
+        <!-- <h4 class="has-text-centered speakers-card-section-title">Target Audience Level</h4>
+        <p class="has-text-centered">{{ .presentation.level }}</p> -->
+        <h4 class="has-text-centered speakers-card-section-title">About {{ .name }}</h4>
+        <div class="speakers-bio has-text-justified">{{ .bio | safeHTML }}</div>
+      </li>
+      {{ end }}
+    {{ end }}
+    </ul>
+
+  </div>
+</section>

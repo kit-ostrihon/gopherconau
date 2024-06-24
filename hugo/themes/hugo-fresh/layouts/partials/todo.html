@@ -1,0 +1,43 @@
+{{- $todo := .Site.Params.todo }}
+{{- $title    := index $todo "title" }}
+{{- $things    := index $todo "things" }}
+<section class="section section-primary" id="todo">
+  <div class="container">
+
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title">Things To Do</h2>
+      <h3 class="subtitle">Around Sydney!</h3>
+      <div class="divider is-centered primary"></div>
+    </div>
+
+    <ul id="speakers-list">
+        {{ range $thing := $things}}
+          {{ if ne .presentation nil }}
+      <li class="speakers-item {{ if .keynote }}keynote-speaker{{ end }}" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+        {{ with .photo }}
+          <span class="speaker-photo">
+            <img class="photo" src="{{ . }}" alt="{{ $thing.name }}" itemprop="image">
+          </span>
+        {{ end }}
+        <h3 class="speakers-name has-text-centered">{{ .name }}
+          <!-- {{ with .link }}
+          <a href="{{ .href }}" target="_blank" title="{{ .text }}"> {{ .text }} </a>
+          {{ end }} -->
+        </h3>
+        <h4 class="has-text-centered speakers-card-talk-title" >{{ .presentation.title }}</h4>
+        <div class="speakers-bio has-text-justified">{{ .presentation.description | safeHTML }}</div>
+        <!-- <h4 class="has-text-centered speakers-card-section-title">Target Audience Level</h4>
+        <p class="has-text-centered">{{ .presentation.level }}</p> -->
+        <h4 class="has-text-centered speakers-card-section-title">About {{ .name }}</h4>
+        <div class="speakers-bio has-text-justified">{{ .about | safeHTML }}</div>
+        <h4 class="has-text-centered speakers-card-section-title">How to get there</h4>
+        <div class="speakers-bio has-text-justified">{{ .name }} is located {{ .distance }} from the conference venue.<br /><br /><div>{{ .navigation | safeHTML }}</div></div>
+        <h4 class="has-text-centered speakers-card-section-title">More info</h4>
+        <div class="speakers-bio has-text-justified">{{ .links | safeHTML }}</div>
+      </li>
+      {{ end }}
+    {{ end }}
+    </ul>
+    <h3 class="has-text-centered subtitle">If none of these entices you, or there is something particular you are looking to do, feel free to ask any of the conference organisers and they will be happy to assist in any way possible!</h3>
+  </div>
+</section>
